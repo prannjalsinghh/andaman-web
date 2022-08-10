@@ -23,6 +23,7 @@ const Footer = () =>
             </div>
             <div className={styles.followUs}>
                 <h3>Follow Us</h3>
+        
                 <ul>
                     <li><FacebookIcon/></li>
                     <li><InstagramIcon/></li>
