@@ -56,9 +56,9 @@ const Header = () => {
                 >
                     <ul>
 
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a> </li>
-                        <li><a>Hotel & Resorts</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/aboutUs">About Us</Link> </li>
+                        <li><Link to="/hotels">Hotel & Resorts</Link></li>
                         <li onMouseEnter={openHandler} onMouseLeave={closeHandler}><a>Packages</a>
                             {isOpen&&<ul  className="">
                                 <li>FamilyPackages</li>
@@ -67,8 +67,8 @@ const Header = () => {
 
                             }
                         </li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+                        <li><Link to="/Blog">Blog</Link></li>
+                        <li><Link to="/contactUs">Contact</Link></li>
 
                     </ul>
 
