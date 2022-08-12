@@ -42,6 +42,7 @@ const Header = () => {
 
     const closeHandler = ()=>{
         setisOpen(false);
+        console.log('khushi');
     }
 
     return (
@@ -57,8 +58,8 @@ const Header = () => {
                         <li><a>Home</a></li>
                         <li><a>About Us</a> </li>
                         <li><a>Hotel & Resorts</a></li>
-                        <li onMouseEnter={openHandler} onMouseMove={closeHandler}><a>Packages</a>
-                            {isOpen&&<ul  className="bg-green">
+                        <li onMouseEnter={openHandler} onMouseLeave={closeHandler}><a>Packages</a>
+                            {isOpen&&<ul  className="">
                                 <li>FamilyPackages</li>
                                 <li>HoneyMoon Packages</li>
                             </ul>
