@@ -1,22 +1,21 @@
-import React from 'react';
+import React from "react";
 
-const PackageCard = (props)=>{
-
-    return(
+const PackageCard = (props) => {
+  return (
+    <div className=" flex flex-col mt-10 max-w-50 ">
         <div>
-            <h2>{props.heading}</h2>
-            <div>
-                <img src={props.url}/>
-            </div>
-            <div>
-                <p>{props.info}</p>
-                <button>More Details</button>
-            </div>
-
-
+          <img className="h-60 rounded-md" src={props.item.url} />
         </div>
-    )
-
-}
+      <h2 className="text-2xl font-semibold mt-3">{props.item.heading}</h2>
+      <div className=" flex flex-row  justify-between mt-1">
+        
+       
+          <button className="rounded-md p-2">More Details</button>
+          <p>38 Tours</p>
+       
+      </div>
+    </div>
+  );
+};
 
 export default PackageCard;

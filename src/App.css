@@ -1,3 +1,11 @@
+body{
+  background-color: black;
+  color:white;
+}
+body button{
+  background-color: rgb(153,119,0);
+}
+
 
 video{
   object-fit: cover;

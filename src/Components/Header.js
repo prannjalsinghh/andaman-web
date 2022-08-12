@@ -49,7 +49,7 @@ const Header = () => {
                     <ul>
                         <li>
                             
-                                Home
+                               <a>Home</a> 
                             
                         </li>
                         <li>
