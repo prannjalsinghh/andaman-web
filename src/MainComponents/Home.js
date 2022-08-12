@@ -3,6 +3,7 @@ import HomeVideo from '../Components/HomeVideo';
 import Footer from '../Components/Footer';
 import PackageCard from '../Components/PackageCard';
 import NewsLetter from '../Components/NewsLetter';
+import QueryForm from '../Components/QueryForm;js';
 
 const Home = ()=>{
     const arr = [{
@@ -23,6 +24,7 @@ const Home = ()=>{
               <PackageCard item={arr[0]} />
               <PackageCard item={arr[1]} />
             </div>
+            {/* <QueryForm/> */}
             <Footer/>
           </div>
         );
