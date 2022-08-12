@@ -44,12 +44,12 @@ const Header = () => {
                     }`}
                 >
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a> </li>
-                        <li><a>Hotel & Resorts</a></li>
-                        <li><a>Packages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/aboutUs'>About Us</Link> </li>
+                        <li><Link to='/hotels'>Hotel & Resorts</Link></li>
+                        <li>Packages</li>
+                        <li><Link to='/Blog'>Blog</Link></li>
+                        <li><Link to='/contactUs'>Contact</Link></li>
                     </ul>
 
                 </nav>
