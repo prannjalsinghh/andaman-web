@@ -7,7 +7,6 @@ import classes from "./Header.module.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-    // const history = useHistory();
     const [menuOpen, setMenuOpen] = useState(false);
     const [matches, setMatches] = useState(
         window.matchMedia("(min-width: 1023px)").matches
@@ -38,43 +37,19 @@ const Header = () => {
     return (
         <header className={classes.header}>
             <div className={classes.header__content}>
-                
-                    navbar
-                
+                navbar
                 <nav
                     className={`${classes.header__content__nav} ${
                         menuOpen && !matches ? classes.isMenu : ""
                     }`}
                 >
                     <ul>
-                        <li>
-                            
-                               <a>Home</a> 
-                            
-                        </li>
-                        <li>
-                            
-                                About Us
-                            
-                        </li>
-                        <li>
-                            
-                               Hotel & Resorts
-                            
-                        </li>
-                        <li>
-                            Packages
-                               
-                            
-                        </li>
-                        <li>
-                            Blog
-                               
-                            
-                        </li>
-                        <li>
-                            Contact
-                        </li>
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a> </li>
+                        <li><a>Hotel & Resorts</a></li>
+                        <li><a>Packages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
 
                 </nav>
