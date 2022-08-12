@@ -7,6 +7,7 @@ import classes from "./Header.module.scss";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+    const[isOpen , setisOpen] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [matches, setMatches] = useState(
         window.matchMedia("(min-width: 1023px)").matches
@@ -34,6 +35,16 @@ const Header = () => {
         
     };
 
+    const openHandler = ()=>{
+        setisOpen(true);
+        console.log("hi");
+    }
+
+    const closeHandler = ()=>{
+        setisOpen(false);
+        console.log('khushi');
+    }
+
     return (
         <header className={classes.header}>
             <div className={classes.header__content}>
@@ -44,12 +55,21 @@ const Header = () => {
                     }`}
                 >
                     <ul>
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/aboutUs'>About Us</Link> </li>
-                        <li><Link to='/hotels'>Hotel & Resorts</Link></li>
-                        <li>Packages</li>
-                        <li><Link to='/Blog'>Blog</Link></li>
-                        <li><Link to='/contactUs'>Contact</Link></li>
+
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a> </li>
+                        <li><a>Hotel & Resorts</a></li>
+                        <li onMouseEnter={openHandler} onMouseLeave={closeHandler}><a>Packages</a>
+                            {isOpen&&<ul  className="">
+                                <li>FamilyPackages</li>
+                                <li>HoneyMoon Packages</li>
+                            </ul>
+
+                            }
+                        </li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+
                     </ul>
 
                 </nav>
