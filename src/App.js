@@ -7,6 +7,7 @@ import PackageCard from './Components/PackageCard';
 import NewsLetter from './Components/NewsLetter';
 
 
+
 function App() {
  const arr = [{
   heading:"FAMILY PACKAGES",
@@ -26,9 +27,10 @@ function App() {
         <PackageCard item={arr[0]} />
         <PackageCard item={arr[1]} />
       </div>
+      <div style={{backgroundImage: `url(https://wallpaperaccess.com/full/1921683.jpg)`,backgroundRepeat:"no-repeat"}} >
       <NewsLetter/>
       <Footer/>
-
+      </div>
     </div>
   );
 }
