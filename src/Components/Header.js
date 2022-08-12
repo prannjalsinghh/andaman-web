@@ -32,7 +32,7 @@ const Header = () => {
 
     const ctaClickHandler = () => {
         menuToggleHandler();
-        // history.push("/page-cta");
+        
     };
 
     return (
