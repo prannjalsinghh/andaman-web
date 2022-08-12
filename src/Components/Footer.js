@@ -13,7 +13,7 @@ const Footer = () =>
     return(
         <div className={styles.footer}>
             <div className={styles.quickLinks}>
-                <h3>Quick Links</h3>
+                <h3 className="text-xl font-semibold">Quick Links</h3>
                 <ul>
                     <li>Home</li>
                     <li>About Us</li>
@@ -22,7 +22,7 @@ const Footer = () =>
                 </ul>
             </div>
             <div className={styles.followUs}>
-                <h3>Follow Us</h3>
+                <h3 className="text-xl font-semibold">Follow Us</h3>
         
                 <ul>
                     <li><FacebookIcon/></li>
@@ -32,7 +32,7 @@ const Footer = () =>
                 </ul>
             </div>
             <div className={styles.contactUs}>
-                <h3>Contact Us</h3>
+                <h3 className="text-xl font-semibold">Contact Us</h3>
                 <ul>
                     <li><span><LocalPhoneIcon/></span>+919958377493</li>
                     <li><span><EmailIcon/></span> Info@andamanoceantour.com</li>
