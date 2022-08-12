@@ -31,13 +31,7 @@ const Footer = () =>
                     <li><LinkedInIcon/></li>
                 </ul>
             </div>
-            {/* <div className={styles.newsletter}>
-                <h3>Weekly Newletter</h3>
-                <input placeholder="Name"/>
-                <input placeholder="Your Email"/>
-                <button>SUBSCRIBE</button>
-            </div> */}
-            <div className="contactUs">
+            <div className={styles.contactUs}>
                 <h3>Contact Us</h3>
                 <ul>
                     <li><span><LocalPhoneIcon/></span>+919958377493</li>
