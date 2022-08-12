@@ -7,10 +7,13 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import NewsLetter from "./NewsLetter";
 
 const Footer = () => 
 {
     return(
+        <div style={{backgroundImage: `url(https://wallpaperaccess.com/full/1921683.jpg)`,backgroundRepeat:"no-repeat"}} >
+        <NewsLetter/>
         <div className={styles.footer}>
             <div className={styles.quickLinks}>
                 <h3 className="text-xl font-semibold">Quick Links</h3>
@@ -39,6 +42,7 @@ const Footer = () =>
                     <li><span><LocationOnIcon/></span>Shop No 21 radhakrishna temple complex,JungliGhat,Port Blair, Andaman & Nicobar Islands 744103</li>
                 </ul>
             </div>
+        </div>
         </div>
     )
 

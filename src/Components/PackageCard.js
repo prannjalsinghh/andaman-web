@@ -1,6 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+
 
 const PackageCard = (props) => {
+  const navigate = useNavigate();
+  const redirecter = ()=>{
+    if(props.item.heading === 'FAMILY PACKAGES'){
+      navigate('FamilyPackages')
+    }
+    else{
+      navigate('HoneymoonPackages');
+    }
+  }
+
   return (
     <div className=" flex flex-col mt-10 max-w-50 ">
         <div>
@@ -10,7 +23,7 @@ const PackageCard = (props) => {
       <div className=" flex flex-row  justify-between mt-1">
         
        
-          <button className="rounded-md p-2">More Details</button>
+          <button className="rounded-md p-2" onClick={redirecter}>More Details</button>
           <p>38 Tours</p>
        
       </div>
