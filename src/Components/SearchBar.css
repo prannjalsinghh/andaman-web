@@ -1,0 +1,12 @@
+.searchBar input{
+    border:none;
+    background-color: rgb(1,155,167);
+    border-bottom: solid 4px white;
+}
+.searchBar input:focus{
+    background-color: white;
+    outline: none;
+}
+.searchBar ::placeholder{
+    color:black;
+}

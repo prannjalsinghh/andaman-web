@@ -64,8 +64,8 @@ const QueryForm = () => {
                 <input type="date"  value={enteredDate} onChange={changeDateHandler}/>
             </div>
             <div>
-                <label>No. of Persons</label>
-                <input type="number" value={enteredPerson} onChange={changePersonHandler}/>
+                <label>No. of People</label>
+                <input type="number" placeholder='0' value={enteredPerson} onChange={changePersonHandler}/>
             </div>
             <button>Submit</button>
         </form>
