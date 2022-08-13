@@ -6,15 +6,15 @@ const QueryForm = () => {
         <div>
             <div>
                 <label>Name</label>
-                <input placeholder='Your Name'/>
+                <input type ="text" placeholder='Your Name'/>
             </div>
             <div>
                 <label>E-Mail</label>
-                <input placeholder='Your E-mail'/>
+                <input type="email" placeholder='Your E-mail'/>
             </div>
             <div>
                 <label>Phone No.</label>
-                <input placeholder='Your Phone No.'/>
+                <input type="text" placeholder='Your Phone No.'/>
             </div>
             <div>
                 <label>Date of Travel</label>
@@ -22,8 +22,9 @@ const QueryForm = () => {
             </div>
             <div>
                 <label>No. of Persons</label>
-                <input type={number}/>
+                <input type="number"/>
             </div>
+            <button>Submit</button>
         </div>
     )
 

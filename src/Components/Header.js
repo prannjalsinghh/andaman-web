@@ -59,8 +59,8 @@ const Header = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/aboutUs">About Us</Link> </li>
                         <li><Link to="/hotels">Hotel & Resorts</Link></li>
-                        <li onMouseEnter={openHandler} onMouseLeave={closeHandler}><a>Packages</a>
-                            {isOpen&&<ul  className="">
+                        <li className = " relative" onMouseEnter={openHandler} onMouseLeave={closeHandler}><a>Packages</a>
+                            {isOpen&&<ul  className=" -right-full  z-10 absolute sm:left-0">
                                 <li>FamilyPackages</li>
                                 <li>HoneyMoon Packages</li>
                             </ul>
