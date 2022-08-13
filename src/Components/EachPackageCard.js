@@ -4,7 +4,7 @@ const EachPackageCard = (props)=>{
 
     return(
 
-        <div className='p-5 w-64 border border-gray-300 rounded-md  hover:scale-90'>
+        <div className='p-7 w-64 border border-gray-300 rounded-md text-center bg-white  hover:scale-90 gap-3'>
 
             <img src={props.item.url} />
             <div className='flex flex-col items-center  justify-between gap-2'>
