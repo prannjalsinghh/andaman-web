@@ -3,7 +3,9 @@ import { red } from '@mui/material/colors';
 const EachPackageCard = (props)=>{
 
     return(
-        <div className='p-5'>
+
+        <div className='p-5 '>
+
             <img src={props.item.url} />
             <div className='flex flex-row  justify-between'>
                 <div>
