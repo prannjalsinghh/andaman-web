@@ -21,6 +21,7 @@ import HomeRepairServiceSharpIcon from '@mui/icons-material/HomeRepairServiceSha
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import PersonIcon from '@mui/icons-material/Person';
 import { useState } from "react";
+import SearchBar from "../Components/SearchBar";
 
 const Home = () => {
   const [isFormOpen,formToggleHandler] = useState(false);
@@ -54,6 +55,7 @@ const Home = () => {
       <Header />
 
       <HomeVideo />
+      <SearchBar/>  
       <Services
         item={{
           heading: "Services We Provide",
