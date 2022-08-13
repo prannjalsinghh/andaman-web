@@ -1,4 +1,3 @@
-import { useSlotProps } from '@mui/base';
 import React from 'react';
 
 const ChotuDiv = (props) => {
@@ -9,7 +8,7 @@ const ChotuDiv = (props) => {
             <div>{props.heading}</div>
             <hr></hr>
             <div>{props.info}</div>
-            {isButton&&<button>Book Now</button>}
+            {props.isButton&&<button>Book Now</button>}
 
         </div>
     )
