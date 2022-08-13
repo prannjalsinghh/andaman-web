@@ -4,17 +4,16 @@ const EachPackageCard = (props)=>{
 
     return(
 
-        <div className='p-5 '>
+        <div className='p-7 w-64 border border-gray-300 rounded-md text-center bg-white  hover:scale-90 gap-3'>
 
             <img src={props.item.url} />
-            <div className='flex flex-row  justify-between'>
-                <div>
-                    <h3 className='text-2xl font-semibold'>{props.item.heading}</h3>
+            <div className='flex flex-col items-center  justify-between gap-2'>
+                
+                    <h3 className='text-2xl text-center font-semibold'>{props.item.heading}</h3>
                     <p>{props.item.info}</p>
-                </div>
-                <div>
-                    <ArrowCircleRightRoundedIcon className='hover:scale-125' sx={{fontSize:45}} style={{color:"red"}}/>
-                </div>
+                    <p>{props.item.TourCode}</p>
+                    <button className='p-1.5 rounded-md'>View Details</button>
+                
             </div>
         </div>
     )
