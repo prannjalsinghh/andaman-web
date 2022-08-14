@@ -38,7 +38,7 @@ const accommodation = {
     ]
   }
 
-  const items = [
+    export const items = [
     {
       TourCode: "MTG 012",
       heading: "Amazing Neil & Havelock",
