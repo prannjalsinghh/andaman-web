@@ -126,9 +126,12 @@ const Packages = () => {
       <div>
         <h1>Cancelation Policy</h1>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>If cancellations are made 30 days before the start date of the trip, 25% of Total Package Cost will be charged as cancellation fees.</li>
+          <li>If cancellations are made 15-30 days before the start date of the trip, 50% of Total Package Cost will be charged as cancellation fees.</li>
+          <li>If cancellations are made within 0-15 days before the start date of the trip, 100% of Total Package Cost will be charged as cancellation fees.</li>
+          <li>In case of unforeseen weather conditions or government restrictions, certain activities may be cancelled and in such cases ,we will try our best to provide an alternate feasible activity. However no refund will be provided for the same.</li>
+          <li>100% cancelation would be charged from the total booking amount in case of last minute booking cancellation due to flight cancellation, any natural calamity, and change in flight schedule/ferry due to technical/weather and high tides and sea conditions.</li>
+          <li>In case of Lockdown in Andaman due to Covid, will provide a credit note which a traveller can redeem within 1 year from the date of issuance of Credit Note. In such Sinario revised package will be provided as per the current applicable season and off season rate. Do check the final cost with the reservation team.</li>
         </ul>
       </div>
       <div>
@@ -146,7 +149,14 @@ const Packages = () => {
           Union Territory “Andaman & Nicobar Islands” is under restricted area category. Please carry valid photo Identity proof issued by Govt. of India (Driving License, Aadhaar Card, and Passport)</li>
           <li>All the hotels at Port Blair, Havelock and Neil Island have early check out 0800hrs. Guests having late afternoon flights may book additional tour accordingly.</li>
           <li>Our Executive may change your itinerary depending on the weather condition and availability of ferry and same will be updated to you daily basis.</li>
-
+        </ul>
+      </div>
+      <div>
+        <h2>Points to be noted while travelling Andaman</h2>
+        <ul>
+          <li>In Andaman mobile networks are BSNL, AIRTEL & VODAFONE and no other networks are supported.</li>
+          <li>All foreign nationals and Indians staying abroad holding passport of different countries (PIO/OCI) needs to register themselves on arrival on Port Blair Airport (Emigration) which should have valid India visa or obtain RAP - Restricted Area Permit, which is valid for 30 days of stay in Andaman’s.</li>
+          <li>Our executive will hold the placard outside the airport exit gate.</li>
 
         </ul>
       </div>
