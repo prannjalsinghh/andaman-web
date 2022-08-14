@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
-const Packages = (props)=>{
+const Packages = ()=>{
     const location = useLocation();
     const [item,setItem]  = useState([])
     function sort(){

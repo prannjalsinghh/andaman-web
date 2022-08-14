@@ -19,7 +19,7 @@ const EachPackageCard = (props)=>{
                 
                     <h3 className='text-2xl text-center font-semibold'>{props.item.heading}</h3>
                     <p>{props.item.info}</p>
-                    <p>{props.item.TourCode}</p>
+                    <p>{`TOURCODE-${props.item.TourCode}`}</p>
                     <button className='p-1.5 rounded-md' onClick={renderNewPackage}>View Details</button>
                 
             </div>
