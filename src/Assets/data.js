@@ -125,8 +125,37 @@ const accommodation = {
     
             },
         ]
-      }
-    
+      },
+      itinerary:[{
+        day:"Day 1",
+        heading:"ARRIVE PORTBLAIR",
+        info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+      },{
+        day:"Day 2",
+        heading:"ROSS ISLAND AND NORTH BAY ISLAND",
+        info:"After breakfast at the hotel. The voyage begins with a mesmerizing scrutiny in a boat to Coral Island of Port Blair North Bay Island. Scuba Diving, Sea Walk, Snorkeling and Glass boat ride can be done here at additional cost. After North Bay, we proceed to Ross Island, the erstwhile capital of Port Blair during the British regime. The island presently houses the ruins of old buildings like Chief Commissioner’s House, Government House, Church, Bakery, Press, Swimming Pool, Cemetery, etc. and all in dilapidated condition. Overnight stay at respective Hotel at Port Blair"
+      },{
+        day:"Day 3",
+        heading:"PORT BLAIR- HAVELOCK ISLAND",
+        info:"Check out from the hotel with packaged breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.Note:- Carry extra cloths in case if you want to get down in water @ Radhanagar Beach."
+      },{
+        day:"Day 4",
+        heading:"HAVELOCK – ELEPHANT BEACH BY BOAT",
+        info:"After Breakfast, proceed to Elephant Beach by boat .The travel time is around 45 minutes to reach Elephant Beach. You get complementary Snorkelling. This beach has one of the best coral reefs in the world & the underwater marine life is very lively & colourful. Please do not forget to take snacks for the trip and lots of drinking water & changing dress for the day trip or advised. After the completion of the coral island tour, return back to resort in Havelock Island. "
+      },{
+        day:"Day 5",
+        heading:"HAVELOCK - KALAPATHAR TRIP TO NEIL ISLAND",
+        info:"After breakfast checkout and proceed to Kala Pathar beach by road. Later catch the ferry for Neil Island. Upon reaching the Island our representative will take you to respective resort. Rest and then proceed for Laxmanpur beach, lies 2 km north of Neil jetty. Stay to view the mesmerizing sunset."
+      },{
+        day:"Day 6",
+        heading:"NEIL ISLAND TO PORT BLAIR",
+        info:"After Breakfast, visit  Bharatpur Beach which is famous for water activities. One can do glass bottom ride to see the beautiful marine life through the glass bottom boat. Later visit Natural Coral Bride. Catch the ferry to Port Blair. Over night in Port Blair."
+      },{
+        day:"Day 7",
+        heading:"DEPARTURE FROM PORTBLAIR",
+        info:""
+      }]
+      
     },
     {
       url:"https://images.news18.com/ibnlive/uploads/2022/04/shutterstock_1064304320-16504498334x3.jpg",
@@ -210,6 +239,33 @@ const accommodation = {
             },
         ]
       },
+      itinerary:[
+        {
+          day:"Day 1",
+          heading:"ARRIVE PORTBLAIR",
+          info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+        },{
+          day:"Day 2",
+          heading:"PORT BLAIR- HAVELOCK – RADHANAGAR TRIP",
+          info:"Check out from the hotel with packed breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.Note:- Carry extra cloths in case if you want to get down in water @ Radhanagar Beach."
+        },{
+          day:"Day 3",
+          heading:"HAVELOCK – KALAPATHAR TRIP",
+          info:"After Breakfast, checkout and proceed to Kala Pathar beach by road. Get a glimpse of various Resorts & Dive centres enroute. Spend rest of the day at leisure enjoying white sand beaches.  return back to resort in Havelock Island. Optional Tour (As per Weather Condition):- Elephant Beach by boat (on direct payment basis) .The travel time is around 45 minutes to reach Elephant Beach. You get complementary Snorkelling. This beach has one of the best coral reefs in the world & the underwater marine life is very lively & colourful. Please do not forget to take snacks for the trip and lots of drinking water & changing dress for the day trip or advised. After the completion of the coral island tour, return back to resort in Havelock Island. "
+        },{
+          day:"Day 4",
+          heading:"HAVELOCK TO NEIL ISLAND",
+          info:"After breakfast catch the ferry for Neil Island. Upon reaching the Island our representative will take you to respective resort. Rest and then proceed for Laxmanpur beach, lies 2 km north of Neil jetty. Stay to view the mesmerizing sunset."
+        },{
+          day:"Day 5",
+          heading:"NEIL ISLAND TO PORT BLAIR",
+          info:"After Breakfast, visit  Bharatpur Beach which is famous for water activities. One can do glass bottom ride to see the beautiful marine life through the glass bottom boat. Later visit Natural Coral Bride. Catch the ferry to Port Blair. Over night in Port Blair."
+        },{
+          day:"Day 6",
+          heading:"DEPARTURE FROM PORTBLAIR",
+          info:""
+        },
+      ]
     },
     {
       url:"https://static.toiimg.com/thumb/69007547/andaman.jpg?width=1200&height=900",
@@ -271,7 +327,34 @@ const accommodation = {
     
             },
         ]
-      }
+      },
+      itinerary:[
+        {
+          day:"Day 1",
+          heading:"ARRIVE PORTBLAIR",
+          info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+        },{
+          day:"Day 2",
+          heading:"PORT BLAIR- HAVELOCK – RADHANAGAR TRIP",
+          info:"Check out from the hotel with packed breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.Note:- Carry extra cloths in case if you want to get down in water @ Radhanagar Beach."
+        },{
+          day:"Day 3",
+          heading:"HAVELOCK – KALAPATHAR TRIP",
+          info:"After Breakfast, checkout and proceed to Kala Pathar beach by road. Get a glimpse of various Resorts & Dive centres enroute. Spend rest of the day at leisure enjoying white sand beaches.  return back to resort in Havelock Island. Optional Tour (As per Weather Condition):- Elephant Beach by boat (on direct payment basis) .The travel time is around 45 minutes to reach Elephant Beach. You get complementary Snorkelling. This beach has one of the best coral reefs in the world & the underwater marine life is very lively & colourful. Please do not forget to take snacks for the trip and lots of drinking water & changing dress for the day trip or advised. After the completion of the coral island tour, return back to resort in Havelock Island. "
+        },{
+          day:"Day 4",
+          heading:"HAVELOCK TO NEIL ISLAND",
+          info:"After breakfast catch the ferry for Neil Island. Upon reaching the Island our representative will take you to respective resort. Rest and then proceed for Laxmanpur beach, lies 2 km north of Neil jetty. Stay to view the mesmerizing sunset."
+        },{
+          day:"Day 5",
+          heading:"NEIL ISLAND TO PORT BLAIR",
+          info:"After Breakfast, visit  Bharatpur Beach which is famous for water activities. One can do glass bottom ride to see the beautiful marine life through the glass bottom boat. Later visit Natural Coral Bride. Catch the ferry to Port Blair. Over night in Port Blair."
+        },{
+          day:"Day 6",
+          heading:"DEPARTURE FROM PORTBLAIR",
+          info:""
+        },
+      ]
     },
     {
       url:"https://media.istockphoto.com/photos/scenic-sea-beach-at-havelock-islands-andaman-india-at-sunset-picture-id1040379102?k=20&m=1040379102&s=612x612&w=0&h=TWWIWrQsFZBMi8TEJk1qZZzqIhSgQB4gtMwHvNpTzKg=",
@@ -350,7 +433,30 @@ const accommodation = {
     
             },
         ]
-      }
+      },
+      itinerary:[
+        {
+          day:"Day 1",
+          heading:"ARRIVE PORTBLAIR",
+          info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+        },{
+          day:"Day 2",
+          heading:"PORT BLAIR- HAVELOCK – RADHANAGAR TRIP",
+          info:"Check out from the hotel with packaed breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.Note:- Carry extra cloths in case if you want to get down in water @ Radhanagar Beach."
+        },{
+          day:"Day 3",
+          heading:"KALAPATHAR TRIP - HAVELOCK TO NEIL ISLAND",
+          info:"After breakfast catch the ferry for Neil Island. Upon reaching the Island our representative will take you to respective resort. Rest and then proceed for Laxmanpur beach, lies 2 km north of Neil jetty. Stay to view the mesmerizing sunset."
+        },{
+          day:"Day 4",
+          heading:"NEIL ISLAND TO PORT BLAIR",
+          info:"After Breakfast, visit  Bharatpur Beach which is famous for water activities. One can do glass bottom ride to see the beautiful marine life through the glass bottom boat. Later visit Natural Coral Bride. Catch the ferry to Port Blair. Over night in Port Blair."
+        },{
+          day:"Day 5",
+          heading:"DEPARTURE FROM PORTBLAIR",
+          info:""
+        },
+      ]
     },
     {
       url:"https://img.onmanorama.com/content/dam/mm/en/travel/outside-kerala/images/2021/10/19/andaman-nicobar.jpg",
@@ -390,7 +496,7 @@ const accommodation = {
         },
         {
             day:"Day 6",
-            details:"Visit Bharatpur Island,Limestone Cave",
+            details:"Visit Baratang  Island,Limestone Cave",
           }
         ,{
           day:"Day 7",
@@ -438,7 +544,38 @@ const accommodation = {
   
           },
       ]
+    },
+    itinerary:[{
+      day:"Day 1",
+      heading:"ARRIVE PORTBLAIR",
+      info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail.",
+    },
+    {
+      day:"Day 2",
+      heading:"PORT BLAIR- HAVELOCK ISLAND",
+      info:"Check out from the hotel with packaged breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.",
+    },{
+      day:"Day 3",
+      heading:"HAVELOCK – KALAPATHAR TRIP",
+      info:"After Breakfast, checkout and proceed to Kala Pathar beach by road. Get a glimpse of various Resorts & Dive centres enroute. Spend rest of the day at leisure enjoying white sand beaches.  return back to resort in Havelock Island. Optional Tour (As per Weather Condition):- Elephant Beach by boat (on direct payment basis) . The travel time is around 45 minutes to reach Elephant Beach. You get complementary Snorkelling. This beach has one of the best coral reefs in the world & the underwater marine life is very lively & colourful. Please do not forget to take snacks for the trip and lots of drinking water & changing dress for the day trip or advised. After the completion of the coral island tour, return back to resort in Havelock Island. ",
+    },{
+      day:"Day 4",
+      heading:"HAVELOCK TO NEIL ISLAND",
+      info:"After breakfast catch the ferry for Neil Island. Upon reaching the Island our representative will take you to respective resort. Rest and then proceed for Laxmanpur beach, lies 2 km north of Neil jetty. Stay to view the mesmerizing sunset.",
+    },{
+      day:"Day 5",
+      heading:"NEIL ISLAND TO PORT BLAIR",
+      info:"After Breakfast, visit  Bharatpur Beach which is famous for water activities. One can do glass bottom ride to see the beautiful marine life through the glass bottom boat. Later visit Natural Coral Bride. Catch the ferry to Port Blair. Over night in Port Blair.",
+    },{
+      day:"Day 6",
+      heading:"BARATANG TRIP",
+      info:"Early morning ( 4 AM Hrs ) departure to Baratang Island with Convoy ( 110 Kms ) road drive, crossing the grand ATR , covered with dense forests on both the side. In between the road journey you will cross the Habitations of one of the worlds primitive tribes “The Jarawas” (please don’t take photograph or give anything to the tribal people ) . Crossing two islands passages via ferry boats, comes a very exciting part of the journey. You can visit Lime Stone Cave by Speed Boat (Charges on direct payment) from Baratang 10 min journey or 20 minutes by walk at katccha road , After visit Back to Port Blair ( At 1530 Hrs ) , Overnight stay at Port Blair.",
+    },{
+      day:"Day 7",
+      heading:"DEPARTURE FROM PORTBLAIR",
+      info:"",
     }
+  ]
   
     },
     {
@@ -508,7 +645,30 @@ const accommodation = {
     
             },
         ]
-      }  
+      }  ,
+      itinerary:[
+        {
+          day:"Day 1",
+          heading:"ARRIVE PORTBLAIR",
+          info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+        },
+        {
+          day:"Day 2",
+          heading:" PORT BLAIR- HAVELOCK – RADHANAGAR TRIP",
+          info:"Check out from the hotel with packaed breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.Note:- Carry extra cloths in case if you want to get down in water @ Radhanagar Beach."
+        },
+        {
+          day:"Day 3",
+          heading:": HAVELOCK – KALAPATHAR TRIP – PORT BLAIR",
+          info:"After Breakfast, checkout and proceed to Kala Pathar beach by road. Get a glimpse of various Resorts & Dive centres enroute. Spend rest of the day at leisure enjoying white sand beaches.  Catch the ferry to Port Blair. Over night in Port Blair."
+        }
+        ,
+        {
+          day:"Day 4",
+          heading:"DEPARTURE FROM PORTBLAIR",
+          info:""
+        }
+      ]
     },
     {
       TourCode: "MTG 003",
@@ -581,7 +741,33 @@ const accommodation = {
   
           },
       ]
-    }
+    },
+    itinerary:[
+      {
+        day:"Day 1",
+        heading:": ARRIVE PORTBLAIR",
+        info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+      },
+      {
+        day:"Day 2",
+        heading:"PORT BLAIR- HAVELOCK – RADHANAGAR TRIP",
+        info:"Check out from the hotel with packed breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island."
+      },
+      {
+        day:"Day 3",
+        heading:"HAVELOCK – KALAPATHAR TRIP",
+        info:"After Breakfast, checkout and proceed to Kala Pathar beach by road. Get a glimpse of various Resorts & Dive centres enroute. Spend rest of the day at leisure enjoying white sand beaches.  return back to resort in Havelock Island. Optional Tour (As per Weather Condition):- Elephant Beach by boat (on direct payment basis) .The travel time is around 45 minutes to reach Elephant Beach. You get complementary Snorkelling. This beach has one of the best coral reefs in the world & the underwater marine life is very lively & colourful. Please do not forget to take snacks for the trip and lots of drinking water & changing dress for the day trip or advised. After the completion of the coral island tour, return back to resort in Havelock Island. "
+      },
+      {
+        day:"Day 4",
+        heading:"HAVELOCK TO PORT BLAIR",
+        info:"After breakfast catch the ferry for Port Blair. Evening Free for Shopping. Over night in Port Blair."
+      },
+      {
+        day:"Day 5",
+        heading:"DEPARTURE FROM PORTBLAIR"
+      }
+    ]
     },
     {
       TourCode: "MTG 005",
@@ -615,7 +801,7 @@ const accommodation = {
           details:"Visit Bharatpur Beach, Natural Coral Bridge. Later transfer to Port Blair.",
         },
         {
-            day:"Day 4",
+            day:"Day 5",
             details:"Visit Ross Island and Chidiya Tapu.",
         },
         {
@@ -663,6 +849,33 @@ const accommodation = {
     
             },
         ]
-      }
+      },
+      itinerary:[
+        {
+          day:"Day 1",
+          heading:"ARRIVE PORTBLAIR",
+          info:"Arrival at Port Blair in the morning/afternoon by flight and our representative will be waiting outside holding a placard with your name on it. You will be taken to your hotel where you relax and rest.Later will start the breathtaking trip to Corbyns Cove Beach, one of the most picturesque, coconut palm fringed beach, 7 kms away from Port Blair town, and to the Cellular Jail, a place of pilgrimage for all freedom loving people. One can also view the history of the heroic freedom struggle which is brought alive in a moving Light & Sound Show at the Cellular Jail."
+        },{
+          day:"Day 2",
+          heading:"PORT BLAIR- HAVELOCK ISLAND",
+          info:"Check out from the hotel with packaged breakfast and board ferry to Havelock. Later we depart to Andaman Islands most amazing destination, Havelock Island. The destination is rated as the best island in India. Depart from Port Blair to Havelock Island in a ferry. Upon reaching Havelock, our representative attends you and will drop you at your hotel. Rest and Relax in a beachside resort. Later we begin our journey to one among Asia's best beach, Radhanagar Beach. Explore this white sand beach and bask in the beauty of this natural wonder. Post this we drop you back to your resort where you relax and unwind. Overnight stay at respective Hotel / Resort at Havelock Island.Note:- Carry extra cloths in case if you want to get down in water @ Radhanagar Beach."
+        },{
+          day:"Day 3",
+          heading:"HAVELOCK TO NEIL ISLAND",
+          info:"After Breakfast, checkout and proceed to Kala Pathar beach by road. Get a glimpse of various Resorts & Dive centres enroute. Spend rest of the day at leisure enjoying white sand beaches.  Later catch the ferry and for Neil Island. upon reaching the Island our representative will take you to respective resort. Rest and then proceed for Laxmanpur beach, lies 2 km north of Neil jetty. Stay to view the mesmerizing sunset."
+        },{
+          day:"Day 4",
+          heading:"NEIL ISLAND – PORT BLAIR",
+          info:"After Breakfast, visit  Bharatpur Beach which is famous for water activities. One can do glass bottom ride on direct payment basis. Later visit Natural Coral Bride. Later proceed to Port Blair. Overnight in Port Blair."
+        },{
+          day:"Day 5",
+          heading:"ROSS ISLAND + CHIDIYA TAPU",
+          info:"After breakfast at the hotel. The voyage begins with a mesmerizing scrutiny in a boat to Ross Island, the erstwhile capital of Port Blair during the British regime. The island presently houses the ruins of old buildings like Chief Commissioner’s House, Government House, Church, Bakery, Press, Swimming Pool, Cemetery, etc. and all in dilapidated condition. After Lunch we proceed for Chidiya Tapu, the southern most tip of South Andaman. The lush green mangroves, forest cover with numerous chirping birds and the  Sylvan Sands and The main attraction of this destination is unseen graceful sunset. Overnight stay at respective Hotel at Port Blair"
+        },{
+          day:"Day 6",
+          heading:"DEPARTURE FROM PORTBLAIR",
+          info:""
+        },
+      ]
     },
   ];
