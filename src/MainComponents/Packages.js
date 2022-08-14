@@ -1,16 +1,25 @@
-import EachPackageCard from "../Components/EachPackageCard";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
+import Banner from "../Components/Banner";
+import Services from "../Components/Services";
 
-const Packages = ()=>{
-    const items = [{url:'https://media.istockphoto.com/photos/family-vacation-holiday-happy-family-running-on-the-beach-in-the-picture-id1299265795?k=20&m=1299265795&s=612x612&w=0&h=kKrVYwdoNvKti2dq9xP5fnoktnLFLgwc5HMeqRixyE4=',heading:'Andaman Family Tour Package',info:"4 Nights 3 Days"},{url:'https://media.istockphoto.com/photos/family-vacation-holiday-happy-family-running-on-the-beach-in-the-picture-id1299265795?k=20&m=1299265795&s=612x612&w=0&h=kKrVYwdoNvKti2dq9xP5fnoktnLFLgwc5HMeqRixyE4=',heading:'Andaman Family Tour Package',info:"4 Nights 3 Days"}]
+const Packages = (props)=>{
     return(
         <>
             <Header/>
-            <div className="flex flex-col justify-around sm:flex-row">
-            <EachPackageCard item={items[0]}/>
-            <EachPackageCard item={items[1]}/>
+            <Banner url="https://img.kantipurholidays.com/ContentImages/IMG__82bacd2d-2094-42e7-819e-5860405b81af-0-1941x1132.jpeg"/>
+            <div>
+                <h2>{props.items.heading}</h2>
+                <p>{props.items.info}</p>
+                <p>{props.items.place}<span>{props.items.time}</span></p>
+                <p>{props.items.number}<span>{props.items.day}</span></p>
+                <p>{`(${props.items.TourCode})`}</p>
             </div>
+            <Services  item={{heading:"HIGHLIGHTS"}}/>
+            <Services item={{heading:"ITERNARY OVERVIEW" , info:"2 Nights Port Blair – 2 Night Havelock Island"}}/>
+            <Services item={{heading:"ITERNARY IN DETAIL"}}/>
+            <Services item={{heading:"ACCOMMODATION USED"}}/>
+            <Services item={{heading:"Ferry Timing"}}/>
             <Footer/>
         </>
     )
