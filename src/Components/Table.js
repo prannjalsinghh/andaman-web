@@ -38,7 +38,7 @@ export default function CustomizedTables(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {props.rows.map((row) => (
             <StyledTableRow key={row.name}>
                  {props.col.map((cell) => <StyledTableCell>{cell}</StyledTableCell> )}
             </StyledTableRow>
