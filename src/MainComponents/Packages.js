@@ -11,7 +11,7 @@ const Packages = (props)=>{
             <div>
                 <h2>{props.items.heading}</h2>
                 <p>{props.items.info}</p>
-                <p>{props.items.place}<span>{props.items.time}</span></p>
+                <p>{props.items.place}<span>{`(${props.items.time})`}</span></p>
                 <p>{props.items.number}<span>{props.items.day}</span></p>
                 <p>{`(${props.items.TourCode})`}</p>
             </div>
