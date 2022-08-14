@@ -1,12 +1,12 @@
 import {Route,Routes} from 'react-router-dom'
 import './App.css';
-import FamilyPackages from './MainComponents/FamilyPackages'
+import Packages from './MainComponents/Packages'
 import Home from './MainComponents/Home'
 import ContactUs from './MainComponents/ContactUs';
 import AboutUs from './MainComponents/AboutUs';
-import Blog from './MainComponents/Blog';
-import Hotels from './MainComponents/Hotels';
-import HoneymoonPackages from './MainComponents/HoneymoonPackages';
+import Activities from './MainComponents/Activities';
+import Ferries from './MainComponents/Ferries';
+import SelectedPage from './MainComponents/SelectedPage';
 
 
 function App() {
@@ -15,10 +15,11 @@ return(
     <Route exact path='/' element={ <Home/>}></Route>
     <Route exact path='/aboutUs' element={<AboutUs/>}></Route>
     <Route exact path='/contactUs' element={<ContactUs/>}></Route>
-    <Route exact path= '/Blog' element={<Blog/>}></Route>
-    <Route exact path= '/hotels' element={<Hotels/>}></Route>
-    <Route exact path='/FamilyPackages' element={<FamilyPackages/>}></Route>
-    <Route exact path='/HoneymoonPackages' element={<HoneymoonPackages/>}></Route>
+    <Route exact path= '/ferries' element={<Ferries/>}></Route>
+    <Route exact path='/packages' element={<Packages/>}></Route>
+    <Route exact path='/activities' element={<Activities/>}></Route>
+
+    <Route exact path='/selectedPackage' element={<SelectedPage/>}></Route>
   </Routes>
   )
 }

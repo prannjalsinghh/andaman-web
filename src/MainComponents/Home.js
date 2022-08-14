@@ -149,7 +149,7 @@ const Home = () => {
           info: "Below Andaman Packages are one of the best selling holiday packages of Andaman. No matter if you are going to Andaman for a honeymoon, budget trip, leisure or group tour.",
         }}
       />
-      <div className="flex flex-col items-center sm:flex sm:flex-row justify-center gap-4 mt-40">
+      <div className="flex flex-col items-center sm:flex sm:flex-row justify-center gap-4 mt-24 mb-32">
         <EachPackageCard item={items[0]} />
         <EachPackageCard item={items[0]} />
         <EachPackageCard item={items[0]} />
@@ -183,12 +183,12 @@ const Home = () => {
           <EachPackageCard item={items[2]} />
         </div>
 
-        <div className="flex gap-20">
+        <div className="flex sm:flex-row flex-col items-center justify-around">
           <EachPackageCard item={items[3]} />
           <EachPackageCard item={items[4]} />
           <EachPackageCard item={items[5]} />
         </div>
-        <div className="flex gap-20">
+        <div className="flex sm:flex-row flex-col items-center justify-around">
           <EachPackageCard item={items[6]} />
           <EachPackageCard item={items[7]} />
 

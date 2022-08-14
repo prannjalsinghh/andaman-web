@@ -2,7 +2,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import EachPackageCard from "../Components/EachPackageCard";
 
-const HoneymoonPackages = () => {
+const Ferries = () => {
   const items = [
     {
       url: "https://outpostgeographic.com/wp-content/uploads/2021/11/delhi-to-maldives-honeymoon-packages-all-inclusive-price-1200x800-2.jpg",
@@ -26,4 +26,4 @@ const HoneymoonPackages = () => {
     </>
   );
 };
-export default HoneymoonPackages;
+export default Ferries;

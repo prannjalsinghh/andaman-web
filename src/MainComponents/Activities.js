@@ -1,7 +1,7 @@
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
-const Blog= ()=>{
+const Activities= ()=>{
     return(
         <>
             <Header/>
@@ -11,4 +11,4 @@ const Blog= ()=>{
     )
 
 }
-export default Blog;
+export default Activities;
