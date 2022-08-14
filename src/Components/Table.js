@@ -34,13 +34,13 @@ export default function CustomizedTables(props) {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            {props.head.map((cell) => <StyledTableCell>{cell}</StyledTableCell> )}
+            {props.head?.map((cell) => <StyledTableCell>{cell}</StyledTableCell> )}
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
-                 {props.col.map((cell) => <StyledTableCell>{cell}</StyledTableCell> )}
+          {props.rows?.map((row) => (
+            <StyledTableRow key={row.day}>
+                 {Object.keys(row)?.map((rowKey) => <StyledTableCell>{row[rowKey]}</StyledTableCell> )}
             </StyledTableRow>
           ))}
         </TableBody>
