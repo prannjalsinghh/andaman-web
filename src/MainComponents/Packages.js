@@ -74,7 +74,7 @@ const Packages = () => {
       />
 
       <Services item={{ heading: "ITERNARY IN DETAIL" }} />
-      {/* {item.itinerary.map((detail)=> <Itinerary itinerary={{day:detail.day , heading:detail.heading , info:detail.info}}/>)} */}
+      {item.itinerary?.map((detail)=> <Itinerary itinerary={{day:detail.day , heading:detail.heading , info:detail.info}}/>)}
       
       <Services item={{ heading: "ACCOMMODATION USED" }} />
       <CustomizedTables
