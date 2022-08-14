@@ -6,8 +6,6 @@ import ContactUs from './MainComponents/ContactUs';
 import AboutUs from './MainComponents/AboutUs';
 import Activities from './MainComponents/Activities';
 import Ferries from './MainComponents/Ferries';
-// import SelectedPage from './MainComponents/SelectedPage';
-
 
 function App() {
 return(

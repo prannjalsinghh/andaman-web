@@ -5,8 +5,11 @@ const EachPackageCard = (props)=>{
 
     const navigate = useNavigate()
     const renderNewPackage = ()=>{
-        navigate(`/packages`,{state:{id:props.item.TourCode}})
+        navigate('/packages',{state:{id:props.item.TourCode}})
     }
+
+    
+
     return(
 
         <div className='p-7 w-64 border border-gray-300 rounded-md text-center bg-white  hover:scale-90  transition-all gap-3'>
