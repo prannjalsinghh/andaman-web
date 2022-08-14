@@ -8,6 +8,7 @@ const HomeVideo = ()=>{
         width="100%"
         height="450px"
         loop={true}
+        style= {{position:"relative",zIndex:-1}}
         />
     )
 }

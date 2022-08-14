@@ -1,4 +1,3 @@
-import { useSlotProps } from '@mui/base';
 import React from 'react';
 
 const ChotuDiv = (props) => {
@@ -10,6 +9,7 @@ const ChotuDiv = (props) => {
             <hr className='w-1/4 bg-orange-500'></hr>
             <div>{props.item.info}</div>
             {props.item.isButton &&<button className='p-1.5 rounded-md'>Book Now</button>}
+
 
         </div>
     )
