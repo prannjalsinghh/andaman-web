@@ -17,17 +17,20 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import FlightTakeoff from "@mui/icons-material/FlightTakeoff";
 import Key from "@mui/icons-material/Key";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
-import HomeRepairServiceSharpIcon from '@mui/icons-material/HomeRepairServiceSharp';
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import PersonIcon from '@mui/icons-material/Person';
+import HomeRepairServiceSharpIcon from "@mui/icons-material/HomeRepairServiceSharp";
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import PersonIcon from "@mui/icons-material/Person";
 import { useState } from "react";
 import SearchBar from "../Components/SearchBar";
 
 const Home = () => {
-  const [isFormOpen,formToggleHandler] = useState(false);
+  const [isFormOpen, formToggleHandler] = useState(false);
 
-  const queryFormOpenHandler = ()=>{
+  const queryFormOpenHandler = () => {
     formToggleHandler(true);
+  };
+  const queryFormCloseHandler= ()=>{
+    formToggleHandler(false);
   }
   const arr = [
     {
@@ -55,7 +58,7 @@ const Home = () => {
       <Header />
 
       <HomeVideo />
-      <SearchBar/>  
+      <SearchBar />
       <Services
         item={{
           heading: "Services We Provide",
@@ -110,12 +113,24 @@ const Home = () => {
         <EachPackageCard item={items[0]} />
         <EachPackageCard item={items[0]} />
       </div>
-      <div className="flex flex-col items-center gap-20" style={{backgroundImage:`url('https://wallpaperaccess.com/full/1921682.jpg')`,backgroundRepeat:'no-repeat',backgroundAttachment:'fixed',backgroundPosition:'bottom'}}>
+      <div
+        className="flex flex-col items-center gap-20"
+        style={{
+          backgroundImage: `url('https://wallpaperaccess.com/full/1921682.jpg')`,
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "bottom",
+        }}
+      >
         <Services
           item={{
             heading: "Packages",
             info: "The below Andaman holiday packages contains sightseeing, hotels, transfers, tickets, ground support and breakfast. Basically, the below packages takes care of everything required during your trip right from the time you arrive at Port Blair airport to the time you depart. If you need any further customization to the Andaman tour packages then our holiday expert will be happy to make necessary changes to the itinerary",
-            icon:<HomeRepairServiceSharpIcon sx={{ fontSize: 40, color: blue[700] }}/>
+            icon: (
+              <HomeRepairServiceSharpIcon
+                sx={{ fontSize: 40, color: blue[700] }}
+              />
+            ),
           }}
         />
         <div className="flex gap-20">
@@ -135,21 +150,78 @@ const Home = () => {
         </div>
       </div>
       <div className="flex flex-col gap-10">
-      <Services item={{heading:"Why Choose Us",icon:<TaskAltIcon sx={{ fontSize: 40, color: green['A700'] }}/>}}/>
-      <div  className="flex text-center">
-        <ChotuDiv item={{heading:"RELIABLE SERVICES",icon:<HandshakeIcon sx={{fontSize: 40, color: blue[700]}}/>,info:"Expect a prompt response at every step of the way, and we will exceed all your expectations with our dedicated services.",isButton:false}}/>
-        <ChotuDiv item={{heading:"TRAINED EXPERTS",icon:<PersonIcon sx={{fontSize: 40, color: blue[700]}}/>,info:"Our dynamic group of individuals always go the extra mile to provide you with the best travel solutions with immense expertise.",isButton:false}}/>
-        <ChotuDiv item={{heading:"24x7 CUSTOMER SERVICES",icon:<PersonIcon sx={{fontSize: 40, color: blue[700]}}/>,info:"We present one of the most reliable & attentive customer services, where the main priority lies in 100% customer satisfaction.",isButton:false}} />
+        <Services
+          item={{
+            heading: "Why Choose Us",
+            icon: <TaskAltIcon sx={{ fontSize: 40, color: green["A700"] }} />,
+          }}
+        />
+        <div className="flex text-center">
+          <ChotuDiv
+            item={{
+              heading: "RELIABLE SERVICES",
+              icon: <HandshakeIcon sx={{ fontSize: 40, color: blue[700] }} />,
+              info: "Expect a prompt response at every step of the way, and we will exceed all your expectations with our dedicated services.",
+              isButton: false,
+            }}
+          />
+          <ChotuDiv
+            item={{
+              heading: "TRAINED EXPERTS",
+              icon: <PersonIcon sx={{ fontSize: 40, color: blue[700] }} />,
+              info: "Our dynamic group of individuals always go the extra mile to provide you with the best travel solutions with immense expertise.",
+              isButton: false,
+            }}
+          />
+          <ChotuDiv
+            item={{
+              heading: "24x7 CUSTOMER SERVICES",
+              icon: <PersonIcon sx={{ fontSize: 40, color: blue[700] }} />,
+              info: "We present one of the most reliable & attentive customer services, where the main priority lies in 100% customer satisfaction.",
+              isButton: false,
+            }}
+          />
+        </div>
+        <div className="flex text-center">
+          <ChotuDiv
+            item={{
+              heading: "POCKET-FRIENDLY RATES",
+              icon: <PersonIcon sx={{ fontSize: 40, color: blue[700] }} />,
+              info: "You can rest assured that we offer the most competitive prices but do not make any compromises on the quality of services.",
+              isButton: false,
+            }}
+          />
+          <ChotuDiv
+            item={{
+              heading: "CUSTOMISED PACKAGES",
+              icon: <PersonIcon sx={{ fontSize: 40, color: blue[700] }} />,
+              info: "In addition to attractive travel packages, we also offer the option of customised packages with round the clock booking services.",
+              isButton: false,
+            }}
+          />
+          <ChotuDiv
+            item={{
+              heading: "PROFESSIONAL GUIDANCE",
+              icon: <PersonIcon sx={{ fontSize: 40, color: blue[700] }} />,
+              info: "Explore the several exotic destinations in this enthralling island under our competent guidance and have an experience of a lifetime.",
+              isButton: false,
+            }}
+          />
+        </div>
+      </div>
 
-      </div>
-      <div className="flex text-center">
-        <ChotuDiv item={{heading:"POCKET-FRIENDLY RATES",icon:<PersonIcon sx={{fontSize: 40, color: blue[700]}}/>,info:"You can rest assured that we offer the most competitive prices but do not make any compromises on the quality of services.",isButton:false}}/>
-        <ChotuDiv item={{heading:"CUSTOMISED PACKAGES",icon:<PersonIcon sx={{fontSize: 40, color: blue[700]}}/>,info:"In addition to attractive travel packages, we also offer the option of customised packages with round the clock booking services.",isButton:false}}/>
-        <ChotuDiv item={{heading:"PROFESSIONAL GUIDANCE",icon:<PersonIcon sx={{fontSize: 40, color: blue[700]}}/>,info:"Explore the several exotic destinations in this enthralling island under our competent guidance and have an experience of a lifetime.",isButton:false}}/>
-      </div>
-      </div>
-      <button onClick={queryFormOpenHandler}>Query Form</button>
-      {isFormOpen && <QueryForm/>}
+      <button
+        className="fixed top-1/2 -rotate-90 right-0 text-xl p-2"
+        onClick={queryFormOpenHandler}
+      >
+        Query Form
+      </button>
+      {isFormOpen && (
+        <div className="">
+          <QueryForm closeHandler={queryFormCloseHandler}/>
+        </div>
+      )}
+
       <Footer />
     </div>
   );
