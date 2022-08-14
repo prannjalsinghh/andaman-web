@@ -6,7 +6,7 @@ import ContactUs from './MainComponents/ContactUs';
 import AboutUs from './MainComponents/AboutUs';
 import Activities from './MainComponents/Activities';
 import Ferries from './MainComponents/Ferries';
-import SelectedPage from './MainComponents/SelectedPage';
+// import SelectedPage from './MainComponents/SelectedPage';
 
 
 function App() {
@@ -19,7 +19,7 @@ return(
     <Route exact path='/packages' element={<Packages/>}></Route>
     <Route exact path='/activities' element={<Activities/>}></Route>
 
-    <Route exact path='/selectedPackage' element={<SelectedPage/>}></Route>
+    {/* <Route exact path='/selectedPackage' element={<SelectedPage/>}></Route> */}
   </Routes>
   )
 }
