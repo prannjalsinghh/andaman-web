@@ -16,7 +16,7 @@ const Packages = (props)=>{
         },
         {
             TourCode:'MTG-004',
-            heading:"Amazing Neil & Havelock",
+            heading:"Havelock(Swaraj Dweep) Delight",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"2NIGHT"},{place:"Havelock",time:"02 NIGHT"},{place:"NEIL(SHAHEED DWEEP)",time:"01 NIGHT"}],
             days:"7",
@@ -24,31 +24,31 @@ const Packages = (props)=>{
         },
         {
             TourCode:'MTG-006',
-            heading:"Amazing Neil & Havelock",
+            heading:"Amazing Andaman with Baratang",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"2NIGHT"},{place:"Havelock",time:"02 NIGHT"},{place:"NEIL(SHAHEED DWEEP)",time:"01 NIGHT"}],
             days:"6",
             nights:"5"
         },
         {
-            TourCode:'MTG-004',
-            heading:"Amazing Neil & Havelock",
+            TourCode:'MTG-002',
+            heading:"Amazing Andaman with Jolly Buoy",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"02NIGHT"},{place:"Havelock",time:"02 NIGHT"},{place:"NEIL(SHAHEED DWEEP)",time:"01 NIGHT"}],
             days:"5",
             nights:"4"
         },
         {
-            TourCode:'MTG-006',
-            heading:"Amazing Neil & Havelock",
+            TourCode:'MTG-007',
+            heading:"Andaman Delight with Jolly Buoy",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"3NIGHT"},{place:"Havelock",time:"02 NIGHT"},{place:"NEIL(SHAHEED DWEEP)",time:"01 NIGHT"}],
             days:"7",
             nights:"6"
         },
         {
-            TourCode:'MTG-004',
-            heading:"Amazing Neil & Havelock",
+            TourCode:'MTG-001',
+            heading:"Andaman Delight with Baratang",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"2NIGHT"},{place:"Havelock",time:"01 NIGHT"}],
             days:"4",
@@ -56,7 +56,7 @@ const Packages = (props)=>{
         },
         {
             TourCode:'MTG-003',
-            heading:"Amazing Neil & Havelock",
+            heading:"Magical Andaman",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"2NIGHT"},{place:"Havelock",time:"02 NIGHT"}],
             days:"5",
@@ -64,7 +64,7 @@ const Packages = (props)=>{
         },
         {
             TourCode:'MTG-005',
-            heading:"Amazing Neil & Havelock",
+            heading:"Magical Andaman with Jolly Buoy",
             info:"A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
             places: [{place:"PORTBLAIR",time:"3NIGHT"},{place:"Havelock",time:"01 NIGHT"},{place:"NEIL(SHAHEED DWEEP)",time:"01 NIGHT"}],
             days:"6",
