@@ -2,6 +2,7 @@
     border:none;
     background-color: rgb(1,155,167);
     border-bottom: solid 4px white;
+    width: 50%;
 }
 .searchBar input:focus{
     background-color: white;

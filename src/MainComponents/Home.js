@@ -66,7 +66,7 @@ const Home = () => {
           icon: <SnowboardingIcon sx={{ fontSize: 40, color: blue[700] }} />,
         }}
       />
-      <div className="flex text-center justify-between mt-20">
+      <div className="flex flex-col sm:flex-row text-center justify-between mt-20">
         <ChotuDiv
           item={{
             icon: <FlightTakeoff sx={{ fontSize: 40, color: blue[700] }} />,
@@ -114,12 +114,14 @@ const Home = () => {
         <EachPackageCard item={items[0]} />
       </div>
       <div
-        className="flex flex-col items-center gap-20"
+        className="flex flex-col  gap-20"
         style={{
           backgroundImage: `url('https://wallpaperaccess.com/full/1921682.jpg')`,
           backgroundRepeat: "no-repeat",
+          backgroundSize:"cover",
           backgroundAttachment: "fixed",
           backgroundPosition: "bottom",
+          maxWidth:"100vw"
         }}
       >
         <Services
@@ -133,17 +135,17 @@ const Home = () => {
             ),
           }}
         />
-        <div className="flex gap-20">
+        <div className="flex sm:flex-row flex-col items-center justify-around">
           <EachPackageCard item={items[0]} />
           <EachPackageCard item={items[0]} />
           <EachPackageCard item={items[0]} />
         </div>
-        <div className="flex gap-20">
+        <div className="flex sm:flex-row flex-col items-center justify-around">
           <EachPackageCard item={items[0]} />
           <EachPackageCard item={items[0]} />
           <EachPackageCard item={items[0]} />
         </div>
-        <div className="flex gap-20">
+        <div className="flex sm:flex-row flex-col items-center justify-around">
           <EachPackageCard item={items[0]} />
           <EachPackageCard item={items[0]} />
           <EachPackageCard item={items[0]} />
@@ -156,7 +158,7 @@ const Home = () => {
             icon: <TaskAltIcon sx={{ fontSize: 40, color: green["A700"] }} />,
           }}
         />
-        <div className="flex text-center">
+        <div className="flex flex-col sm:flex-row text-center">
           <ChotuDiv
             item={{
               heading: "RELIABLE SERVICES",
@@ -182,7 +184,7 @@ const Home = () => {
             }}
           />
         </div>
-        <div className="flex text-center">
+        <div className="flex flex-col sm:flex-row text-center">
           <ChotuDiv
             item={{
               heading: "POCKET-FRIENDLY RATES",
