@@ -47,10 +47,52 @@ const Home = () => {
 
   const items = [
     {
+      heading: "6 NIGHTS-7 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(3 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
+      TourCode: "TOUR CODE :- MTG 006",
+    },
+    {
+      heading: "3 NIGHTS-4 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(2 N Port Blair+1 N Havelock)",
+      TourCode: "TOUR CODE :- MTG 004",
+    },
+    {
       heading: "4 NIGHTS-5 DAYS",
       url: "https://static.toiimg.com/photo/68814397.cms",
       info: "(2 N Port Blair+1 N Havelock+1N Neil (Shaheed Dweep))",
+      TourCode: "TOUR CODE :- MTG 004",
+    },
+    {
+      heading: "4 NIGHTS-5 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(2 N Port Blair+2 N Havelock)",
       TourCode: "TOUR CODE :- MTG 003",
+    },
+    {
+      heading: "5 NIGHTS-6 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(2 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
+      TourCode: "TOUR CODE :- MTG 006",
+    },
+    {
+      heading: "5 NIGHTS-6 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(2 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
+      TourCode: "TOUR CODE :- MTG 004",
+    },
+    {
+      heading: "5 NIGHTS-6 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(3 N Port Blair+1 N Havelock+1N Neil (Shaheed Dweep))",
+      TourCode: "TOUR CODE :- MTG 005",
+    },
+    {
+      heading: "6 NIGHTS-7 DAYS",
+      url: "https://static.toiimg.com/photo/68814397.cms",
+      info: "(3 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
+      TourCode: "TOUR CODE :- MTG 012",
     },
   ];
   return (
@@ -135,18 +177,17 @@ const Home = () => {
         />
         <div className="flex gap-20">
           <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[0]} />
+          <EachPackageCard item={items[1]} />
+          <EachPackageCard item={items[2]} />
         </div>
         <div className="flex gap-20">
-          <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[0]} />
+          <EachPackageCard item={items[3]} />
+          <EachPackageCard item={items[4]} />
+          <EachPackageCard item={items[5]} />
         </div>
         <div className="flex gap-20">
-          <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[0]} />
+          <EachPackageCard item={items[6]} />
+          <EachPackageCard item={items[7]} />
         </div>
       </div>
       <div className="flex flex-col gap-10">
