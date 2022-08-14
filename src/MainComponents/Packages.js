@@ -95,17 +95,32 @@ const Packages = () => {
       <div>
         <h1>The Prices Are <span>Inclusive</span>of:</h1>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+            <li>Accommodation in rooms as given at hotels in Port Blair—Havelock and Neil on Double or triple sharing basis.</li>
+            <li>Meal Plan: CPAI (Room + Breakfast)</li>
+            <li>Assistance at all arrival and departure point.</li>
+            <li>Welcome cake on Arrival</li>
+            <li>Complimentary Candid Photography</li>
+            <li>Sightseeing in private air-conditioned vehicle as per the itinerary at Port Blair—Havelock--Neil including Airport Pick up and Drop.</li>
+            <li>All side Private Cruise charges Included - Port Blair – Neil – Havelock –Port blair.</li>
+            <li>(NAUTIKA//MAK//Sea Link//Green Ocean//Aashi).</li>
+            <li> Sightseeing as per the itinerary.</li>
+            <li>Travel assistance by Mytourguru Experts in all the islands.</li>
+            <li>5% GST Included</li>
         </ul>
       </div>
       <div>
         <h1>The Prices Are <span>Exclusive</span>of:</h1>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+            <li>Any Airfare, Train fare, Overland Journey which is not mentioned in the Itinerary.</li>
+            <li>If Govt Cruise is not issued due to availability then Pvt Cruise will be issued on fare difference.</li>
+            <li>Any Medical/rescue evacuation due to mishaps.</li>
+            <li>Any personal nature items like Laundry, bar bills, table bills, camera fee, tips or any other item.</li>
+            <li>Vehicle not at disposal at any of the islands.</li>
+            <li>Any extra excursion or sightseeing apart from suggested tour itinerary.</li>
+            <li>Cost incidental to any change in the itinerary/ stay on account of flight cancellation due to bad weather, ill health, roadblocks and/or any factors beyond control </li>
+            <li>Peak Season Supplement of 15% applicable from 15th Dec to 15th Jan </li>
+
+
         </ul>
       </div>
       <div>
@@ -134,6 +149,24 @@ const Packages = () => {
 
 
         </ul>
+      </div>
+      <div>
+        <h1>Covid-19 Guidelines</h1>
+        <ul>
+            <li>All asymptomatic passengers who have been vaccinated with both doses of COVID 19 Vaccine and 15 days have been lapse since the administration of second dose of the vaccine and are in possession of the final vaccination certificate issued through the COWIN portal are exempted from mandatory requirement of carrying negative RTPCR Report to travel to Port Blair from Mainland. And also such passengers will be excepted from undergoing additional RTPCR test on Arrival at Port Blair Airport. Such passengers shall also have to produce the ID card / Documents</li>
+            <li>Its mandatory to carry an Covid RT-PCR negative report sampled within 48 hrs of travel date, </li>
+            <li>Upon tested negative, you are free to travel within South Andaman (Port Blair- havelock- Neil island) and in case tested positive, Standard Isolation process to be followed. </li>
+            <li>Kindly carry few copies of your Covid Report and Photo ID for convenience</li>
+            <li>We require all guest’s ID proof (Pan Card not accepted) upon confirmation of booking to ensure all services booked on time. </li>
+            <li>Our team is committed to work on physical contactless environment and our local team</li>
+            <li>Our vehicles will be sanitized as per administration/ government guidelines and will be</li>
+            <li>All guests are required to wear face masks in public areas/ inside vehicle and to sanitise</li>
+            <li>Temperature checks will be conducted every time a guest board the vehicle. Should the temperature be higher than 99 degrees, along with other symptoms, including but not limited to coughing, sneezing and shortness of breath, they will be assisted to visit the nearest hospital or healthcare facility. </li>
+
+            We look forward to welcoming your guests to our pristine islands, we would be happy to share more details, please feel free to mail/ call
+
+        </ul>
+
       </div>
       <Footer />
     </>
