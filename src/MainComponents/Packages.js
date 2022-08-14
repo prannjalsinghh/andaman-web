@@ -16,134 +16,7 @@ const Packages = () => {
     sort();
   }, []);
 
-  const items = [
-    {
-      TourCode: "MTG 012",
-      heading: "Amazing Neil & Havelock",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "3NIGHT" },
-        { place: "Havelock", time: "02 NIGHT" },
-        { place: "NEIL(SHAHEED DWEEP)", time: "01 NIGHT" },
-      ],
-      days: "4",
-      nights: "5",
-    },
-    {
-      TourCode: "MTG 004",
-      heading: "Havelock(Swaraj Dweep) Delight",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "2NIGHT" },
-        { place: "Havelock", time: "02 NIGHT" },
-        { place: "NEIL(SHAHEED DWEEP)", time: "01 NIGHT" },
-      ],
-      days: "7",
-      nights: "6",
-    },
-    {
-      TourCode: "MTG 006",
-      heading: "Amazing Andaman with Baratang",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "2NIGHT" },
-        { place: "Havelock", time: "02 NIGHT" },
-        { place: "NEIL(SHAHEED DWEEP)", time: "01 NIGHT" },
-      ],
-      days: "6",
-      nights: "5",
-    },
-    {
-      TourCode: "MTG 002",
-      heading: "Amazing Andaman with Jolly Buoy",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "02NIGHT" },
-        { place: "Havelock", time: "02 NIGHT" },
-        { place: "NEIL(SHAHEED DWEEP)", time: "01 NIGHT" },
-      ],
-      days: "5",
-      nights: "4",
-    },
-    {
-      TourCode: "MTG 007",
-      heading: "Andaman Delight with Jolly Buoy",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "3NIGHT" },
-        { place: "Havelock", time: "02 NIGHT" },
-        { place: "NEIL(SHAHEED DWEEP)", time: "01 NIGHT" },
-      ],
-      days: "7",
-      nights: "6",
-    },
-    {
-      TourCode: "MTG 001",
-      heading: "Andaman Delight with Baratang",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "2NIGHT" },
-        { place: "Havelock", time: "01 NIGHT" },
-      ],
-      days: "4",
-      nights: "3",
-    },
-    {
-      TourCode: "MTG 003",
-      heading: "Magical Andaman",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "2NIGHT" },
-        { place: "Havelock", time: "02 NIGHT" },
-      ],
-      days: "5",
-      nights: "4",
-    },
-    {
-      TourCode: "MTG 005",
-      heading: "Magical Andaman with Jolly Buoy",
-      info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
-      places: [
-        { place: "PORTBLAIR", time: "3NIGHT" },
-        { place: "Havelock", time: "01 NIGHT" },
-        { place: "NEIL(SHAHEED DWEEP)", time: "01 NIGHT" },
-      ],
-      days: "6",
-      nights: "5",
-      table1: {
-        head:["Days", "Overview"],
-        rows:[
-        {
-          day: "Day 1",
-          details:
-            "Airport Pick Up. Later Trip to Cellular Jail Light and Sound Show",
-        },
-        {
-          day:"Day 2",
-          details:"Visit Ross Island and North Bay Island"
-        },
-        {
-          day:"Day 3",
-          details:"Port Blair to Neil. Laxmanpur Beach, Bharatpur Beach, Natural Coral Bridge.",
-
-        },
-        {
-          day:"Day 4",
-          details:"Neil Island to Havelock Island in Ferry and Later Trip to Radhanagar Beach"
-        },
-        {
-          day:"Day 5",
-          details:"Kalapathar Beach and Later Depart from Havelock Island to Port Blair.",
-        }
-        ,{
-          day:"Day 6",
-          details:"Airport Drop"
-        }
-
-      ],
-    },
-    },
-  ];
+  
   return (
     <>
       <Header />
@@ -178,7 +51,17 @@ const Packages = () => {
 
       <Services item={{ heading: "ITERNARY IN DETAIL" }} />
       <Services item={{ heading: "ACCOMMODATION USED" }} />
+      <CustomizedTables
+        head={ accommodation?.head }
+        rows = {accommodation?.rows}
+      />
+
       <Services item={{ heading: "Ferry Timing" }} />
+      <CustomizedTables
+        head={ item.table3?.head }
+        rows = {item.table3?.rows}
+      />
+
       <Footer />
     </>
   );
