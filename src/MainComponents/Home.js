@@ -103,8 +103,8 @@ const Home = () => {
         <HomeVideo />
         <SearchBar />
 
-        <Marquee pauseOnHover={true} speed={50} className="mt-10" gradient={false}>
-          
+        <Marquee pauseOnHover={true} speed={30} className="mt-10" gradient={false}>
+
           <EachPackageHomeDiv heading="Family Packages" url="https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156982254180_travel-by-family.jpg"/>
           <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
           <EachPackageHomeDiv heading="Corporate Packages" url="https://www.anjnaglobal.com/img/dubai-corporate-tour.jpg"/>

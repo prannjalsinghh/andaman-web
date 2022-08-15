@@ -87,7 +87,7 @@ const Packages = () => {
     allPackages();
     imageHandler();
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, [location.state.id]);
+  }, [location.state.id, item.images]);
 
   const [isFormOpen, formToggleHandler] = useState(false);
 

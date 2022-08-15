@@ -1,7 +1,7 @@
 @import "./../styles/variables.scss";
 
 .header {
-    background: $dark;
+    background: white;
     // width: 100%;
     height: $headerHeight;
     padding: 0 1.5rem;
@@ -12,7 +12,7 @@
 
     &__content {
         overflow: hidden;
-        color: $light;
+        color: $dark;
         margin: 0 auto;
         max-width: 1920px;
         height: 100%;
@@ -75,13 +75,13 @@
                     }
                     a {
                         text-decoration: none;
-                        color: inherit;
+                        color: white;
                         padding: 0.75rem 1.25rem;
                         border-radius: $borderRadius;
                         transition: 0.3s ease all;
 
                         &:hover {
-                            background: rgb(153,119,0);
+                            background: rgb(218,93,58);
                             cursor: pointer;
                         }
                         &:active {

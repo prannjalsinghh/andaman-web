@@ -41,7 +41,6 @@ const Header = () => {
 
   const closeHandler = () => {
     setisOpen(false);
-    console.log("khushi");
   };
 
   return (
@@ -59,9 +58,6 @@ const Header = () => {
             </li>
             <li>
               <Link to="/aboutUs">About Us</Link>{" "}
-            </li>
-            <li>
-              <Link to="/packages">Packages</Link>
             </li>
             <li>
               <Link to="/ferries">Ferries</Link>
