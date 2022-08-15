@@ -1,44 +1,4 @@
-const accommodation = {
-    head:["Hotel category" , "Portblair" , "HaveLock" , "Neil(Shaheed Dweep)"],
-    rows:[
-        {
-            category:"Standard",
-            portblair:"Tamarind (Deluxe Room)//Anchorage Inn (Deluxe Room)//Shine View(Deluxe Room)//Ryan Residency (Deluxe Room) // Or Similar",
-            havelock:"Royal Pearl Beach Resort (Cottage) //Blue Wave(Standard Cottage) or Similar",
-            neil:"Neil Banjara (Deluxe Cottage)// Seven Sea (Standard Cottage) Or Similar"
-
-        },
-        {
-            category:"Deluxe",
-            portblair:"Aparupa Ambience (Deluxe Room) // The Pearl (Deluxe Room)//Hotel King (Deluxe  Room)// Hotel KPN (Standard Room) Or Similar",
-            havelock:"Honeymoon Beach Resort (Valley Room) // Shangrila Beach Resort (STD AC Cottage) // Bodhik Villa Beach Resort (Deluxe Room) // Royal Villa Beach Resort (Villa Room)  Or Similar",
-            neil:"Sarthak Resort (Deluxe Cottage)//Lakshmi Continental (Deluxe Cottage)// CS Empire (STD Room) Or Similar"
-        },
-        {
-            category:"Super Deluxe",
-            portblair:"J Hotel (Deluxe Room) // Blue Horizon (Deluxe Room)//King Safire( Deluxe Room) // Hotel Airport(Deluxe Room) //  Or Similar",
-            havelock:"Radhakrishan Beach resort(Deluxe Cottage)//Ocean Pearl Beach Resort (Deluxe Room/Cottage) //Virgin Beach Resort(deluxe Cottage)//Havelock Exotica (Deluxe Cottage) //Haywizz (Pool View) //Or Similar",
-            neil:"Tango Beach Resort (Premium Room)//Coral Garden (Deluxe Cottage)//Sandy Ridge (Deluxe Cottage) Or Similar"
-
-        },
-        {
-            category:"Premium",
-            portblair:"Mansha Palace (Deluxe Room)//North Reef(Contemporary Room)//SR Castle( Super Deluxe Room) // Bell Elite(Premium Room)//Bay Leaf(Deluxe Room)//Olive (Sea view)// Blue Horizon (Bathtub)Or Similar",
-            havelock:"Sand Marina (Deluxe Cottage)//White Coral Beach Resort (Cottage)// Aquays Beach Resort (Havelock Plaza) // NK Eco Resort (Deluxe Cottage) //Or Similar",
-            neil:"Pearl Park Beach Resort (STD Cottage) // Reef Valley (Deluxe Cottage) //NK Eco Resort (Deluxe Cottage) //Aquays Beach Resort (Neil Plaza) // TSG Aura Or Similar"
-
-        },
-        {
-            category:"Luxury",
-            portblair:"Heritage MNR (Club Room with Bath Tub) //Advasaha Beach Spa Resort (STD Cottage) // Comfort Inn (Bathtub Room) // Mansha Regency(Deluxe Room)//Hotel Kalki(Deluxe Room) Or Similar",
-            havelock:"Haywizz(Private Pool) // Havelock Island Beach Resort (Deluxe Cottage) // Symphony Palm (Havelock Cottage) //TSG Blue (Aqua Pool Room)//Ocean Tree Beach Resort (Villa with Bath Tub) Or Similar",
-            neil:"Silver Sand Beach Resort (Neil Panorama) //Summer Sand (Casa Earth)// Aquays (Bathtub Room) //Or Similar"
-
-        },
-    ]
-  }
-
-    export const items = [
+export const items = [
     {
       url:"https://media.istockphoto.com/photos/andaman-sea-island-with-morning-sun-lighting-picture-id1266075200?k=20&m=1266075200&s=612x612&w=0&h=yQoNJ6qEStNCfTg5TdsyRELLBr0LT-kakn-Ix4kNudY=",
       TourCode: "MTG 012",
@@ -883,3 +843,13 @@ const accommodation = {
       ]
     },
   ];
+
+
+  const arr = [
+    [
+        
+    ],
+    [
+
+    ],
+  ]
