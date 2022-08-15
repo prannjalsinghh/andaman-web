@@ -11,6 +11,7 @@ export const items = [
       ],
       days: "7",
       nights: "6",
+      images:["CellularJail","RossIsland","Cruise","ElephantBeach","Havelock","Neil"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -130,6 +131,7 @@ export const items = [
       ],
       days: "6",
       nights: "5",
+      images:["CellularJail","Cruise","Havelock","Neil"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -240,6 +242,7 @@ export const items = [
       ],
       days: "6",
       nights: "5",
+      images:["CellularJail","Cruise","Havelock","Neil"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -329,6 +332,7 @@ export const items = [
       ],
       days: "5",
       nights: "4",
+      images:["CellularJail","Cruise","Havelock","Neil"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -431,6 +435,7 @@ export const items = [
       ],
       days: "7",
       nights: "6",
+      images:["CellularJail","Cruise","ElephantBeach","Havelock","Neil","Bartang"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -550,6 +555,7 @@ export const items = [
       ],
       days: "4",
       nights: "3",
+      images:["CellularJail","Cruise","Havelock","Neil"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -643,6 +649,7 @@ export const items = [
       ],
       days: "5",
       nights: "4",
+      images:["CellularJail","Cruise","Havelock"],
       table1: {
         head:["Days", "Overview"],
         rows:[
@@ -744,6 +751,7 @@ export const items = [
       ],
       days: "6",
       nights: "5",
+      images:["CellularJail","RossIsland","Cruise","Havelock","Neil"],
       table1: {
         head:["Days", "Overview"],
         rows:[
