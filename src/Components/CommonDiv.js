@@ -6,19 +6,13 @@ const CommonDiv = (props) => {
 
     return(
         <Container className='mt-10'>
-<<<<<<< HEAD
-=======
           <div>
->>>>>>> 23338ee1f184da54246d17c1fa4ce453d2ebd101
             <h1 className='text-2xl font-semibold text-orange-600'> {props.title}</h1>
             <h3>{props.subtitle}</h3>
             <ul className='mt-5 list-decimal font-bold text-gray-700'>
                 {props.arr.map((item) => <li>{item}</li>)}
             </ul>
-<<<<<<< HEAD
-=======
            </div>
->>>>>>> 23338ee1f184da54246d17c1fa4ce453d2ebd101
         </Container>
     )
 
