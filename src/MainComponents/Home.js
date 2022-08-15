@@ -21,6 +21,7 @@ import SearchBar from "../Components/SearchBar";
 import { FcCustomerSupport, FcMoneyTransfer } from "react-icons/fc";
 import { BiCustomize } from "react-icons/bi";
 import Pro from "../Assets/icons/pro.svg";
+import Marquee from "react-fast-marquee";
 const Home = () => {
   const [isFormOpen, formToggleHandler] = useState(false);
 
@@ -100,6 +101,11 @@ const Home = () => {
 
         <HomeVideo />
         <SearchBar />
+
+        <Marquee>
+          
+        </Marquee>
+
         <Services
           item={{
             heading: "Services We Provide",
