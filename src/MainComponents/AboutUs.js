@@ -26,11 +26,7 @@ const AboutUs = ()=>{
                 <div>
                     <h1 className='text-xl text-orange-600 font-medium'>Welcome</h1>
                     <p>
-                        Andaman Tour is a part of My Tourguru Online Pvt. Ltd . It is a complete destination management company teamed by hardcore professionals with average experience of 10 years in domestic and international travel, approved by the Government of India .We are based out in Port Blair with branch office in Delhi .
-
-                        Andaman Tour and Travels is one of the most reliable travel agent when it comes to choosing the best travel agents in Andaman or Best Andaman Tour Packages. We offer attractive Andaman Honeymoon Tour Package, which have been designed while keeping all your needs in mind. Since our inception, we have been striving to deliver an unrivalled service which at par with all your expectations and demands.
-
-                        Our vast experience has enabled us to handle all your travel arrangements with almost competence and professionalism. Our customer-centric services are aimed at fulfilling all your whims and desires effortlessly.best travel agent in andaman nicobar islands for connections list of top company at good local tour operators review trek
+                     A division of andamanoceantours is Andaman Tour. It is a full-service destination management organisation authorised by the Government of India, staffed by ardent experts with an average of 10 years of local and international travel expertise. Our main office is in Port Blair, and we also have a branch there. When it comes to selecting the top travel agencies in Andaman or the best Andaman tour packages, Andaman Tour and Travels is one of the most dependable travel agencies. We provide alluring Andaman Honeymoon Tour Packages that were created with your demands in mind. Since the beginning, we have worked hard to provide unmatched service that meets all of your requirements and expectations. Our extensive experience has allowed us to manage all of your travel plans with an almost professional level of skill. Our customer-focused services are designed to effortlessly satisfy all of your whims and needs. Best connection-oriented travel agency in the Andaman & Nicobar Islands top companies at trustworthy local tour operators reviews trip.
 
                     </p>
                 </div>
