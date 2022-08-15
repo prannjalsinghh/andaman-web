@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 
-const EachPackageCard = (props)=>{
+const EachWaterCard = (props)=>{
 
     const navigate = useNavigate()
-    const renderNewPackage = ()=>{
-        navigate('/packages',{state:{id:props.item.TourCode}})
+    const renderNewWater = ()=>{
+        navigate('/Waters',{state:{id:props.item.TourCode}})
     }
 
     
@@ -18,11 +18,10 @@ const EachPackageCard = (props)=>{
                 
                     <h3 className='text-2xl text-center font-semibold'>{props.item.heading}</h3>
                     <p className=''>{props.item.info}</p>
-                    <p>{`TOURCODE-${props.item.TourCode}`}</p>
-                    <button className='p-1.5 rounded-md' onClick={renderNewPackage}>View Details</button>
+                    <button className='p-1.5 rounded-md' onClick={renderNewWater}>View Details</button>
                 
             </div>
         </div>
     )
 }
-export default EachPackageCard;
+export default EachWaterCard;
