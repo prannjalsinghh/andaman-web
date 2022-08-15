@@ -853,11 +853,4 @@ export const items = [
   ];
 
 
-  const arr = [
-    [
-        
-    ],
-    [
-
-    ],
-  ]
+  
