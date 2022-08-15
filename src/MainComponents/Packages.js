@@ -82,7 +82,7 @@ const Packages = () => {
         head={ item.accommodation?.head }
         rows = {item.accommodation?.rows}
       />
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <Link to="/contactUs"><button className=" bg-orange-600 rounded-md m-auto mt-10 p-3">BOOK NOW</button></Link>
 
       </div>
@@ -95,6 +95,28 @@ const Packages = () => {
       </marquee>
 
       
+      <CommonDiv arr={[
+        "Standard- Rs 300 per person Per Meal",
+        "Deluxe – Rs 650per person",
+        "Super Deluxe – Rs 850 per person"  
+        
+      ]} title={"MEAL SUPPLEMENT FOR LUNCH / DINNER"} subtitle={"( Meal supplement Per Person Per Meal.)"} />
+
+      <CommonDiv arr={[
+        "Shore Scuba Diving: 3500",
+        "Boat Scuba DIving: 4000",
+        "Jet Skiing : 900",
+        "Snorkelling: 1200",
+        "Glass Bottom Boating:900",
+        "Kayaking: 3500",
+        "Parasailing: 4500",
+        "Banana Boat rides : 1200",
+        "Sea Kart: 3500",
+        "Underwater Engagement: 4500"
+      ]}
+      title={"OPTIONAL CHARGES"}
+      subtitle={"WATERSPORTS ACTIVITIES (APPLICABLE ONLY IF PRE-BOOKED)"} />
+
            <CommonDiv arr={[ "Accommodation in rooms as given at hotels in Port Blair—Havelock and Neil on Double or triple sharing basis.",    
            " Meal Plan: CPAI (Room + Breakfast)  ",
            " Assistance at all arrival and departure point.  ",
