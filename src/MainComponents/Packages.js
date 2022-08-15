@@ -82,7 +82,7 @@ const Packages = () => {
         head={ item.accommodation?.head }
         rows = {item.accommodation?.rows}
       />
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <Link to="/contactUs"><button className=" bg-orange-600 rounded-md m-auto mt-10 p-3">BOOK NOW</button></Link>
 
       </div>
