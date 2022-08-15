@@ -107,7 +107,7 @@ const Home = () => {
             icon: <SnowboardingIcon sx={{ fontSize: 40, color: blue[700] }} />,
           }}
         />
-        <div className="flex flex-col sm:flex-row text-center justify-between mt-20">
+        <div className="flex flex-col gap-5 sm:flex-row text-center justify-between mt-20">
           <ChotuDiv
             item={{
               icon: <FlightTakeoff sx={{ fontSize: 40, color: blue[700] }} />,
@@ -155,7 +155,7 @@ const Home = () => {
           <EachPackageCard item={items[3]} />
         </div>
         <div
-          className="flex flex-col  gap-20"
+          className="flex flex-col  sm:gap-20 gap-5"
           style={{
             backgroundImage: `url('https://wallpaperaccess.com/full/1921682.jpg')`,
             backgroundRepeat: "no-repeat",
@@ -176,18 +176,18 @@ const Home = () => {
               ),
             }}
           />
-          <div className="flex sm:flex-row flex-col items-center justify-around">
+          <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
             <EachPackageCard item={items[0]} />
             <EachPackageCard item={items[1]} />
             <EachPackageCard item={items[2]} />
           </div>
 
-          <div className="flex sm:flex-row flex-col items-center justify-around">
+          <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
             <EachPackageCard item={items[3]} />
             <EachPackageCard item={items[4]} />
             <EachPackageCard item={items[5]} />
           </div>
-          <div className="flex sm:flex-row flex-col items-center justify-around">
+          <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
             <EachPackageCard item={items[6]} />
             <EachPackageCard item={items[7]} />
           </div>
