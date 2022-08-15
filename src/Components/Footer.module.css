@@ -2,7 +2,8 @@
     display:flex;
     width: 100%;
     justify-content: space-around;
-    margin-top: 3rem
+    margin-top: 3rem;
+    color: white;
 }
 
 ul {
@@ -23,6 +24,9 @@ ul {
 .contactUs{
     display: flex ;
     flex-direction: column;
+}
+.contactUs :hover{
+    cursor: pointer;
 }
 .contactUs li{
     text-align: left;

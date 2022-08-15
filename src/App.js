@@ -6,8 +6,14 @@ import ContactUs from './MainComponents/ContactUs';
 import AboutUs from './MainComponents/AboutUs';
 import Activities from './MainComponents/Activities';
 import Ferries from './MainComponents/Ferries';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
+  
 return(
   <Routes>
     <Route exact path='/' element={ <Home/>}></Route>

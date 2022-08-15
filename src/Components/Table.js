@@ -6,12 +6,24 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 import { Container } from '@mui/material';
+import {cyan} from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: cyan[600],
+    },
+    secondary: {
+      main: '#f44336',
+    },
+  },
+});
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.info.dark,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
     textAlign:'center'
 
@@ -34,7 +46,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function CustomizedTables(props) {
   return (
-    <TableContainer component={Container}>
+    <TableContainer component={Container} style={{marginTop:"30px"}}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
