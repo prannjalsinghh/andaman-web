@@ -20,3 +20,9 @@ video{
   transform-origin: top right; 
 
 }
+
+.onHover:hover{
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}

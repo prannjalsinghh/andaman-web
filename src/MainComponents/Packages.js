@@ -9,6 +9,7 @@ import EachPackageCard from "../Components/EachPackageCard";
 import {items} from "../Assets/data";
 import Itinerary from "../Components/ItineraryinDetail";
 import CommonDiv from "../Components/CommonDiv";
+import Marquee from "react-fast-marquee";
 
 const Packages = () => {
   const location = useLocation();
@@ -87,12 +88,13 @@ const Packages = () => {
 
       </div>
        
-      <marquee behavior="scroll" direction="left" scrollamount="10" onmouseover="this.stop();" className="h-full mt-10" onmouseout="this.start();">
-      <div className="flex">
-        {mainArray.map((each)=><EachPackageCard item={{heading:`${each.nights}Nights - ${each.days}Days`,info:`${each.places[0]?.time} ${each.places[0]?.place} - ${each.places[1]?.time} ${each.places[1]?.place} `, TourCode:each.TourCode, url:each.url}}/>)}
+     <Marquee pauseOnHover={true} speed={50} className="mt-10">
+      <div className="flex gap-2">
+        {mainArray.map((each)=><EachPackageCard item={{heading:`${each.nights}Nights - ${each.days}Days`,info:`${each.places[0].time} ${each.places[0].place} - ${each.places[1].time} ${each.places[1].place} - ${each.places[2]?.time?each.places[2].time:''} ${each.places[2]?.place?each.places[2].place:''} `, TourCode:each.TourCode, url:each.url}}/>)}
       </div>
+      </Marquee>
      
-      </marquee>
+      
 
       
       <CommonDiv arr={[
