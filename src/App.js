@@ -7,6 +7,7 @@ import AboutUs from './MainComponents/AboutUs';
 import Activities from './MainComponents/Activities';
 import Ferries from './MainComponents/Ferries';
 import { useEffect } from 'react';
+import TypesPackages from './Components/TypesPackages';
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,7 @@ return(
     <Route exact path='/packages' element={<Packages/>}></Route>
     <Route exact path='/activities' element={<Activities/>}></Route>
 
-    {/* <Route exact path='/selectedPackage' element={<SelectedPage/>}></Route> */}
+    <Route exact path='/TypePackages' element={<TypesPackages/>}></Route>
   </Routes>
   )
 }
