@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Services from '../Components/Services';
 import CallIcon from '@mui/icons-material/Call';
+import SimpleMap from '../Components/Map';
 import { TextField,Container,Button } from '@mui/material';
 const styles = {
   "input-label": {
@@ -20,6 +21,8 @@ const styles = {
     },
   },
 };
+
+
 const ContactUs = ()=>{
     const[enteredName , setenteredName] = useState('');
 
@@ -64,6 +67,7 @@ const ContactUs = ()=>{
         };
 
     };
+
     return (
       <>
         <Header />
@@ -140,6 +144,7 @@ const ContactUs = ()=>{
         <Footer />
       </>
     );
+  
 
 }
 export default ContactUs;
