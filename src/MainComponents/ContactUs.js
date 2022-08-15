@@ -4,6 +4,8 @@ import Footer from '../Components/Footer';
 import Services from '../Components/Services';
 import CallIcon from '@mui/icons-material/Call';
 import SimpleMap from '../Components/Map';
+import { blue } from '@mui/material/colors';
+
 import { TextField,Container,Button } from '@mui/material';
 const styles = {
   "input-label": {
@@ -21,6 +23,7 @@ const styles = {
     },
   },
 };
+
 
 
 const ContactUs = ()=>{
@@ -67,18 +70,17 @@ const ContactUs = ()=>{
         };
 
     };
-
     return (
       <>
         <Header />
         <Services
           item={{
             heading: "Contact Us",
-            icon: <CallIcon />,
+            icon: <CallIcon  sx={{ fontSize: 80, color: blue[700] }} />,
             info: "Our team would love to create a package for you!",
           }}
         />
-        <Container sx={{ mt: 8 }}>
+        <Container sx={{ mt: 8 , display:"flex" , gap:"20px" }}>
           <form
             className="flex flex-col"
             style={{ width: 450 }}
@@ -139,6 +141,7 @@ const ContactUs = ()=>{
               Submit
             </Button>
           </form>
+          <SimpleMap/>
         </Container>
 
         <Footer />
