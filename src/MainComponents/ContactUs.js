@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Services from '../Components/Services';
 import CallIcon from '@mui/icons-material/Call';
+import SimpleMap from '../Components/Map';
 
 const ContactUs = ()=>{
     const[enteredName , setenteredName] = useState('');
@@ -52,7 +53,7 @@ const ContactUs = ()=>{
         <>
             <Header/>
             <Services item={{heading:"Contact Us" , icon:<CallIcon/> , info:"Our team would love to create a package for you!"}} />
-            <div>
+            <div className='flex'>
                 <form className="flex flex-col" onSubmit={addHandler}>
                     <input type ="text" value={enteredName} onChange={changeNameHandler} placeholder='Your Name'/>
                     <input type="email" value={enteredEmail} onChange={changeEmailHandler} placeholder='Your E-mail'/>
@@ -63,6 +64,7 @@ const ContactUs = ()=>{
                     <button className='p-2 rounded-md w-20'>Submit</button>
 
                 </form>
+                <SimpleMap/>
             </div>
             
             <Footer/>

@@ -11,7 +11,7 @@ import {cyan} from '@mui/material/colors';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: cyan[600],
+    backgroundColor: cyan[800],
     color: theme.palette.common.white,
     textAlign:'center'
 
