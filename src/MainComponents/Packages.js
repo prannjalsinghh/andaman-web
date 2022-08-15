@@ -48,17 +48,17 @@ const Packages = () => {
       <Banner url="https://img.kantipurholidays.com/ContentImages/IMG__82bacd2d-2094-42e7-819e-5860405b81af-0-1941x1132.jpeg" />
       <div className="flex flex-col gap-2 items-center text-center w-3/4 m-auto mt-10">
         <h2 className=" text-3xl font-bold text-orange-600">{item.heading}</h2>
-        <p className="font-md text-gray-800">{item.info}</p>
+        <p className="font-bold text-gray-600">{item.info}</p>
         {item.places?.map((each) => (
           <p className="font-md text-orange-600">
             {each.place}-
-            <span className="font-md text-black">{each.time}</span>
+            <span className="font-bold text-black">{each.time}</span>
           </p>
         ))}
-        <p className="font-md">
+        <p className="font-bold">
           ({item.days}DAYS / {item.nights}NIGHTS)
         </p>
-        <p className="font-md">{`(${item.TourCode})`}</p>
+        <p className="font-bold">{`(${item.TourCode})`}</p>
       </div>
       <Services item={{ heading: "HIGHLIGHTS" }} />
 
