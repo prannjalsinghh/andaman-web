@@ -22,6 +22,7 @@ import { FcCustomerSupport, FcMoneyTransfer } from "react-icons/fc";
 import { BiCustomize } from "react-icons/bi";
 import Pro from "../Assets/icons/pro.svg";
 import Marquee from "react-fast-marquee";
+import EachPackageHomeDiv from "./EachPackageHomeDiv";
 const Home = () => {
   const [isFormOpen, formToggleHandler] = useState(false);
 
@@ -102,8 +103,14 @@ const Home = () => {
         <HomeVideo />
         <SearchBar />
 
-        <Marquee>
+        <Marquee pauseOnHover={true} speed={50} className="mt-10" gradient={false}>
           
+          <EachPackageHomeDiv heading="Family Packages" url="https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156982254180_travel-by-family.jpg"/>
+          <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
+          <EachPackageHomeDiv heading="Corporate Packages" url="https://www.anjnaglobal.com/img/dubai-corporate-tour.jpg"/>
+          <EachPackageHomeDiv heading="Honeymoon Packages" url="https://www.holidayrepresentations.com/images/theme_honeymoon.webp"/>
+          <EachPackageHomeDiv heading="Budget Packages" url="https://www.india.com/wp-content/uploads/2018/08/fam-1-dne.jpg"/>
+
         </Marquee>
 
         <Services
