@@ -127,7 +127,7 @@ const ContactUs = ()=>{
               variant="filled"
               sx={{ mb: 2 }}
               type="number"
-              placeholder="0"
+              placeholder="No of Person"
               value={enteredPerson}
               onChange={changePersonHandler}
             />
