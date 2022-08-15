@@ -40,6 +40,7 @@ const accommodation = {
 
     export const items = [
     {
+      url:"https://media.istockphoto.com/photos/andaman-sea-island-with-morning-sun-lighting-picture-id1266075200?k=20&m=1266075200&s=612x612&w=0&h=yQoNJ6qEStNCfTg5TdsyRELLBr0LT-kakn-Ix4kNudY=",
       TourCode: "MTG 012",
       heading: "Amazing Neil & Havelock",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
@@ -579,6 +580,7 @@ const accommodation = {
   
     },
     {
+      url:"https://i.pinimg.com/originals/0f/a7/ee/0fa7ee26d557dc67d997e2d28c8b084c.jpg",
       TourCode: "MTG 001",
       heading: "Andaman Delight with Baratang",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
@@ -671,6 +673,7 @@ const accommodation = {
       ]
     },
     {
+      url:"https://www.holidify.com/images/bgImages/ANDAMAN-NICOBAR-ISLANDS.jpg",
       TourCode: "MTG 003",
       heading: "Magical Andaman",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
@@ -770,6 +773,7 @@ const accommodation = {
     ]
     },
     {
+      url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeV-fgzFv5-S1NP3EE6Mv2vPoG1UTg9dndPQ&usqp=CAU",
       TourCode: "MTG 005",
       heading: "Magical Andaman with Jolly Buoy",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",

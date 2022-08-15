@@ -2,7 +2,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Banner from "../Components/Banner";
 import Services from "../Components/Services";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import CustomizedTables from '../Components/Table'
 import EachPackageCard from "../Components/EachPackageCard";
@@ -74,7 +74,7 @@ const Packages = () => {
       />
 
       <Services item={{ heading: "ITERNARY IN DETAIL" }} />
-      {/* {item.itinerary.map((detail)=> <Itinerary itinerary={{day:detail.day , heading:detail.heading , info:detail.info}}/>)} */}
+      {item.itinerary?.map((detail)=> <Itinerary itinerary={{day:detail.day , heading:detail.heading , info:detail.info}}/>)}
       
       <Services item={{ heading: "ACCOMMODATION USED" }} />
       <CustomizedTables
@@ -82,7 +82,7 @@ const Packages = () => {
         rows = {item.accommodation?.rows}
       />
       <div className="flex items-center">
-        <button className=" bg-orange-600 rounded-md m-auto mt-10 p-3">BOOK NOW</button>
+        <Link to="/contactUs"><button className=" bg-orange-600 rounded-md m-auto mt-10 p-3">BOOK NOW</button></Link>
 
       </div>
        
