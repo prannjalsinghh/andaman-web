@@ -1,17 +1,13 @@
 import Header from "../Components/Header";
 import HomeVideo from "../Components/HomeVideo";
 import Footer from "../Components/Footer";
-import PackageCard from "../Components/PackageCard";
-import NewsLetter from "../Components/NewsLetter";
 import QueryForm from "../Components/QueryForm.js";
 import EachPackageCard from "../Components/EachPackageCard";
 import Services from "../Components/Services";
 import SnowboardingIcon from "@mui/icons-material/Snowboarding";
 import { blue, green } from "@mui/material/colors";
 import ChotuDiv from "../Components/ChotuDiv";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
-import KeyIcon from "@mui/icons-material/Key";
 import SailingIcon from "@mui/icons-material/Sailing";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import FlightTakeoff from "@mui/icons-material/FlightTakeoff";
