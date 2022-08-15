@@ -6,6 +6,26 @@ import CallIcon from '@mui/icons-material/Call';
 import SimpleMap from '../Components/Map';
 import { blue } from '@mui/material/colors';
 
+import { TextField,Container,Button } from '@mui/material';
+const styles = {
+  "input-label": {
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    width: "100%",
+    color: "red",
+  },
+
+  input: {
+    "&::placeholder": {
+      textOverflow: "ellipsis !important",
+      color: "blue",
+    },
+  },
+};
+
+
+
 const ContactUs = ()=>{
     const[enteredName , setenteredName] = useState('');
 
@@ -50,27 +70,84 @@ const ContactUs = ()=>{
         };
 
     };
-    return(
-        <>
-            <Header/>
-            <Services item={{heading:"Contact Us" , icon:<CallIcon sx={{ fontSize: 80, color: blue[700] }}/> , info:"Our team would love to create a package for you!"}} />
-            <div className='flex mt-10'>
-                <form className="flex flex-col" onSubmit={addHandler}>
-                    <input type ="text" value={enteredName} onChange={changeNameHandler} placeholder='Your Name'/>
-                    <input type="email" value={enteredEmail} onChange={changeEmailHandler} placeholder='Your E-mail'/>
-                    <input type="text" value={enteredPhoneno} onChange={changePhonenoHandler} placeholder='Your Phone No.'/>
-                    <input type="date"  value={enteredDate} onChange={changeDateHandler}/>
-                    <input type="number" placeholder='0' value={enteredPerson} onChange={changePersonHandler}/>
-            
-                    <button className='p-2 rounded-md w-20'>Submit</button>
+    return (
+      <>
+        <Header />
+        <Services
+          item={{
+            heading: "Contact Us",
+            icon: <CallIcon  sx={{ fontSize: 80, color: blue[700] }} />,
+            info: "Our team would love to create a package for you!",
+          }}
+        />
+        <Container sx={{ mt: 8 , display:"flex" , gap:"20px" }}>
+          <form
+            className="flex flex-col"
+            style={{ width: 450 }}
+            onSubmit={addHandler}
+          >
+            <TextField
+              variant="filled"
+              sx={{ mb: 2 }}
+              type="text"
+              value={enteredName}
+              onChange={changeNameHandler}
+              placeholder="Your Name"
+              // make placeholder darker
+              InputProps={{
+                style: {
+                    color: "black",
+                },
+              }}
+            />
+            <TextField
+              variant="filled"
+              sx={{ mb: 2 }}
+              type="email"
+              value={enteredEmail}
+              onChange={changeEmailHandler}
+              placeholder="Your E-mail"
+            />
+            <TextField
+              variant="filled"
+              sx={{ mb: 2 }}
+              type="text"
+              value={enteredPhoneno}
+              onChange={changePhonenoHandler}
+              placeholder="Your Phone No."
+            />
+            <TextField
+              variant="filled"
+              sx={{ mb: 2 }}
+              type="date"
+              value={enteredDate}
+              onChange={changeDateHandler}
+            />
+            <TextField
+              variant="filled"
+              sx={{ mb: 2 }}
+              type="number"
+              placeholder="0"
+              value={enteredPerson}
+              onChange={changePersonHandler}
+            />
 
-                </form>
-                <SimpleMap/>
-            </div>
-            
-            <Footer/>
-        </>
-    )
+            <Button
+              variant="contained"
+              className="p-2 rounded-md w-20"
+              fullWidth
+              sx={{ backgroundColor: "#EA580C" }}
+            >
+              Submit
+            </Button>
+          </form>
+          <SimpleMap/>
+        </Container>
+
+        <Footer />
+      </>
+    );
+  
 
 }
 export default ContactUs;
