@@ -13,3 +13,10 @@ body button{
 video{
   object-fit: cover;
 }
+
+.rotate-fix{
+  transform: rotate(90deg);
+  /* shift to right and stick to border */
+  transform-origin: top right; 
+
+}

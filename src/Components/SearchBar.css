@@ -11,3 +11,8 @@
 .searchBar ::placeholder{
     color:black;
 }
+.searchBar{
+    position: fixed;
+ 
+  width: 100%;
+}
