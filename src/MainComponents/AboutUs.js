@@ -2,9 +2,21 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Banner from '../Components/Banner';
 import Services from '../Components/Services';
+import QueryForm from '../Components/QueryForm';
 import InfoIcon from '@mui/icons-material/Info';
+import { useState } from 'react';
 
 const AboutUs = ()=>{
+
+    const [isFormOpen, formToggleHandler] = useState(false);
+
+    const queryFormOpenHandler = () => {
+        formToggleHandler(true);
+    };
+    const queryFormCloseHandler = () => {
+        formToggleHandler(false);
+    };
+
     return(
         <>
             <Header/>
@@ -25,6 +37,18 @@ const AboutUs = ()=>{
                 
                 <img className=' w-full sm:w-1/2 h-3/4' src="https://wallpaperaccess.com/full/1921683.jpg"/>
             </div>
+
+            <button
+            className="fixed top-1/2 right-0 text-xl p-2 rotate-fix"
+            onClick={queryFormOpenHandler}
+            >
+            Query Form
+            </button>
+            {isFormOpen && (
+                <div className="">
+                <QueryForm closeHandler={queryFormCloseHandler} />
+                </div>
+            )}
             
             <Footer/>
         </>

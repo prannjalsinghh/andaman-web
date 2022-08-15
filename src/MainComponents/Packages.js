@@ -10,6 +10,7 @@ import {items} from "../Assets/data";
 import Itinerary from "../Components/ItineraryinDetail";
 import CommonDiv from "../Components/CommonDiv";
 import Marquee from "react-fast-marquee";
+import QueryForm from "../Components/QueryForm";
 
 const Packages = () => {
   const location = useLocation();
@@ -23,7 +24,14 @@ const Packages = () => {
     allPackages();
   }, []);
 
+  const [isFormOpen, formToggleHandler] = useState(false);
 
+  const queryFormOpenHandler = () => {
+    formToggleHandler(true);
+  };
+  const queryFormCloseHandler = () => {
+    formToggleHandler(false);
+  };
 
   const allPackages = ()=>{
     let loadedArray = [];
@@ -204,6 +212,18 @@ const Packages = () => {
           
         ]}
         title={"OPTIONAL ACTIVITIES AND TOURS:-"} />
+
+          <button
+            className="fixed top-1/2 right-0 text-xl p-2 rotate-fix"
+            onClick={queryFormOpenHandler}
+            >
+            Query Form
+            </button>
+            {isFormOpen && (
+                <div className="">
+                <QueryForm closeHandler={queryFormCloseHandler} />
+                </div>
+            )}
 
       
       <Footer />
