@@ -103,15 +103,7 @@ const Home = () => {
         <HomeVideo />
         <SearchBar />
 
-        <Marquee pauseOnHover={true} speed={30} className="mt-10" gradient={false}>
-
-          <EachPackageHomeDiv heading="Family Packages" url="https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156982254180_travel-by-family.jpg"/>
-          <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
-          <EachPackageHomeDiv heading="Corporate Packages" url="https://www.anjnaglobal.com/img/dubai-corporate-tour.jpg"/>
-          <EachPackageHomeDiv heading="Honeymoon Packages" url="https://www.holidayrepresentations.com/images/theme_honeymoon.webp"/>
-          <EachPackageHomeDiv heading="Budget Packages" url="https://www.india.com/wp-content/uploads/2018/08/fam-1-dne.jpg"/>
-
-        </Marquee>
+        
 
         <Services
           item={{
@@ -120,7 +112,7 @@ const Home = () => {
             icon: <SnowboardingIcon sx={{ fontSize: 40, color: blue[700] }} />,
           }}
         />
-        <div className="flex flex-col gap-5 sm:flex-row text-center justify-between mt-20">
+        <div className="flex flex-col gap-5 sm:flex-row text-center justify-between mt-20 mb-20">
           <ChotuDiv
             item={{
               icon: <FlightTakeoff sx={{ fontSize: 40, color: blue[700] }} />,
@@ -154,6 +146,16 @@ const Home = () => {
             }}
           />
         </div>
+        <Services item={{heading: "MOST POPULAR PACKAGES"}}/> 
+        <Marquee pauseOnHover={true} speed={30} className="mt-10" gradient={false}>
+
+          <EachPackageHomeDiv heading="Family Packages" url="https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156982254180_travel-by-family.jpg"/>
+          <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
+          <EachPackageHomeDiv heading="Corporate Packages" url="https://www.anjnaglobal.com/img/dubai-corporate-tour.jpg"/>
+          <EachPackageHomeDiv heading="Honeymoon Packages" url="https://www.holidayrepresentations.com/images/theme_honeymoon.webp"/>
+          <EachPackageHomeDiv heading="Budget Packages" url="https://www.india.com/wp-content/uploads/2018/08/fam-1-dne.jpg"/>
+
+        </Marquee>
         <Services
           item={{
             heading: "Best Sellers",

@@ -12,7 +12,7 @@
 
     &__content {
         overflow: hidden;
-        color: $dark;
+        color: black;
         margin: 0 auto;
         max-width: 1920px;
         height: 100%;
@@ -46,6 +46,7 @@
             transition: 0.3s ease transform;
 
             @include breakpoint(md) {
+            
                 transform: none;
                 flex-direction: row;
                 background: transparent;
@@ -79,6 +80,9 @@
                         padding: 0.75rem 1.25rem;
                         border-radius: $borderRadius;
                         transition: 0.3s ease all;
+                        @include breakpoint(md) {
+                            color:black;
+                        }
 
                         &:hover {
                             background: rgb(218,93,58);
