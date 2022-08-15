@@ -8,6 +8,7 @@ import CustomizedTables from '../Components/Table'
 import EachPackageCard from "../Components/EachPackageCard";
 import {items} from "../Assets/data";
 import Itinerary from "../Components/ItineraryinDetail";
+import CommonDiv from "../Components/CommonDiv";
 
 const Packages = () => {
   const location = useLocation();
@@ -92,92 +93,95 @@ const Packages = () => {
       </div>
      
       </marquee>
-      <div>
-        <h1>The Prices Are <span>Inclusive</span>of:</h1>
-        <ul>
-            <li>Accommodation in rooms as given at hotels in Port Blair—Havelock and Neil on Double or triple sharing basis.</li>
-            <li>Meal Plan: CPAI (Room + Breakfast)</li>
-            <li>Assistance at all arrival and departure point.</li>
-            <li>Welcome cake on Arrival</li>
-            <li>Complimentary Candid Photography</li>
-            <li>Sightseeing in private air-conditioned vehicle as per the itinerary at Port Blair—Havelock--Neil including Airport Pick up and Drop.</li>
-            <li>All side Private Cruise charges Included - Port Blair – Neil – Havelock –Port blair.</li>
-            <li>(NAUTIKA//MAK//Sea Link//Green Ocean//Aashi).</li>
-            <li> Sightseeing as per the itinerary.</li>
-            <li>Travel assistance by Mytourguru Experts in all the islands.</li>
-            <li>5% GST Included</li>
-        </ul>
-      </div>
-      <div>
-        <h1>The Prices Are <span>Exclusive</span>of:</h1>
-        <ul>
-            <li>Any Airfare, Train fare, Overland Journey which is not mentioned in the Itinerary.</li>
-            <li>If Govt Cruise is not issued due to availability then Pvt Cruise will be issued on fare difference.</li>
-            <li>Any Medical/rescue evacuation due to mishaps.</li>
-            <li>Any personal nature items like Laundry, bar bills, table bills, camera fee, tips or any other item.</li>
-            <li>Vehicle not at disposal at any of the islands.</li>
-            <li>Any extra excursion or sightseeing apart from suggested tour itinerary.</li>
-            <li>Cost incidental to any change in the itinerary/ stay on account of flight cancellation due to bad weather, ill health, roadblocks and/or any factors beyond control </li>
-            <li>Peak Season Supplement of 15% applicable from 15th Dec to 15th Jan </li>
 
+      
+           <CommonDiv arr={[ "Accommodation in rooms as given at hotels in Port Blair—Havelock and Neil on Double or triple sharing basis.",    
+           " Meal Plan: CPAI (Room + Breakfast)  ",
+           " Assistance at all arrival and departure point.  ",
+           " Welcome cake on Arrival ",
+            "Complimentary Candid Photography    ",
+            "Sightseeing in private air-conditioned vehicle as per the itinerary at Port Blair—Havelock--Neil including Airport Pick up and Drop. " ,  
+            "All side Private Cruise charges Included - Port Blair – Neil – Havelock –Port blair.    ",
+            "(NAUTIKA//MAK//Sea Link//Green Ocean//Aashi).   ",
+            "Sightseeing as per the itinerary.  ",
+            "Travel assistance by Mytourguru Experts in all the islands. ",
+            "5% GST Included" ]} title={"The Prices Are Inclusive of:"} />
 
-        </ul>
-      </div>
-      <div>
-        <h1>Cancelation Policy</h1>
-        <ul>
-          <li>If cancellations are made 30 days before the start date of the trip, 25% of Total Package Cost will be charged as cancellation fees.</li>
-          <li>If cancellations are made 15-30 days before the start date of the trip, 50% of Total Package Cost will be charged as cancellation fees.</li>
-          <li>If cancellations are made within 0-15 days before the start date of the trip, 100% of Total Package Cost will be charged as cancellation fees.</li>
-          <li>In case of unforeseen weather conditions or government restrictions, certain activities may be cancelled and in such cases ,we will try our best to provide an alternate feasible activity. However no refund will be provided for the same.</li>
-          <li>100% cancelation would be charged from the total booking amount in case of last minute booking cancellation due to flight cancellation, any natural calamity, and change in flight schedule/ferry due to technical/weather and high tides and sea conditions.</li>
-          <li>In case of Lockdown in Andaman due to Covid, will provide a credit note which a traveller can redeem within 1 year from the date of issuance of Credit Note. In such Sinario revised package will be provided as per the current applicable season and off season rate. Do check the final cost with the reservation team.</li>
-        </ul>
-      </div>
-      <div>
-        <h1>Terms And Conditions</h1>
-        <ul>
-          <li>Rates are valid till March 2023</li>
-          <li>Hotel will be provided from the above list however if none of the hotel is available on the given date then similar alternative option will be provided.</li>
-          <li>Standard, Deluxe, Super Deluxe, Premium, and Luxury is the hotel category and not the room category. Costing has been taken on the base category of the room, any up gradation in the room or Hotel category due to Non availability will incurred additional cost which has to be borne by the guest</li>
-          <li>All water activities are subject to weather conditions. Complementary items are free of cost if not done due to any reason then no refund will be provided.</li>
-          <li>Ferry sailing is subject to weather conditions. Alternate arrangements will be made in case sailing does not take place due to weather or payload restriction. However, Mytourguru will not be responsible for refunding any amount due to non-sailing of ferry and will be governed by our cancellation policy. The itinerary flow is subject to change.</li>
-          <li>In case due to any operational reason or due to bad weather condition, if Private Ferry is not operating will provide inland transfer in Govt Ferry. </li>
-          <li>Cancellation charges as per company policy</li>
-          <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised.</li>
-          <li>Ferry / Cruise Operations are purely subjected to Govt. Clearance.
-          Union Territory “Andaman & Nicobar Islands” is under restricted area category. Please carry valid photo Identity proof issued by Govt. of India (Driving License, Aadhaar Card, and Passport)</li>
-          <li>All the hotels at Port Blair, Havelock and Neil Island have early check out 0800hrs. Guests having late afternoon flights may book additional tour accordingly.</li>
-          <li>Our Executive may change your itinerary depending on the weather condition and availability of ferry and same will be updated to you daily basis.</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Points to be noted while travelling Andaman</h2>
-        <ul>
-          <li>In Andaman mobile networks are BSNL, AIRTEL & VODAFONE and no other networks are supported.</li>
-          <li>All foreign nationals and Indians staying abroad holding passport of different countries (PIO/OCI) needs to register themselves on arrival on Port Blair Airport (Emigration) which should have valid India visa or obtain RAP - Restricted Area Permit, which is valid for 30 days of stay in Andaman’s.</li>
-          <li>Our executive will hold the placard outside the airport exit gate.</li>
+       
+            <CommonDiv arr={[
+            "Any Airfare, Train fare, Overland Journey which is not mentioned in the Itinerary.  ",
+            "If Govt Cruise is not issued due to availability then Pvt Cruise will be issued on fare difference. ",
+            "Any Medical/rescue evacuation due to mishaps.   ",
+            "Any personal nature items like Laundry, bar bills, table bills, camera fee, tips or any other item. ",
+            "Vehicle not at disposal at any of the islands.  ",
+            "Any extra excursion or sightseeing apart from suggested tour itinerary. ",
+            "Cost incidental to any change in the itinerary/ stay on account of flight cancellation due to bad weather, ill health, roadblocks and/or any factors beyond control     ",
+            "Peak Season Supplement of 15% applicable from 15th Dec to 15th Jan  " ]} title={"The Prices are exclusive "}/>
 
-        </ul>
-      </div>
-      <div>
-        <h1>Covid-19 Guidelines</h1>
-        <ul>
-            <li>All asymptomatic passengers who have been vaccinated with both doses of COVID 19 Vaccine and 15 days have been lapse since the administration of second dose of the vaccine and are in possession of the final vaccination certificate issued through the COWIN portal are exempted from mandatory requirement of carrying negative RTPCR Report to travel to Port Blair from Mainland. And also such passengers will be excepted from undergoing additional RTPCR test on Arrival at Port Blair Airport. Such passengers shall also have to produce the ID card / Documents</li>
-            <li>Its mandatory to carry an Covid RT-PCR negative report sampled within 48 hrs of travel date, </li>
-            <li>Upon tested negative, you are free to travel within South Andaman (Port Blair- havelock- Neil island) and in case tested positive, Standard Isolation process to be followed. </li>
-            <li>Kindly carry few copies of your Covid Report and Photo ID for convenience</li>
-            <li>We require all guest’s ID proof (Pan Card not accepted) upon confirmation of booking to ensure all services booked on time. </li>
-            <li>Our team is committed to work on physical contactless environment and our local team</li>
-            <li>Our vehicles will be sanitized as per administration/ government guidelines and will be</li>
-            <li>All guests are required to wear face masks in public areas/ inside vehicle and to sanitise</li>
-            <li>Temperature checks will be conducted every time a guest board the vehicle. Should the temperature be higher than 99 degrees, along with other symptoms, including but not limited to coughing, sneezing and shortness of breath, they will be assisted to visit the nearest hospital or healthcare facility. </li>
+            <CommonDiv arr={[
+                "Booked morning Slot so that under water visibility perfect.",
+                "Sealed Package mouth pieces for better hygiene.",
+                "Fully Sanitized face mask to ensure COVID 19 guidelines are followed.",
+                "Regular Check-up of Oxygen Cylinder filters so that under water risk can be minimized.",
+                "Unlimited training time given before we take you under water.",
+                "Min 25 Min underwater with Photo’s and Video’s",
+                "Best Quality Scuba diving in Entire Island."
+            ]} title={"Benefits of Pre Booking of Scuba Diving:-"} />
 
-            We look forward to welcoming your guests to our pristine islands, we would be happy to share more details, please feel free to mail/ call
+            <CommonDiv arr={["If cancellations are made 30 days before the start date of the trip, 25% of Total Package Cost will be charged as cancellation fees.<",
+          "If cancellations are made 15-30 days before the start date of the trip, 50% of Total Package Cost will be charged as cancellation fees.<",
+          "If cancellations are made within 0-15 days before the start date of the trip, 100% of Total Package Cost will be charged as cancellation fees.<",
+          "In case of unforeseen weather conditions or government restrictions, certain activities may be cancelled and in such cases ,we will try our best to provide an alternate feasible activity. However no refund will be provided for the same.<",
+          "100% cancelation would be charged from the total booking amount in case of last minute booking cancellation due to flight cancellation, any natural calamity, and change in flight schedule/ferry due to technical/weather and high tides and sea conditions.<",
+          "In case of Lockdown in Andaman due to Covid, will provide a credit note which a traveller can redeem within 1 year from the date of issuance of Credit Note. In such Sinario revised package will be provided as per the current applicable season and off season rate. Do check the final cost with the reservation team.<",]} 
+          title={"Cancellation Policy"} />
 
-        </ul>
+      
+        <CommonDiv arr = {["Rates are valid till March 2023",
+        "Hotel will be provided from the above list however if none of the hotel is available on the given date then similar alternative option will be provided.",
+        "Standard, Deluxe, Super Deluxe, Premium, and Luxury is the hotel category and not the room category. Costing has been taken on the base category of the room, any up gradation in the room or Hotel category due to Non availability will incurred additional cost which has to be borne by the guest",
+        "All water activities are subject to weather conditions. Complementary items are free of cost if not done due to any reason then no refund will be provided.",
+        "Ferry sailing is subject to weather conditions. Alternate arrangements will be made in case sailing does not take place due to weather or payload restriction. However, Mytourguru will not be responsible for refunding any amount due to non-sailing of ferry and will be governed by our cancellation policy. The itinerary flow is subject to change.",
+        "In case due to any operational reason or due to bad weather condition, if Private Ferry is not operating will provide inland transfer in Govt Ferry. ",
+        "Cancellation charges as per company policy",
+        "In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised.",
+        "Ferry / Cruise Operations are purely subjected to Govt. Clearance.",
+         "Union Territory “Andaman & Nicobar Islands” is under restricted area category. Please carry valid photo Identity proof issued by Govt. of India (Driving License, Aadhaar Card, and Passport)",
+        "All the hotels at Port Blair, Havelock and Neil Island have early check out 0800hrs. Guests having late afternoon flights may book additional tour accordingly.",
+        "Our Executive may change your itinerary depending on the weather condition and availability of ferry and same will be updated to you daily basis."]}
+        title={"Terms and Conditions"} />
+  
+      
+            <CommonDiv arr={[
+                "In Andaman mobile networks are BSNL, AIRTEL & VODAFONE and no other networks are supported.",
+                "All foreign nationals and Indians staying abroad holding passport of different countries (PIO/OCI) needs to register themselves on arrival on Port Blair Airport (Emigration) which should have valid India visa or obtain RAP - Restricted Area Permit, which is valid for 30 days of stay in Andaman’s.",
+                "Our executive will hold the placard outside the airport exit gate.",
+            ]}
+            title={"Points to be noted while travelling Andaman"} />
+        
+       <CommonDiv arr={["All asymptomatic passengers who have been vaccinated with both doses of COVID 19 Vaccine and 15 days have been lapse since the administration of second dose of the vaccine and are in possession of the final vaccination certificate issued through the COWIN portal are exempted from mandatory requirement of carrying negative RTPCR Report to travel to Port Blair from Mainland. And also such passengers will be excepted from undergoing additional RTPCR test on Arrival at Port Blair Airport. Such passengers shall also have to produce the ID card / Documents",
+        "Its mandatory to carry an Covid RT-PCR negative report sampled within 48 hrs of travel date, ",
+        "Upon tested negative, you are free to travel within South Andaman (Port Blair- havelock- Neil island) and in case tested positive, Standard Isolation process to be followed. ",
+        "Kindly carry few copies of your Covid Report and Photo ID for convenience",
+        "We require all guest’s ID proof (Pan Card not accepted) upon confirmation of booking to ensure all services booked on time. ",
+        "Our team is committed to work on physical contactless environment and our local team",
+        "Our vehicles will be sanitized as per administration/ government guidelines and will be",
+        "All guests are required to wear face masks in public areas/ inside vehicle and to sanitise",
+        "Temperature checks will be conducted every time a guest board the vehicle. Should the temperature be higher than 99 degrees, along with other symptoms, including but not limited to coughing, sneezing and shortness of breath, they will be assisted to visit the nearest hospital or healthcare facility. ",
+           " We look forward to welcoming your guests to our pristine islands, we would be happy to share more details, please feel free to mail/ call"]}
+           title={"Covid-19 Guidelines"} />
 
-      </div>
+        <CommonDiv arr={[
+          "Bella Bay Luxury Dinner Cruise in Port Blair- 5 Course Dinner with live action packed entertainment   (3500 Per Person)",
+          "Photography Pack- Get your memories captured by our professional photo artists",
+          "Scuba Certification Courses",
+          "Game Fishing.",
+          "Day/ Night Kayaking: adventure in the Mangroves of Havelock"
+          
+        ]}
+        title={"OPTIONAL ACTIVITIES AND TOURS:-"} />
+
+      
       <Footer />
     </>
   );

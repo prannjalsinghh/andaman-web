@@ -4,8 +4,10 @@ const CommonDiv = (props) => {
 
     return(
         <div>
-            <h1>{props.title}</h1>
-            {props.arr.map((item) => <li>{item}</li>)}
+            <h1 className='text-2xl font-semibold text-orange-700'> {props.title}</h1>
+            <ul>
+                {props.arr.map((item) => <li>{item}</li>)}
+            </ul>
         </div>
     )
 
