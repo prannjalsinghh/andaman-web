@@ -80,9 +80,9 @@ const ContactUs = ()=>{
             info: "Our team would love to create a package for you!",
           }}
         />
-        <Container sx={{ mt: 8 , display:"flex" , gap:"20px" }}>
+        <div className="flex flex-col sm:flex-row gap-2">
           <form
-            className="flex flex-col"
+            className="flex flex-col m-auto"
             style={{ width: 450 }}
             onSubmit={addHandler}
           >
@@ -142,7 +142,8 @@ const ContactUs = ()=>{
             </Button>
           </form>
           <SimpleMap/>
-        </Container>
+          
+        </div>
 
         <Footer />
       </>

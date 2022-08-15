@@ -2,7 +2,7 @@ import React from "react";
 import { Divider } from "@mui/material";
 const Services = (props) => {
   return (
-    <div className="flex flex-col items-center w-3/4 m-auto mt-10 gap-2">
+    <div className="flex flex-col items-center text-center  m-auto mt-10 gap-2">
       <h1 className="text-5xl font-semibold text-orange-600">
         {props.item.heading}
       </h1>

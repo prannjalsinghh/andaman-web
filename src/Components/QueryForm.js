@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import "./QueryForm.css";
 import { TextField,Button } from "@mui/material";
+import { Container } from "postcss";
 const QueryForm = (props) => {
   const [enteredName, setenteredName] = useState("");
 
@@ -48,18 +49,15 @@ const QueryForm = (props) => {
   return (
     <>
       <div className="backdrop" onClick={props.closeHandler} />
+    
       <form
         onSubmit={addHandler}
-        style={{ width: "450px" }}
-        className="modal fixed h-screen top-0 bg-white flex flex-col justify-center gap-10 p-8 right-0 z-100"
+        style={{ width:'640px' }}
+        className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-center  gap-10 p-8 right-0 z-100"
       >
-        <div
-          className="fixed p-5 right-0 top-0"
-          style={{ cursor: "pointer" }}
-          onClick={props.closeHandler}
-        >
+        <div className="flex justify-center" onClick={props.closeHandler}>
           <CloseIcon />
-        </div>
+          </div>
         <div className="flex gap-3">
           <TextField
             fullWidth
@@ -112,6 +110,7 @@ const QueryForm = (props) => {
           Submit
         </Button>
       </form>
+      
     </>
   );
 };
