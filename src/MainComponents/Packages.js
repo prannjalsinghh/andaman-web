@@ -147,10 +147,13 @@ const Packages = () => {
 
       <Services
         item={{
-          heading: "ITERNARY OVERVIEW",
-          info: "2 Nights Port Blair – 2 Night Havelock Island",
-        }}
-      />
+          heading: "ITERNARY OVERVIEW"}}/>
+
+      {item.places?.map((each) => (
+          <p className="font-bold text-gray-600 text-center ">
+            {each.time}-{each.place}
+          </p>
+        ))}
 
       <CustomizedTables
         head={ item.table1?.head }
