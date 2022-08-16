@@ -42,7 +42,7 @@ const Home = () => {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 500 ? setStickyClass('fixed top-16 left-0 z-50') : setStickyClass('relative');
+      windowHeight > 500 ? setStickyClass('fixed top-0 left-0 z-50') : setStickyClass('relative');
     }
   };
   const [isFormOpen, formToggleHandler] = useState(false);
@@ -119,9 +119,9 @@ const Home = () => {
           />
         </div>
         <Services item={{heading: "MOST POPULAR PACKAGES"}}/> 
-        <Marquee pauseOnHover={true} speed={30} className="mt-10" gradient={false}>
+        <Marquee pauseOnHover={true} speed={60} className="mt-10" gradient={false}>
 
-          <EachPackageHomeDiv heading="Family Packages" url="https://www.welgrowgroup.com/img.php?file=welgrowgroupuploadsNew/package/images/pkg_156982254180_travel-by-family.jpg"/>
+          <EachPackageHomeDiv heading="Family Packages" url="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFtaWx5JTIwdHJhdmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
           <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
           <EachPackageHomeDiv heading="Corporate Packages" url="https://www.anjnaglobal.com/img/dubai-corporate-tour.jpg"/>
           <EachPackageHomeDiv heading="Honeymoon Packages" url="https://www.holidayrepresentations.com/images/theme_honeymoon.webp"/>
@@ -144,7 +144,7 @@ const Home = () => {
         <div
           className="flex flex-col  sm:gap-20 gap-5"
           style={{
-            backgroundImage: `url('https://wallpaperaccess.com/full/1921682.jpg')`,
+            backgroundImage: `url('https://miro.medium.com/max/1400/1*Y6uwynW9oHw_PzJMULpNsw.jpeg')`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
@@ -155,14 +155,16 @@ const Home = () => {
           <Services
             item={{
               heading: "Packages",
-              info: "The below Andaman holiday packages contains sightseeing, hotels, transfers, tickets, ground support and breakfast. Basically, the below packages takes care of everything required during your trip right from the time you arrive at Port Blair airport to the time you depart. If you need any further customization to the Andaman tour packages then our holiday expert will be happy to make necessary changes to the itinerary",
               icon: (
                 <HomeRepairServiceSharpIcon
-                  sx={{ fontSize: 40, color: blue[700] }}
+                  sx={{ fontSize: 40, color: "white" }}
                 />
               ),
             }}
           />
+          <p className="text-center text-yellow-500 font-semibold">
+          The below Andaman holiday packages contains sightseeing, hotels, transfers, tickets, ground support and breakfast. Basically, the below packages takes care of everything required during your trip right from the time you arrive at Port Blair airport to the time you depart. If you need any further customization to the Andaman tour packages then our holiday expert will be happy to make necessary changes to the itinerary
+          </p>
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
           <EachPackageCard item={{heading:`${items[0].nights}Nights - ${items[0].days}Days`,info:`${items[0].places[0].time} ${items[0].places[0].place} - ${items[0].places[1].time} ${items[0].places[1].place} - ${items[0].places[2]?.time?items[0].places[2].time:''} ${items[0].places[2]?.place?items[0].places[2].place:''} `, TourCode:items[0].TourCode, url:items[0].url}}/>
           <EachPackageCard item={{heading:`${items[1].nights}Nights - ${items[1].days}Days`,info:`${items[1].places[0].time} ${items[1].places[0].place} - ${items[1].places[1].time} ${items[1].places[1].place} - ${items[1].places[2]?.time?items[1].places[2].time:''} ${items[1].places[2]?.place?items[1].places[2].place:''} `, TourCode:items[1].TourCode, url:items[1].url}}/>
@@ -245,9 +247,9 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around w-10/12 m-auto">
-          <img className="w-96 md:w-2/5" src={banner1}/>
-          <img className="w-96 md:w-2/5" src={banner2}/>
+        <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around md:w-10/12 m-auto">
+          <img className=" md:w-2/5" src={banner1}/>
+          <img className="w-full md:w-2/5" src={banner2}/>
           <img className="w-96 md:w-2/5" src={banner3}/>
         </div>
         <Footer />

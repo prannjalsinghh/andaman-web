@@ -8,6 +8,7 @@ import { blue } from '@mui/material/colors';
 
 import { TextField,Container,Button } from '@mui/material';
 import ContactUsLeft from '../Components/ContactUsLeft';
+import Banner from '../Components/Banner';
 const styles = {
   "input-label": {
     textOverflow: "ellipsis",
@@ -74,6 +75,7 @@ const ContactUs = ()=>{
     return (
       <>
         <Header />
+        <Banner url="https://wallpapercave.com/wp/wp7333479.png"/>
         <Services
           item={{
             heading: "Contact Us",

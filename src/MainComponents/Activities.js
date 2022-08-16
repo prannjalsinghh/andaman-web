@@ -2,6 +2,8 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import EachWaterCard from '../Components/EachWaterCard';
 import CommonDiv from '../Components/CommonDiv';
+import Banner from '../Components/Banner';
+import Services from '../Components/Services';
 
 const Activities= ()=>{
 
@@ -41,6 +43,8 @@ const Activities= ()=>{
     return(
         <>
             <Header/>
+            <Banner url="https://images.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg?cs=srgb&dl=pexels-pixabay-390051.jpg&fm=jpg"/>
+            <Services item={ {heading:"Experience Water Sports & Activities with us".toUpperCase()}}/>
             <div className="flex sm:flex-row flex-col items-center gap-10 sm:gap-0 justify-around mt-10 ">
                 <EachWaterCard item={item[0]} />
                 <EachWaterCard item={item[1]} />

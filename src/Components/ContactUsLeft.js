@@ -4,7 +4,7 @@ const ContactUsLeft = ()=>{
             <div className="ContactUsBoxLeft">
                
                 <h1>Feel Free To Contact & Reach Us!</h1>
-                <p>Just send us your questions or concerns by filling out the form and we will give you the help you need.<br></br> Or contact us from below details for all general queries or donation related queries</p>
+                <p>Just send us your requirements by filling the below form or contact us from the below details for all your queries related to Andaman Island</p>
                 <div className="contactAdress">
                     <i class="fa-solid fa-location-dot"></i>
                     <div className="desc">

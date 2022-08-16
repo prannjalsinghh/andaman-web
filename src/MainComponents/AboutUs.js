@@ -31,7 +31,7 @@ const AboutUs = ()=>{
                     </p>
                 </div>
                 
-                <img className=' w-full sm:w-1/2 h-3/4' src="https://wallpaperaccess.com/full/1921683.jpg"/>
+                <img className=' w-full sm:w-1/2 h-3/4' src="https://cdn.pixabay.com/photo/2019/02/11/04/25/jail-3988719_1280.jpg"/>
             </div>
 
             <button

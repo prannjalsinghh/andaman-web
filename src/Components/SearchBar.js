@@ -47,7 +47,7 @@ const SearchBar = (props) => {
   return (
     <form
       onSubmit={addHandler}
-      className={`searchBar hidden sm:flex p-5 gap-5 justify-around sm:p-10 w-11/12 rounded-xl items-center mx-auto mt-[-5%] z-20 ${props.class}`}
+      className={`searchBar hidden sm:flex p-5 gap-5 justify-around sm:p-10 w-11/12 rounded-xl items-center mx-auto z-20 ${props.class}`}
       style={{ background: "rgb(1,155,167)" }}
     >
       <input
