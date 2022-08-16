@@ -6,7 +6,9 @@ const ChotuDiv = (props) => {
   return (
     <div className="w-64 m-auto  flex flex-col items-center gap-3">
       <div>{props.item.icon}</div>
+
       <div className="font-bold text-red-700">{props.item.heading}</div>
+
       <Divider
         style={{ color: "orange", width: "50px", backgroundColor: "orange" }}
       />

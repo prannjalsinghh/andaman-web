@@ -94,6 +94,7 @@ const QueryForm = (props) => {
             type="date"
             value={enteredDate}
             onChange={changeDateHandler}
+            placeholder="Date of Travel"
           />
         </div>
         <div className="flex gap-3">

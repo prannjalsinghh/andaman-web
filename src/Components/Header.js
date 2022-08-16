@@ -45,7 +45,15 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} />
+        {/* <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} /> */}
+        <h1 style={{position:"relative"}} className="text-center">
+                <a style={{fontFamily: 'Changa One'}} className="font-extrabold">
+                    Andaman Ocean<br/>
+                    <span class="andaman">
+                        <span class="tour">Tours</span>
+                    </span>
+                </a>
+          </h1>
         <nav
           className={`${classes.header__content__nav} ${
             menuOpen && !matches ? classes.isMenu : ""
