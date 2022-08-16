@@ -24,7 +24,9 @@ import Pro from "../Assets/icons/pro.svg";
 import Marquee from "react-fast-marquee";
 import EachPackageHomeDiv from "./EachPackageHomeDiv";
 import {items} from '../Assets/data';
-import banner from '../Assets/Untitled.svg'
+import banner1 from '../Assets/banner1.svg';
+import banner2 from '../Assets/banner2.svg';
+import banner3 from '../Assets/banner3.svg';
 
 const Home = () => {
   const [stickyClass, setStickyClass] = useState('relative');
@@ -243,7 +245,11 @@ const Home = () => {
             />
           </div>
         </div>
-        {/* <img src={banner}/> */}
+        <div className="flex flex-col p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around w-10/12 m-auto">
+          <img className="w-96 md:w-2/5" src={banner1}/>
+          <img className="w-96 md:w-2/5" src={banner2}/>
+          <img className="w-96 md:w-2/5" src={banner3}/>
+        </div>
         <Footer />
       </div>
       <button
