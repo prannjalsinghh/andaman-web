@@ -16,7 +16,7 @@ import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 import HomeRepairServiceSharpIcon from "@mui/icons-material/HomeRepairServiceSharp";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import PersonIcon from "@mui/icons-material/Person";
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import SearchBar from "../Components/SearchBar";
 import { FcCustomerSupport, FcMoneyTransfer } from "react-icons/fc";
 import { BiCustomize } from "react-icons/bi";
@@ -27,6 +27,22 @@ import {items} from '../Assets/data';
 import banner from '../Assets/Untitled.svg'
 
 const Home = () => {
+  const [stickyClass, setStickyClass] = useState('relative');
+
+  useEffect(() => {
+    window.addEventListener('scroll', stickNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', stickNavbar);
+    };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 400 ? setStickyClass('fixed top-0 left-0 z-50') : setStickyClass('relative');
+    }
+  };
   const [isFormOpen, formToggleHandler] = useState(false);
 
   const queryFormOpenHandler = () => {
@@ -55,7 +71,7 @@ const Home = () => {
         <Header />
 
         <HomeVideo />
-        <SearchBar />
+        <SearchBar class={stickyClass} />
 
         
 
