@@ -23,7 +23,9 @@ import { BiCustomize } from "react-icons/bi";
 import Pro from "../Assets/icons/pro.svg";
 import Marquee from "react-fast-marquee";
 import EachPackageHomeDiv from "./EachPackageHomeDiv";
+import {items} from '../Assets/data';
 import banner from '../Assets/Untitled.svg'
+
 const Home = () => {
   const [isFormOpen, formToggleHandler] = useState(false);
 
@@ -46,56 +48,7 @@ const Home = () => {
     },
   ];
 
-  const items = [
-    {
-      heading: "6 NIGHTS-7 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(3 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
-      TourCode: "MTG 012",
-    },
-    {
-      heading: "5 NIGHTS-6 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(2 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
-      TourCode: "MTG 004",
-    },
-    {
-      heading: "5 NIGHTS-6 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(2 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
-      TourCode: "MTG 006",
-    },
-    {
-      heading: "4 NIGHTS-5 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(2 N Port Blair+1 N Havelock+1N Neil (Shaheed Dweep))",
-      TourCode: "MTG 002",
-    },
-    {
-      heading: "6 NIGHTS-7 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(3 N Port Blair+2 N Havelock+1N Neil (Shaheed Dweep))",
-      TourCode: "MTG 007",
-    },
-    {
-      heading: "3 NIGHTS-4 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(2 N Port Blair+1 N Havelock)",
-      TourCode: "MTG 001",
-    },
-    {
-      heading: "4 NIGHTS-5 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(2 N Port Blair+2 N Havelock)",
-      TourCode: "MTG 003",
-    },
-    {
-      heading: "5 NIGHTS-6 DAYS",
-      url: "https://static.toiimg.com/photo/68814397.cms",
-      info: "(3 N Port Blair+1 N Havelock+1N Neil (Shaheed Dweep))",
-      TourCode: "MTG 005",
-    },
-  ];
+ 
   return (
     <React.Fragment>
       <div className="App">
@@ -165,10 +118,10 @@ const Home = () => {
           }}
         />
         <div className="flex flex-col items-center sm:flex sm:flex-row justify-center gap-4 mt-24 mb-32">
-          <EachPackageCard item={items[0]} />
-          <EachPackageCard item={items[1]} />
-          <EachPackageCard item={items[2]} />
-          <EachPackageCard item={items[3]} />
+          <EachPackageCard item={{heading:`${items[0].nights}Nights - ${items[0].days}Days`,info:`${items[0].places[0].time} ${items[0].places[0].place} - ${items[0].places[1].time} ${items[0].places[1].place} - ${items[0].places[2]?.time?items[0].places[2].time:''} ${items[0].places[2]?.place?items[0].places[2].place:''} `, TourCode:items[0].TourCode, url:items[0].url}}/>
+          <EachPackageCard item={{heading:`${items[1].nights}Nights - ${items[1].days}Days`,info:`${items[1].places[0].time} ${items[1].places[0].place} - ${items[1].places[1].time} ${items[1].places[1].place} - ${items[1].places[2]?.time?items[1].places[2].time:''} ${items[1].places[2]?.place?items[1].places[2].place:''} `, TourCode:items[1].TourCode, url:items[1].url}}/>
+          <EachPackageCard item={{heading:`${items[2].nights}Nights - ${items[2].days}Days`,info:`${items[2].places[0].time} ${items[2].places[0].place} - ${items[2].places[1].time} ${items[2].places[1].place} - ${items[2].places[2]?.time?items[2].places[2].time:''} ${items[2].places[2]?.place?items[2].places[2].place:''} `, TourCode:items[2].TourCode, url:items[2].url}}/>
+          <EachPackageCard item={{heading:`${items[3].nights}Nights - ${items[3].days}Days`,info:`${items[3].places[0].time} ${items[3].places[0].place} - ${items[3].places[1].time} ${items[3].places[1].place} - ${items[3].places[2]?.time?items[3].places[2].time:''} ${items[3].places[2]?.place?items[3].places[2].place:''} `, TourCode:items[3].TourCode, url:items[3].url}}/>
         </div>
         <div
           className="flex flex-col  sm:gap-20 gap-5"
@@ -193,19 +146,19 @@ const Home = () => {
             }}
           />
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
-            <EachPackageCard item={items[0]} />
-            <EachPackageCard item={items[1]} />
-            <EachPackageCard item={items[2]} />
+          <EachPackageCard item={{heading:`${items[0].nights}Nights - ${items[0].days}Days`,info:`${items[0].places[0].time} ${items[0].places[0].place} - ${items[0].places[1].time} ${items[0].places[1].place} - ${items[0].places[2]?.time?items[0].places[2].time:''} ${items[0].places[2]?.place?items[0].places[2].place:''} `, TourCode:items[0].TourCode, url:items[0].url}}/>
+          <EachPackageCard item={{heading:`${items[1].nights}Nights - ${items[1].days}Days`,info:`${items[1].places[0].time} ${items[1].places[0].place} - ${items[1].places[1].time} ${items[1].places[1].place} - ${items[1].places[2]?.time?items[1].places[2].time:''} ${items[1].places[2]?.place?items[1].places[2].place:''} `, TourCode:items[1].TourCode, url:items[1].url}}/>
+          <EachPackageCard item={{heading:`${items[2].nights}Nights - ${items[2].days}Days`,info:`${items[2].places[0].time} ${items[2].places[0].place} - ${items[2].places[1].time} ${items[2].places[1].place} - ${items[2].places[2]?.time?items[2].places[2].time:''} ${items[2].places[2]?.place?items[2].places[2].place:''} `, TourCode:items[2].TourCode, url:items[2].url}}/>
           </div>
 
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
-            <EachPackageCard item={items[3]} />
-            <EachPackageCard item={items[4]} />
-            <EachPackageCard item={items[5]} />
+          <EachPackageCard item={{heading:`${items[3].nights}Nights - ${items[3].days}Days`,info:`${items[3].places[0].time} ${items[3].places[0].place} - ${items[3].places[1].time} ${items[3].places[1].place} - ${items[3].places[2]?.time?items[3].places[2].time:''} ${items[3].places[2]?.place?items[3].places[2].place:''} `, TourCode:items[3].TourCode, url:items[3].url}}/>
+          <EachPackageCard item={{heading:`${items[4].nights}Nights - ${items[4].days}Days`,info:`${items[4].places[0].time} ${items[4].places[0].place} - ${items[4].places[1].time} ${items[4].places[1].place} - ${items[4].places[2]?.time?items[4].places[2].time:''} ${items[4].places[2]?.place?items[4].places[2].place:''} `, TourCode:items[4].TourCode, url:items[4].url}}/>
+          <EachPackageCard item={{heading:`${items[5].nights}Nights - ${items[5].days}Days`,info:`${items[5].places[0].time} ${items[5].places[0].place} - ${items[5].places[1].time} ${items[5].places[1].place} - ${items[5].places[2]?.time?items[5].places[2].time:''} ${items[5].places[2]?.place?items[5].places[2].place:''} `, TourCode:items[5].TourCode, url:items[5].url}}/>
           </div>
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
-            <EachPackageCard item={items[6]} />
-            <EachPackageCard item={items[7]} />
+          <EachPackageCard item={{heading:`${items[6].nights}Nights - ${items[6].days}Days`,info:`${items[6].places[0].time} ${items[6].places[0].place} - ${items[6].places[1].time} ${items[6].places[1].place} - ${items[6].places[2]?.time?items[6].places[2].time:''} ${items[6].places[2]?.place?items[6].places[2].place:''} `, TourCode:items[6].TourCode, url:items[6].url}}/>
+          <EachPackageCard item={{heading:`${items[7].nights}Nights - ${items[7].days}Days`,info:`${items[7].places[0].time} ${items[7].places[0].place} - ${items[7].places[1].time} ${items[7].places[1].place} - ${items[7].places[2]?.time?items[7].places[2].time:''} ${items[7].places[2]?.place?items[7].places[2].place:''} `, TourCode:items[7].TourCode, url:items[7].url}}/>
           </div>
         </div>
         <div className="flex flex-col gap-10">
