@@ -7,6 +7,8 @@ import SimpleMap from '../Components/Map';
 import { blue } from '@mui/material/colors';
 
 import { TextField,Container,Button } from '@mui/material';
+import ContactUsLeft from '../Components/ContactUsLeft';
+import Banner from '../Components/Banner';
 const styles = {
   "input-label": {
     textOverflow: "ellipsis",
@@ -73,6 +75,7 @@ const ContactUs = ()=>{
     return (
       <>
         <Header />
+        <Banner url="https://wallpapercave.com/wp/wp7333479.png"/>
         <Services
           item={{
             heading: "Contact Us",
@@ -80,10 +83,11 @@ const ContactUs = ()=>{
             info: "Our team would love to create a package for you!",
           }}
         />
-        <div className="flex flex-col sm:flex-row gap-2">
+        <div className="flex flex-col items-center sm:flex-row gap-2">
+          <ContactUsLeft/>
           <form
-            className="flex flex-col m-auto"
-            style={{ width: 450 }}
+            className="flex flex-col sm:max-w-screen-md max-w-sm p-5"
+            style={{width:"1000px"}}
             onSubmit={addHandler}
           >
             <TextField
@@ -142,7 +146,7 @@ const ContactUs = ()=>{
               Submit
             </Button>
           </form>
-          <SimpleMap/>
+          
           
         </div>
 

@@ -115,7 +115,7 @@ const Packages = () => {
     <>
       <Header />
       
-      <Banner url="https://img.kantipurholidays.com/ContentImages/IMG__82bacd2d-2094-42e7-819e-5860405b81af-0-1941x1132.jpeg" />
+      <Banner url="https://wallpaperaccess.com/full/1921694.jpg" />
       <div className="flex flex-col gap-2 items-center text-center w-3/4 m-auto mt-10">
         <h2 className=" text-3xl font-bold text-orange-600">{item.heading}</h2>
         <p className="font-bold text-gray-600">{item.info}</p>
@@ -288,10 +288,10 @@ const Packages = () => {
         title={"OPTIONAL ACTIVITIES AND TOURS:-"} />
 
           <button
-            className="fixed top-1/2 right-0 text-xl p-2 rotate-fix"
+            className="fixed top-1/2 text-white right-0 text-xl p-2 rotate-fix"
             onClick={queryFormOpenHandler}
             >
-            Query Form
+            Enquire Now
             </button>
             {isFormOpen && (
                 <div className="">

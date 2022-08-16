@@ -9,6 +9,7 @@ const HomeVideo = ()=>{
         height="450px"
         loop={true}
         style= {{position:"relative",zIndex:-1}}
+        playsinline={true}
         />
     )
 }

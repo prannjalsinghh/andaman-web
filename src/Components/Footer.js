@@ -32,15 +32,15 @@ const Footer = () =>
     return(
         <>
         <Services item={{ heading:"Approved By:-"}}/>
-        <ul className="grid lg:grid-cols-8 mt-10 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto">
-            <li><img className="sm:w-full w-1/2" src={img1}/></li>
-            <li><img className="sm:w-full w-1/2" src={img2}/></li>
-            <li><img className="sm:w-full w-1/2" src={img3}/></li>
-            <li><img className="sm:w-full w-1/2" src={img4}/></li>
-            <li><img className="sm:w-full w-1/2" src={img5}/></li>
-            <li><img className="sm:w-full w-1/2" src={img6}/></li>
-            <li><img className="sm:w-full w-1/2" src={img7}/></li>
-            <li><img className="sm:w-full w-1/2" src={img8}/></li>
+        <ul className="grid lg:grid-cols-8 mt-5 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto">
+            <li><img className="sm:w-full " src={img1}/></li>
+            <li><img className="sm:w-full " src={img2}/></li>
+            <li><img className="sm:w-full " src={img3}/></li>
+            <li><img className="sm:w-full " src={img4}/></li>
+            <li><img className="sm:w-full " src={img5}/></li>
+            <li><img className="sm:w-full " src={img6}/></li>
+            <li><img className="sm:w-full " src={img7}/></li>
+            <li><img className="sm:w-full " src={img8}/></li>
         </ul>
         <div style={{backgroundImage: `url(${footerBg})`,backgroundPosition: "bottom",backgroundSize:"cover",backgroundRepeat:"no-repeat"}} >
         <NewsLetter/>
