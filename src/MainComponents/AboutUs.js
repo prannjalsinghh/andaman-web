@@ -35,10 +35,10 @@ const AboutUs = ()=>{
             </div>
 
             <button
-            className="fixed top-1/2 right-0 text-xl p-2 rotate-fix"
+            className="fixed top-1/2 text-white right-0 text-xl p-2 rotate-fix"
             onClick={queryFormOpenHandler}
             >
-            Query Form
+            Enquire Now
             </button>
             {isFormOpen && (
                 <div className="">

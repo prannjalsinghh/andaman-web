@@ -1,10 +1,20 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, } from "react-router-dom";
 import { items } from "../Assets/data";
 import Banner from "./Banner";
 import EachPackageCard from "./EachPackageCard";
 import Footer from "./Footer";
 import Header from "./Header";
+import { useState } from "react";
+import QueryForm from "./QueryForm";
 const TypesPackages = ()=>{
+    const [isFormOpen, formToggleHandler] = useState(false);
+
+    const queryFormOpenHandler = () => {
+        formToggleHandler(true);
+    };
+    const queryFormCloseHandler = () => {
+        formToggleHandler(false);
+    };
 
     const location = useLocation();
     console.log(location)
@@ -19,6 +29,17 @@ const TypesPackages = ()=>{
                     {items.map((each)=><EachPackageCard item={{heading:`${each.nights}Nights - ${each.days}Days ${location.state.id}`,info:`${each.places[0].time} ${each.places[0].place} - ${each.places[1].time} ${each.places[1].place} - ${each.places[2]?.time?each.places[2].time:''} ${each.places[2]?.place?each.places[2].place:''} `, TourCode:each.TourCode, url:each.url}}/>)}
                 </div>
             </div>
+            <button
+            className="fixed top-1/2 text-white right-0 text-xl p-2 rotate-fix"
+            onClick={queryFormOpenHandler}
+            >
+            Enquire Now
+            </button>
+            {isFormOpen && (
+                <div className="">
+                <QueryForm closeHandler={queryFormCloseHandler} />
+                </div>
+            )}
             <Footer/>
         </>
     )

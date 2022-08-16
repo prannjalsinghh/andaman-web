@@ -19,6 +19,7 @@ export default function BasicMenu(props) {
     
     navigate('/TypePackages',{state:{id:option}})
     handleClose();
+    props.headerCloseHandler();
   }
   const handleOnLeave = (event)=>{
     event.target.style.backgroundColor = '#ffffff'

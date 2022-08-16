@@ -4,8 +4,18 @@ import EachWaterCard from '../Components/EachWaterCard';
 import CommonDiv from '../Components/CommonDiv';
 import Banner from '../Components/Banner';
 import Services from '../Components/Services';
+import QueryForm from '../Components/QueryForm';
+import { useState } from 'react';
 
 const Activities= ()=>{
+    const [isFormOpen, formToggleHandler] = useState(false);
+
+    const queryFormOpenHandler = () => {
+        formToggleHandler(true);
+    };
+    const queryFormCloseHandler = () => {
+        formToggleHandler(false);
+    };
 
     const item = [
         {
@@ -68,6 +78,18 @@ const Activities= ()=>{
             "Underwater Engagement: 4500"
         ]}
         title={"WATERSPORTS ACTIVITIES (APPLICABLE ONLY IF PRE-BOOKED)"} />
+        <button
+            className="fixed top-1/2 text-white right-0 text-xl p-2 rotate-fix"
+            onClick={queryFormOpenHandler}
+            >
+            Enquire Now
+            </button>
+            {isFormOpen && (
+                <div className="">
+                <QueryForm closeHandler={queryFormCloseHandler} />
+                </div>
+            )}
+
             <Footer/>
         </>
     )
