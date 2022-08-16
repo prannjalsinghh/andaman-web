@@ -58,7 +58,7 @@ const Header = () => {
             <li>
               <Link to="/aboutUs">About Us</Link>{" "}
             </li>
-            < BasicMenu item={{heading:"packages" , options:["Family Package" , "HoneyMoon Package","Group Package","Corporate Package","Budget Package"]}}/>
+            < BasicMenu item={{heading:"Packages" , options:["Family Package" , "Honeymoon Package","Group Package","Corporate Package","Budget Package"]}}/>
             
             <li>
               <Link to="/activities">Water Sports</Link>
