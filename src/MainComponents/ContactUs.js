@@ -122,6 +122,7 @@ const ContactUs = ()=>{
               type="date"
               value={enteredDate}
               onChange={changeDateHandler}
+              placeholder="Date of Travel"
             />
             <TextField
               variant="filled"
