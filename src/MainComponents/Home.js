@@ -136,10 +136,10 @@ const Home = () => {
           }}
         />
         <div className="flex flex-col items-center sm:flex sm:flex-row justify-center gap-4 mt-24 mb-32">
-          <EachPackageCard item={{heading:`${items[0].nights}Nights - ${items[0].days}Days`,info:`${items[0].places[0].time} ${items[0].places[0].place} - ${items[0].places[1].time} ${items[0].places[1].place} - ${items[0].places[2]?.time?items[0].places[2].time:''} ${items[0].places[2]?.place?items[0].places[2].place:''} `, TourCode:items[0].TourCode, url:items[0].url}}/>
-          <EachPackageCard item={{heading:`${items[1].nights}Nights - ${items[1].days}Days`,info:`${items[1].places[0].time} ${items[1].places[0].place} - ${items[1].places[1].time} ${items[1].places[1].place} - ${items[1].places[2]?.time?items[1].places[2].time:''} ${items[1].places[2]?.place?items[1].places[2].place:''} `, TourCode:items[1].TourCode, url:items[1].url}}/>
           <EachPackageCard item={{heading:`${items[2].nights}Nights - ${items[2].days}Days`,info:`${items[2].places[0].time} ${items[2].places[0].place} - ${items[2].places[1].time} ${items[2].places[1].place} - ${items[2].places[2]?.time?items[2].places[2].time:''} ${items[2].places[2]?.place?items[2].places[2].place:''} `, TourCode:items[2].TourCode, url:items[2].url}}/>
           <EachPackageCard item={{heading:`${items[3].nights}Nights - ${items[3].days}Days`,info:`${items[3].places[0].time} ${items[3].places[0].place} - ${items[3].places[1].time} ${items[3].places[1].place} - ${items[3].places[2]?.time?items[3].places[2].time:''} ${items[3].places[2]?.place?items[3].places[2].place:''} `, TourCode:items[3].TourCode, url:items[3].url}}/>
+          <EachPackageCard item={{heading:`${items[4].nights}Nights - ${items[4].days}Days`,info:`${items[4].places[0].time} ${items[4].places[0].place} - ${items[4].places[1].time} ${items[4].places[1].place} - ${items[4].places[2]?.time?items[4].places[2].time:''} ${items[4].places[2]?.place?items[4].places[2].place:''} `, TourCode:items[4].TourCode, url:items[4].url}}/>
+          <EachPackageCard item={{heading:`${items[6].nights}Nights - ${items[6].days}Days`,info:`${items[6].places[0].time} ${items[6].places[0].place} - ${items[6].places[1].time} ${items[6].places[1].place} - ${items[6].places[2]?.time?items[6].places[2].time:''} ${items[6].places[2]?.place?items[6].places[2].place:''} `, TourCode:items[6].TourCode, url:items[6].url}}/>
         </div>
         <div
           className="flex flex-col  sm:gap-20 gap-5"
@@ -257,6 +257,7 @@ const Home = () => {
       <button
         className="fixed top-1/2 right-0 text-white text-xl p-2 rotate-fix"
         onClick={queryFormOpenHandler}
+        style={{zIndex:"10000"}}
       >
         Enquire Now
       </button>

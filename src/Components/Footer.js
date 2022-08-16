@@ -45,22 +45,24 @@ const Footer = () =>
         <div style={{backgroundImage: `url(${footerBg})`,backgroundPosition: "bottom",backgroundSize:"cover",backgroundRepeat:"no-repeat"}} >
         <NewsLetter/>
         <div className={styles.footer}>
-            <div className={styles.quickLinks}>
-                <h3 className="text-xl font-semibold">Quick Links</h3>
-                <ul>
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/aboutUs"><li>About Us</li></Link>
-                </ul>
-            </div>
-            <div className={styles.followUs}>
-                <h3 className="text-xl font-semibold">Follow Us</h3>
-        
-                <ul>
-                    <li><FacebookIcon/></li>
-                    <li><InstagramIcon/></li>
-                    <li><YouTubeIcon/></li>
-                    <li><LinkedInIcon/></li>
-                </ul>
+            <div className="grid md:flex grid-cols-2 md:grid-cols-1 gap-8">
+                <div className={styles.quickLinks}>
+                    <h3 className="text-xl font-semibold">Quick Links</h3>
+                    <ul>
+                        <Link to="/"><li>Home</li></Link>
+                        <Link to="/aboutUs"><li>About Us</li></Link>
+                    </ul>
+                </div>
+                <div className={styles.followUs}>
+                    <h3 className="text-xl font-semibold">Follow Us</h3>
+            
+                    <ul>
+                        <li><FacebookIcon/></li>
+                        <li><InstagramIcon/></li>
+                        <li><YouTubeIcon/></li>
+                        <li><LinkedInIcon/></li>
+                    </ul>
+                </div>
             </div>
             <div className={styles.contactUs}>
                 <h3 className="text-xl font-semibold">Contact Us</h3>
