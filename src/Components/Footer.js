@@ -10,6 +10,17 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import NewsLetter from "./NewsLetter";
+import img1 from '../Assets/img1.jpg'
+import img2 from '../Assets/img2.jpg'
+import img3 from '../Assets/img3.jpg'
+import img4 from '../Assets/img4.jpg'
+import img5 from '../Assets/img5.jpg'
+import img6 from '../Assets/img6.jpg'
+import img7 from '../Assets/img7.jpg'
+import img8 from '../Assets/img8.jpg'
+import Services from "./Services";
+import footerBg from '../Assets/footerBg.jpg'
+
 
 const Footer = () => 
 {
@@ -19,7 +30,19 @@ const Footer = () =>
       }, []);
 
     return(
-        <div style={{backgroundImage: `url(https://wallpaperaccess.com/full/1921683.jpg)`,backgroundRepeat:"no-repeat"}} >
+        <>
+        <Services item={{ heading:"Approved By:-"}}/>
+        <ul className="grid lg:grid-cols-8 mt-10 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto">
+            <li><img className="sm:w-full w-1/2" src={img1}/></li>
+            <li><img className="sm:w-full w-1/2" src={img2}/></li>
+            <li><img className="sm:w-full w-1/2" src={img3}/></li>
+            <li><img className="sm:w-full w-1/2" src={img4}/></li>
+            <li><img className="sm:w-full w-1/2" src={img5}/></li>
+            <li><img className="sm:w-full w-1/2" src={img6}/></li>
+            <li><img className="sm:w-full w-1/2" src={img7}/></li>
+            <li><img className="sm:w-full w-1/2" src={img8}/></li>
+        </ul>
+        <div style={{backgroundImage: `url(${footerBg})`,backgroundPosition: "bottom",backgroundSize:"cover",backgroundRepeat:"no-repeat"}} >
         <NewsLetter/>
         <div className={styles.footer}>
             <div className={styles.quickLinks}>
@@ -49,6 +72,7 @@ const Footer = () =>
             </div>
         </div>
         </div>
+        </>
     )
 
 };

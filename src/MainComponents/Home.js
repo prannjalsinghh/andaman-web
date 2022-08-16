@@ -23,6 +23,7 @@ import { BiCustomize } from "react-icons/bi";
 import Pro from "../Assets/icons/pro.svg";
 import Marquee from "react-fast-marquee";
 import EachPackageHomeDiv from "./EachPackageHomeDiv";
+import banner from '../Assets/Untitled.svg'
 const Home = () => {
   const [isFormOpen, formToggleHandler] = useState(false);
 
@@ -273,6 +274,7 @@ const Home = () => {
             />
           </div>
         </div>
+        {/* <img src={banner}/> */}
         <Footer />
       </div>
       <button
