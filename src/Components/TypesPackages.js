@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { items } from "../Assets/data";
+import Banner from "./Banner";
 import EachPackageCard from "./EachPackageCard";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -11,6 +12,7 @@ const TypesPackages = ()=>{
     return(
         <>
         <Header/>
+        <Banner url="https://suntourismpune.files.wordpress.com/2021/12/unstoppable-andaman-0.jpg"/>
             <div className="flex flex-col items-center gap-10">
                 <h1 className="text-3xl text-orange-700 font-semibold m-auto">{location.state.id}</h1>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-y-5 gap-x-10">

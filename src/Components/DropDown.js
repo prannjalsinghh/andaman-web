@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
+import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function BasicMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,6 +20,10 @@ export default function BasicMenu(props) {
     navigate('/TypePackages',{state:{id:option}})
     handleClose();
   }
+  const handleOnLeave = (event)=>{
+    event.target.style.backgroundColor = '#ffffff'
+    
+  }
 
   return (
     <>
@@ -33,17 +38,21 @@ export default function BasicMenu(props) {
         {props.item.heading}
         </a>
       </li>
+      
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+       
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
       >
-        {props.item.options.map((option) =><MenuItem onClick={()=>renderNewPackage(option)}>{option}</MenuItem>)}
+        {props.item.options.map((option) =><MenuItem onMouseEnter={(e) => e.target.style.backgroundColor= 'rgb(245,105,65'}
+onMouseLeave={handleOnLeave} onClick={()=>renderNewPackage(option)}>{option}</MenuItem>)}
       </Menu>
+      
     </>
   );
 }

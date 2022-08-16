@@ -42,7 +42,7 @@ const Home = () => {
   const stickNavbar = () => {
     if (window !== undefined) {
       let windowHeight = window.scrollY;
-      windowHeight > 400 ? setStickyClass('fixed top-0 left-0 z-50') : setStickyClass('relative');
+      windowHeight > 500 ? setStickyClass('fixed top-16 left-0 z-50') : setStickyClass('relative');
     }
   };
   const [isFormOpen, formToggleHandler] = useState(false);

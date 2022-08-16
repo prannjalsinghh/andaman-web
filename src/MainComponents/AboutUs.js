@@ -20,7 +20,7 @@ const AboutUs = ()=>{
     return(
         <>
             <Header/>
-            <Banner url="https://wallpaperaccess.com/full/1921683.jpg"></Banner>
+            <Banner url="https://wallpaperaccess.com/full/1921800.jpg"></Banner>
             <Services item={{heading:"About Us", icon:<InfoIcon/> , info:""}}></Services>
             <div className='flex flex-col sm:flex-row w-3/4 m-auto gap-10 items-center'>
                 <div>

@@ -7,32 +7,32 @@ const Activities= ()=>{
 
     const item = [
         {
-            url:"",
+            url:"https://img.veenaworld.com/wp-content/uploads/2021/06/Scuba-Diving-in-Andaman-Best-Time-Cost.jpeg",
             heading:"Book Scuba Diving at Andaman Islands",
             info:"Book Scuba Diving at different locations of Port Blair, Havelock and Neil Islands and get loads of discount."
         },
         {
-            url:"",
+            url:"http://www.andamantourism.org/wp-content/uploads/2017/07/walking.jpg",
             heading:"Book Under Water Sea Walk at Andaman Islands",
             info:"Walk under the sea like you belong there, spend sometimes with beautiful fishes and get a glimpse of beautiful coral life."
         },
         {
-            url:"",
+            url:"https://admin.banbanjara.com/public/frontend/uploads/product/1619004976310-2.jpg",
             heading:"Book Parasailing in Andaman Islands",
             info:"Parasailing in Andaman Islands is a unique experience, the beauty of these Islands is mismarising from the above"
         },
         {
-            url:"",
+            url:"https://assets.traveltriangle.com/blog/wp-content/uploads/2019/08/Coevr-for-Snorkeling-In-Andaman.jpg",
             heading:"Book Snorkeling and Glass Bottom boat rides",
             info:"Book Snorkeling, Glass bottom boat and other activities for watching underwater marine life."
         },
         {
-            url:"",
+            url:"https://uploads-ssl.webflow.com/5b56319971ac8c56a6a9d887/5ed748995c2d8d47161c3f69_Kayak%204-.jpg",
             heading:"Book Kayaking tour in Andaman Islands",
             info:"One of the best adventure activity to enjoy natural beauty of dense mangrove forest of Andaman Islands."
         },
         {
-            url:"",
+            url:"https://www.havelockislandbeachresort.com/medias/page/big/63/jet3.jpg",
             heading:"Book Jet ski Ride, Banana Ride and Speed Boat rides",
             info:"Other activities like Jet ski, Banana ride, Sofa ride and Speed boat rides to book at best price at Andaman Islands."
         },
