@@ -45,15 +45,8 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        {/* <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} /> */}
-        <h1 style={{position:"relative"}} className="text-center">
-                <a style={{fontFamily: 'Changa One'}} className="font-extrabold">
-                    Andaman Ocean<br/>
-                    <span class="andaman">
-                        <span class="tour">Tours</span>
-                    </span>
-                </a>
-          </h1>
+        <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} />
+        
         <nav
           className={`${classes.header__content__nav} ${
             menuOpen && !matches ? classes.isMenu : ""
@@ -66,7 +59,7 @@ const Header = () => {
             <li>
               <Link to="/aboutUs">About Us</Link>{" "}
             </li>
-            < BasicMenu item={{heading:"Packages" , options:["Family Package" , "Honeymoon Package","Group Package","Corporate Package","Budget Package"]}}/>
+            < BasicMenu headerCloseHandler = {closeHandler} item={{heading:"Packages" , options:["Family Package" , "Honeymoon Package","Group Package","Corporate Package","Budget Package"]}}/>
             
             <li>
               <Link to="/activities">Water Sports</Link>

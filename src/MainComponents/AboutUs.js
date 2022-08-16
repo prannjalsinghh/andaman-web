@@ -21,7 +21,7 @@ const AboutUs = ()=>{
     return(
         <>
             <Header/>
-            <Banner url="https://wallpaperaccess.com/full/1921683.jpg"></Banner>
+            <Banner url="https://wallpaperaccess.com/full/1921800.jpg"></Banner>
             <Services item={{heading:"About Us", icon:<InfoIcon/> , info:""}}></Services>
             
             <div className='flex flex-col sm:flex-row w-3/4 m-auto gap-10 items-center'>
@@ -64,14 +64,15 @@ const AboutUs = ()=>{
                     
                 </div>
                 
-                {/* <img className=' w-full sm:w-1/2 h-3/4' src="https://wallpaperaccess.com/full/1921683.jpg"/> */}
+
             </div>
 
             <button
-            className="fixed top-1/2 right-0 text-xl p-2 rotate-fix"
+            className="fixed top-1/2 text-white right-0 text-xl p-2 rotate-fix"
             onClick={queryFormOpenHandler}
+            style={{zIndex:"10000"}}
             >
-            Query Form
+            Enquire Now
             </button>
             {isFormOpen && (
                 <div className="">

@@ -32,35 +32,37 @@ const Footer = () =>
     return(
         <>
         <Services item={{ heading:"Approved By:-"}}/>
-        <ul className="grid lg:grid-cols-8 mt-10 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto">
-            <li><img className="sm:w-full w-1/2" src={img1}/></li>
-            <li><img className="sm:w-full w-1/2" src={img2}/></li>
-            <li><img className="sm:w-full w-1/2" src={img3}/></li>
-            <li><img className="sm:w-full w-1/2" src={img4}/></li>
-            <li><img className="sm:w-full w-1/2" src={img5}/></li>
-            <li><img className="sm:w-full w-1/2" src={img6}/></li>
-            <li><img className="sm:w-full w-1/2" src={img7}/></li>
-            <li><img className="sm:w-full w-1/2" src={img8}/></li>
+        <ul className="grid lg:grid-cols-8 mt-5 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto">
+            <li><img className="sm:w-full " src={img1}/></li>
+            <li><img className="sm:w-full " src={img2}/></li>
+            <li><img className="sm:w-full " src={img3}/></li>
+            <li><img className="sm:w-full " src={img4}/></li>
+            <li><img className="sm:w-full " src={img5}/></li>
+            <li><img className="sm:w-full " src={img6}/></li>
+            <li><img className="sm:w-full " src={img7}/></li>
+            <li><img className="sm:w-full " src={img8}/></li>
         </ul>
         <div style={{backgroundImage: `url(${footerBg})`,backgroundPosition: "bottom",backgroundSize:"cover",backgroundRepeat:"no-repeat"}} >
         <NewsLetter/>
         <div className={styles.footer}>
-            <div className={styles.quickLinks}>
-                <h3 className="text-xl font-semibold">Quick Links</h3>
-                <ul>
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/aboutUs"><li>About Us</li></Link>
-                </ul>
-            </div>
-            <div className={styles.followUs}>
-                <h3 className="text-xl font-semibold">Follow Us</h3>
-        
-                <ul>
-                    <li><FacebookIcon/></li>
-                    <li><InstagramIcon/></li>
-                    <li><YouTubeIcon/></li>
-                    <li><LinkedInIcon/></li>
-                </ul>
+            <div className="grid md:flex grid-cols-2 md:grid-cols-1 gap-8">
+                <div className={styles.quickLinks}>
+                    <h3 className="text-xl font-semibold">Quick Links</h3>
+                    <ul>
+                        <Link to="/"><li>Home</li></Link>
+                        <Link to="/aboutUs"><li>About Us</li></Link>
+                    </ul>
+                </div>
+                <div className={styles.followUs}>
+                    <h3 className="text-xl font-semibold">Follow Us</h3>
+            
+                    <ul>
+                        <li><FacebookIcon/></li>
+                        <li><InstagramIcon/></li>
+                        <li><YouTubeIcon/></li>
+                        <li><LinkedInIcon/></li>
+                    </ul>
+                </div>
             </div>
             <div className={styles.contactUs}>
                 <h3 className="text-xl font-semibold">Contact Us</h3>
