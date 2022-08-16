@@ -24,6 +24,8 @@ import Pro from "../Assets/icons/pro.svg";
 import Marquee from "react-fast-marquee";
 import EachPackageHomeDiv from "./EachPackageHomeDiv";
 import {items} from '../Assets/data';
+import banner from '../Assets/Untitled.svg'
+
 const Home = () => {
   const [isFormOpen, formToggleHandler] = useState(false);
 
@@ -225,6 +227,7 @@ const Home = () => {
             />
           </div>
         </div>
+        {/* <img src={banner}/> */}
         <Footer />
       </div>
       <button
