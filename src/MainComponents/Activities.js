@@ -50,7 +50,7 @@ const Activities= ()=>{
                 <EachWaterCard item={item[1]} />
                 <EachWaterCard item={item[2]} />
             </div>
-            <div className='flex sm:flex-row flex-col items-center gap-10 sm:gap-0 justify-around mt-10'>
+            <div className='flex sm:flex-row flex-col items-center gap-10 sm:gap-0 justify-around mt-10 '>
                 <EachWaterCard item={item[3]} />
                 <EachWaterCard item={item[4]} />
                 <EachWaterCard item={item[5]} />
