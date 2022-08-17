@@ -251,10 +251,10 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around md:w-10/12 m-auto">
-          <Link to="/contactUs"><img className="w-full md:w-2/5 " src={banner3}/></Link>
-          <Link to="/contactUs"><img className="w-full md:w-2/5 " src={banner1}/></Link>
-          <Link to="/contactUs"><img className="w-full md:w-2/5 " src={banner2}/></Link>
+        <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around m-auto">
+          <Link to="/contactUs"><img  src={banner3}/></Link>
+          <Link to="/contactUs"><img  src={banner1}/></Link>
+          <Link to="/contactUs"><img  src={banner2}/></Link>
         </div>
         <Footer />
       </div>

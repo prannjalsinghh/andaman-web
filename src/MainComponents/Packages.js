@@ -14,6 +14,7 @@ import QueryForm from "../Components/QueryForm";
 import ImageGallery from 'react-image-gallery';
 import "/node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 import "/node_modules/react-image-gallery/styles/css/image-gallery.css";
+import { Container } from "@mui/system";
 
 
 const images = [
@@ -169,17 +170,24 @@ const Packages = () => {
         rows = {item.accommodation?.rows}
       />
 
-    <CommonDiv arr={[ "Accommodation in rooms as given at hotels in Port Blair—Havelock and Neil on Double or triple sharing basis.",    
-           " Meal Plan: CPAI (Room + Breakfast)  ",
-           " Assistance at all arrival and departure point.  ",
-           " Welcome cake on Arrival ",
-            "Complimentary Candid Photography    ",
-            "Sightseeing in private air-conditioned vehicle as per the itinerary at Port Blair—Havelock--Neil including Airport Pick up and Drop. " ,  
-            "All side Private Cruise charges Included - Port Blair – Neil – Havelock –Port blair.    ",
-            "(NAUTIKA//MAK//Sea Link//Green Ocean//Aashi).   ",
-            "Sightseeing as per the itinerary.  ",
-            "Travel assistance by Mytourguru Experts in all the islands. ",
-            "5% GST Included" ]} title={"The Prices Are Inclusive of:"} />
+      <Container>
+      <div  className='mt-10 m-auto sm:ml-0 ml-5'>
+      <h1 className='text-2xl font-semibold text-orange-600'>The Prices are Inclusive</h1> 
+        <ul className=" mt-5 list-decimal font-bold text-gray-700">
+          <li> Accommodation in rooms as given at hotels in Port Blair—Havelock and Neil on Double or triple sharing basis.</li> 
+          <li> Meal Plan: CPAI (Room + Breakfast)</li>
+           <li> Assistance at all arrival and departure point.  </li>
+           <li ><mark> Welcome cake on Arrival </mark></li>
+           <li><mark>Complimentary Candid Photography </mark>   </li>
+           <li>Sightseeing in private air-conditioned vehicle as per the itinerary at Port Blair—Havelock--Neil including Airport Pick up and Drop.  </li>  
+           <li>All side Private Cruise charges Included - Port Blair – Neil – Havelock –Port blair.    </li>
+           <li>(NAUTIKA//MAK//Sea Link//Green Ocean//Aashi).   </li>
+           <li> Sightseeing as per the itinerary.  </li>
+           <li>Travel assistance by Mytourguru Experts in all the islands. </li>
+           <li>5% GST Included</li>
+        </ul>
+      </div>
+      </Container>
 
        
             <CommonDiv arr={[

@@ -32,7 +32,7 @@ const Footer = () =>
     return(
         <>
         <Services item={{ heading:"Approved By:-"}}/>
-        <ul className="grid lg:grid-cols-8 mt-5 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto">
+        <ul className="grid lg:grid-cols-8 mt-5 gap-x-2 sm:grid-cols-4 grid-cols-4 items-center w-2/3 m-auto mb-5">
             <li><img className="sm:w-full " src={img1}/></li>
             <li><img className="sm:w-full " src={img2}/></li>
             <li><img className="sm:w-full " src={img3}/></li>
