@@ -21,7 +21,7 @@ const AboutUs = ()=>{
     return(
         <>
             <Header/>
-            <Banner url="https://wallpaperaccess.com/full/1921800.jpg"></Banner>
+            <Banner url="https://img.freepik.com/premium-photo/bleak-stone-staircase-jungle-old-presbyterian-church-ruins-ross-island-port-blair-andaman-nicobar-india-old-abandoned-staircase-entrance-abandoned-building-dilapidated-house_431724-2549.jpg?w=2000"></Banner>
             <Services item={{heading:"About Us", icon:<InfoIcon/> , info:""}}></Services>
             
             <div className='flex flex-col sm:flex-row w-3/4 m-auto gap-10 items-center'>
