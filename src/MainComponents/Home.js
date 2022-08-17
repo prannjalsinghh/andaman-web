@@ -24,9 +24,10 @@ import Pro from "../Assets/icons/pro.svg";
 import Marquee from "react-fast-marquee";
 import EachPackageHomeDiv from "./EachPackageHomeDiv";
 import {items} from '../Assets/data';
-import banner1 from '../Assets/banner1.svg';
-import banner2 from '../Assets/banner2.svg';
+import banner1 from '../Assets/banner1.jpg';
+import banner2 from '../Assets/banner2.jpg';
 import banner3 from '../Assets/banner3.svg';
+import packagesBg from '../Assets/packagesBg.jpeg'
 
 const Home = () => {
   const [stickyClass, setStickyClass] = useState('relative');
@@ -72,7 +73,9 @@ const Home = () => {
       <div className="App">
         <Header />
 
+      <div className="-mt-24">
         <HomeVideo />
+        </div>
         <SearchBar class={stickyClass} />
 
         
@@ -119,7 +122,7 @@ const Home = () => {
           />
         </div>
         <Services item={{heading: "MOST POPULAR PACKAGES"}}/> 
-        <Marquee pauseOnHover={true} speed={60} className="mt-10" gradient={false}>
+        <Marquee pauseOnHover={true} speed={80} className="mt-10" gradient={false}>
 
           <EachPackageHomeDiv heading="Family Packages" url="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFtaWx5JTIwdHJhdmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
           <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
@@ -144,7 +147,7 @@ const Home = () => {
         <div
           className="flex flex-col  sm:gap-20 gap-5"
           style={{
-            backgroundImage: `url('https://miro.medium.com/max/1400/1*Y6uwynW9oHw_PzJMULpNsw.jpeg')`,
+            backgroundImage: `url(${packagesBg})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundAttachment: "fixed",

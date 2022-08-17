@@ -2,7 +2,7 @@ export const items = [
     {
       url:"https://i.pinimg.com/originals/0f/a7/ee/0fa7ee26d557dc67d997e2d28c8b084c.jpg",
       TourCode: "MTG 001",
-      heading: "Andaman Delight with Baratang",
+      heading: "Andaman Delight",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
       places: [
         { place: "PORTBLAIR", time: "2NIGHT" },
@@ -198,7 +198,7 @@ export const items = [
     {
       url:"https://media.istockphoto.com/photos/scenic-sea-beach-at-havelock-islands-andaman-india-at-sunset-picture-id1040379102?k=20&m=1040379102&s=612x612&w=0&h=TWWIWrQsFZBMi8TEJk1qZZzqIhSgQB4gtMwHvNpTzKg=",
       TourCode: "MTG 002",
-      heading: "Amazing Andaman with Jolly Buoy",
+      heading: "Amazing Andaman ",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
       places: [
         { place: "PORTBLAIR", time: "02NIGHT" },
@@ -301,7 +301,7 @@ export const items = [
     {
       url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeV-fgzFv5-S1NP3EE6Mv2vPoG1UTg9dndPQ&usqp=CAU",
       TourCode: "MTG 005",
-      heading: "Magical Andaman with Jolly Buoy",
+      heading: "Magical Andaman",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
       places: [
         { place: "PORTBLAIR", time: "3NIGHT" },
@@ -524,7 +524,7 @@ export const items = [
     {
       url:"https://static.toiimg.com/thumb/69007547/andaman.jpg?width=1200&height=900",
       TourCode: "MTG 006",
-      heading: "Amazing Andaman with Baratang",
+      heading: "Amazing Andaman",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
       places: [
         { place: "PORTBLAIR", time: "2NIGHT" },
@@ -734,7 +734,7 @@ export const items = [
     {
       url:"https://img.onmanorama.com/content/dam/mm/en/travel/outside-kerala/images/2021/10/19/andaman-nicobar.jpg",
       TourCode: "MTG 007",
-      heading: "Andaman Delight with Jolly Buoy",
+      heading: "Andaman Delight",
       info: "A perfect program to hop in from one island to other. This trip takes you to the best-rated attraction in Andaman Islands during your short trip to the Amazing Andaman Island. Explore white sand beaches, boat rides during this trip.",
       places: [
         { place: "PORTBLAIR", time: "3NIGHT" },

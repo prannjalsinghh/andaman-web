@@ -75,7 +75,7 @@ const ContactUs = ()=>{
     return (
       <>
         <Header />
-        <Banner url="https://wallpapercave.com/wp/wp7333479.png"/>
+        <Banner url="https://img.freepik.com/premium-photo/bleak-stone-staircase-jungle-old-presbyterian-church-ruins-ross-island-port-blair-andaman-nicobar-india-old-abandoned-staircase-entrance-abandoned-building-dilapidated-house_431724-2549.jpg?w=2000"/>
         <Services
           item={{
             heading: "Contact Us",
