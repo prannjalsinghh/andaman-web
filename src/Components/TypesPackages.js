@@ -4,7 +4,7 @@ import Banner from "./Banner";
 import EachPackageCard from "./EachPackageCard";
 import Footer from "./Footer";
 import Header from "./Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import QueryForm from "./QueryForm";
 const TypesPackages = ()=>{
     const [isFormOpen, formToggleHandler] = useState(false);
@@ -17,12 +17,14 @@ const TypesPackages = ()=>{
     };
 
     const location = useLocation();
-    console.log(location)
+
+    
+ 
 
     return(
         <>
         <Header/>
-        <Banner url="https://andamantourtravel.com/assets/img/banner-or3.jpg"/>
+        <Banner url="https://wallpaperaccess.com/full/1921692.jpg"/>
             <div className="flex flex-col items-center gap-10 text-center">
                 <h1 className="text-5xl text-orange-700 font-semibold m-auto mt-10">{location.state.id}</h1>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-y-5 gap-x-10">

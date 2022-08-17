@@ -16,10 +16,11 @@ export default function BasicMenu(props) {
     setAnchorEl(null);
   };
   const renderNewPackage = (option)=>{
-    
-    navigate('/TypePackages',{state:{id:option}})
-    handleClose();
     props.headerCloseHandler();
+    navigate('/TypePackages',{state:{id:option}})
+    window.location.reload(true);
+    handleClose();
+    
   }
   const handleOnLeave = (event)=>{
     event.target.style.backgroundColor = '#ffffff'
