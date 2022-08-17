@@ -28,6 +28,7 @@ import banner1 from '../Assets/banner1.jpg';
 import banner2 from '../Assets/banner2.jpg';
 import banner3 from '../Assets/banner3.svg';
 import packagesBg from '../Assets/packagesBg.jpeg'
+import {Link} from 'react-router-dom';
 
 const Home = () => {
   const [stickyClass, setStickyClass] = useState('relative');
@@ -251,9 +252,9 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around md:w-10/12 m-auto">
-          <img className="w-full md:w-2/5" src={banner1}/>
-          <img className="w-full md:w-2/5" src={banner2}/>
-          <img className="w-full md:w-2/5" src={banner3}/>
+          <Link to="/contactUs"><img className="w-full md:w-2/5 " src={banner3}/></Link>
+          <Link to="/contactUs"><img className="w-full md:w-2/5 " src={banner1}/></Link>
+          <Link to="/contactUs"><img className="w-full md:w-2/5 " src={banner2}/></Link>
         </div>
         <Footer />
       </div>
