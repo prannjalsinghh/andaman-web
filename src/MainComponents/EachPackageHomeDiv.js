@@ -3,8 +3,10 @@ import Banner from "../Components/Banner";
 const EachPackageHomeDiv = (props)=>{
     const navigate = useNavigate();
 
+
     const renderNewPackages = ()=>{
         navigate('/TypePackages',{state:{id:props.heading}})
+        
     }
 
     return(

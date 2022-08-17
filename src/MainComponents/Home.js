@@ -248,9 +248,9 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around md:w-10/12 m-auto">
-          <img className=" md:w-2/5" src={banner1}/>
+          <img className="w-full md:w-2/5" src={banner1}/>
           <img className="w-full md:w-2/5" src={banner2}/>
-          <img className="w-96 md:w-2/5" src={banner3}/>
+          <img className="w-full md:w-2/5" src={banner3}/>
         </div>
         <Footer />
       </div>

@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import classes from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/icons/logo.png";
+import Services from "./Services";
 
 const Header = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -45,8 +46,12 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__content}>
-        <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} />
         
+        
+        <div className="flex items-center">
+        <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} />
+        <Services call="header" item={{heading:"ANDAMAN", icon:<p className="sm:text-sm  text-sm font-semibold">OCEAN TOURS</p>}}/>
+        </div>
         <nav
           className={`${classes.header__content__nav} ${
             menuOpen && !matches ? classes.isMenu : ""

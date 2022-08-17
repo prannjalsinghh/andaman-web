@@ -4,7 +4,7 @@ import Banner from "./Banner";
 import EachPackageCard from "./EachPackageCard";
 import Footer from "./Footer";
 import Header from "./Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import QueryForm from "./QueryForm";
 const TypesPackages = ()=>{
     const [isFormOpen, formToggleHandler] = useState(false);
@@ -17,7 +17,9 @@ const TypesPackages = ()=>{
     };
 
     const location = useLocation();
-    console.log(location)
+
+    
+ 
 
     return(
         <>
