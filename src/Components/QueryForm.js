@@ -53,11 +53,13 @@ const QueryForm = (props) => {
       <form
         onSubmit={addHandler}
         style={{ width:'640px' }}
-        className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-center  gap-10 p-8 right-0 z-100"
+        className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-center  gap-10 p-8 pt-0 pb-0 right-0 z-100"
       >
+
         <div className="flex justify-center" onClick={props.closeHandler}>
           <CloseIcon />
           </div>
+        <h2 className="text-center text-xl font-bold text-orange-700">Send us your requirements, We'll get back to you in 30 minutes!</h2>
         <div className="flex gap-3">
           <TextField
             fullWidth

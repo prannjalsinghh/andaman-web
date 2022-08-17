@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function BasicMenu(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -35,6 +34,7 @@ export default function BasicMenu(props) {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onMouseEnter={handleClick}
+        onClick={handleClick}
         
       ><a>
         {props.item.heading}
@@ -51,7 +51,7 @@ export default function BasicMenu(props) {
           'aria-labelledby': 'basic-button',
         }}
       >
-        {props.item.options.map((option) =><MenuItem onMouseEnter={(e) => e.target.style.backgroundColor= 'rgb(245,105,65'}
+        {props.item.options.map((option) =><MenuItem  onMouseEnter={(e) => e.target.style.backgroundColor= 'rgb(245,105,65'}
 onMouseLeave={handleOnLeave} onClick={()=>renderNewPackage(option)}>{option}</MenuItem>)}
       </Menu>
       

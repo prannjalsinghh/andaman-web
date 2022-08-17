@@ -49,7 +49,6 @@ const Header = () => {
         
         
         <div className="flex items-center">
-        <img src={Logo} alt="logo" style={{width:'100px',height:"100px",objectFit:'contain'}} className={classes.header__logo} />
         <Services call="header" item={{heading:"ANDAMAN", icon:<p className="sm:text-sm  text-sm font-semibold">OCEAN TOURS</p>}}/>
         </div>
         <nav

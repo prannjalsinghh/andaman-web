@@ -179,7 +179,7 @@ const Home = () => {
           <EachPackageCard item={{heading:`${items[4].nights}Nights - ${items[4].days}Days`,info:`${items[4].places[0].time} ${items[4].places[0].place} - ${items[4].places[1].time} ${items[4].places[1].place} - ${items[4].places[2]?.time?items[4].places[2].time:''} ${items[4].places[2]?.place?items[4].places[2].place:''} `, TourCode:items[4].TourCode, url:items[4].url}}/>
           <EachPackageCard item={{heading:`${items[5].nights}Nights - ${items[5].days}Days`,info:`${items[5].places[0].time} ${items[5].places[0].place} - ${items[5].places[1].time} ${items[5].places[1].place} - ${items[5].places[2]?.time?items[5].places[2].time:''} ${items[5].places[2]?.place?items[5].places[2].place:''} `, TourCode:items[5].TourCode, url:items[5].url}}/>
           </div>
-          <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
+          <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around pb-5">
           <EachPackageCard item={{heading:`${items[6].nights}Nights - ${items[6].days}Days`,info:`${items[6].places[0].time} ${items[6].places[0].place} - ${items[6].places[1].time} ${items[6].places[1].place} - ${items[6].places[2]?.time?items[6].places[2].time:''} ${items[6].places[2]?.place?items[6].places[2].place:''} `, TourCode:items[6].TourCode, url:items[6].url}}/>
           <EachPackageCard item={{heading:`${items[7].nights}Nights - ${items[7].days}Days`,info:`${items[7].places[0].time} ${items[7].places[0].place} - ${items[7].places[1].time} ${items[7].places[1].place} - ${items[7].places[2]?.time?items[7].places[2].time:''} ${items[7].places[2]?.place?items[7].places[2].place:''} `, TourCode:items[7].TourCode, url:items[7].url}}/>
           </div>
