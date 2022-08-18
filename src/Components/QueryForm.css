@@ -10,3 +10,6 @@
   .modal{
     z-index:100;
   }
+  button button, [type='submit']{
+    background-color: rgb(245,105,65);
+  }

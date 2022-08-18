@@ -49,7 +49,7 @@ const Header = () => {
         
         
         <div className="flex items-center">
-        <Services call="header" item={{heading:"ANDAMAN", icon:<p className="sm:text-sm  text-sm font-semibold">OCEAN TOURS</p>}}/>
+        <Services call="header" item={{heading:"ANDAMAN", icon:<p className="sm:text-sm  text-sm font-semibold">OCEAN TOUR</p>}}/>
         </div>
         <nav
           className={`${classes.header__content__nav} ${
