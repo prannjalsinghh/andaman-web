@@ -30,7 +30,7 @@ const QueryForm = (props) => {
       ref={form}
         onSubmit={addHandler}
         style={{ width:'640px' }}
-        className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-center  gap-10 p-8 pt-0 pb-0 right-0 z-100"
+        className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-around  p-8 pt-0 pb-0 right-0 z-100"
       >
 
         <div className="flex justify-center" onClick={props.closeHandler}>

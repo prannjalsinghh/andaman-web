@@ -128,7 +128,7 @@ const Home = () => {
           <Link to="/contactUs"><img  src={banner2}/></Link>
         </div>
         <Services item={{heading: "MOST POPULAR PACKAGES"}}/> 
-        <Marquee pauseOnHover={true} speed={80} className="mt-10" gradient={false}>
+        <Marquee pauseOnHover={true} speed={80} className="mt-10 " gradient={false}>
 
           <EachPackageHomeDiv heading="Family Packages" url="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFtaWx5JTIwdHJhdmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80"/>
           <EachPackageHomeDiv heading="Group Packages" url="https://www.smartertravel.com/wp-content/uploads/2017/08/Group-Travel-101-1400x500.jpg"/>
@@ -260,7 +260,7 @@ const Home = () => {
         <Footer />
       </div>
       <button
-        className="fixed top-1/2 right-0 text-white text-xl p-2 rotate-fix"
+        className="fixed top-1/2 right-0 text-white text-base p-2 rotate-fix"
         onClick={queryFormOpenHandler}
         style={{zIndex:"10000"}}
       >

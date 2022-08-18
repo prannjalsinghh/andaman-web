@@ -46,6 +46,7 @@ const SearchBar = (props) => {
       <input
         type="number"
         placeholder="0"
+        min="1"
         name='user-numberOfPeople'
       />
 

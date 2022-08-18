@@ -68,7 +68,7 @@ const AboutUs = ()=>{
             </div>
 
             <button
-            className="fixed top-1/2 text-white right-0 text-xl p-2 rotate-fix"
+            className="fixed top-1/2 text-white right-0 text-base p-2 rotate-fix"
             onClick={queryFormOpenHandler}
             style={{zIndex:"10000"}}
             >

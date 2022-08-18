@@ -47,10 +47,11 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.header__content}>
         
-        
+        <Link to='/'>
         <div className="flex items-center">
         <Services call="header" item={{heading:"ANDAMAN", icon:<p className="sm:text-sm  text-sm font-semibold">OCEAN TOUR</p>}}/>
         </div>
+        </Link>
         <nav
           className={`${classes.header__content__nav} ${
             menuOpen && !matches ? classes.isMenu : ""

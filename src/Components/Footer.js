@@ -50,6 +50,9 @@ const Footer = () =>
                     <ul>
                         <Link to="/"><li>Home</li></Link>
                         <Link to="/aboutUs"><li>About Us</li></Link>
+                        <Link to="/activities"><li>Water Sports</li></Link>
+                        <Link to="/contactUs"><li>Contact Us</li></Link>
+                     
                     </ul>
                 </div>
                 <div className={styles.followUs}>
