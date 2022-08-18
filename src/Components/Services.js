@@ -16,7 +16,7 @@ const Services = (props) => {
           style={{ color: "", width: "30px",height:"3px", backgroundColor: "rgb(245,105,65)" }}
         />
       </div>
-      <div className="text-center font-bold text-gray-600">{props.item.info}</div>
+      <div className="text-center w-3/4 font-bold text-gray-600">{props.item.info}</div>
     </div>
   );
 };
