@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useRef} from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Services from '../Components/Services';
@@ -9,6 +9,8 @@ import { blue } from '@mui/material/colors';
 import { TextField,Container,Button } from '@mui/material';
 import ContactUsLeft from '../Components/ContactUsLeft';
 import Banner from '../Components/Banner';
+import emailjs from '@emailjs/browser';
+
 const styles = {
   "input-label": {
     textOverflow: "ellipsis",
@@ -29,47 +31,23 @@ const styles = {
 
 
 const ContactUs = ()=>{
-    const[enteredName , setenteredName] = useState('');
+  const form = useRef();
 
-    const changeNameHandler = (event) => {
-        setenteredName(event.target.value);
-    };
-
-    const[enteredEmail , setenteredEmail] = useState('');
-
-    const changeEmailHandler = (event) => {
-        setenteredEmail(event.target.value);
-    };
-
-    const[enteredPhoneno , setenteredPhoneno] = useState('');
-
-    const changePhonenoHandler = (event) => {
-        setenteredPhoneno(event.target.value);
-    };
-
-    const[enteredDate , setenteredDate] = useState('');
-
-    const changeDateHandler = (event) => {
-        setenteredDate(event.target.value);
-    };
-
-    const[enteredPerson , setenteredPerson] = useState('');
-
-    const changePersonHandler = (event) => {
-        setenteredPerson(event.target.value);
-    };
 
     const addHandler = (event) => {
         event.preventDefault();
 
-        const submitObj = {
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+          .then((result) => {
+              console.log(result.text);
+              form.current.reset();
 
-            Name:enteredName,
-            Email:enteredEmail,
-            phoneno:enteredPhoneno,
-            Date:enteredDate,
-            Person:enteredPerson
-        };
+              
+          }, (error) => {
+              console.log(error.text);
+          });
+
+
 
     };
     return (
@@ -88,14 +66,14 @@ const ContactUs = ()=>{
           <form
             className="flex flex-col sm:max-w-screen-md max-w-sm p-5"
             style={{width:"1000px"}}
+            ref={form}
             onSubmit={addHandler}
           >
             <TextField
               variant="filled"
               sx={{ mb: 2 }}
               type="text"
-              value={enteredName}
-              onChange={changeNameHandler}
+              name='user-name'
               placeholder="Your Name"
               // make placeholder darker
               InputProps={{
@@ -108,24 +86,21 @@ const ContactUs = ()=>{
               variant="filled"
               sx={{ mb: 2 }}
               type="email"
-              value={enteredEmail}
-              onChange={changeEmailHandler}
+              name='user-email'
               placeholder="Your E-mail"
             />
             <TextField
               variant="filled"
               sx={{ mb: 2 }}
               type="text"
-              value={enteredPhoneno}
-              onChange={changePhonenoHandler}
+              name='user-phone'
               placeholder="Your Phone No."
             />
             <TextField
               variant="filled"
               sx={{ mb: 2 }}
               type="date"
-              value={enteredDate}
-              onChange={changeDateHandler}
+              name='travel-date'
               placeholder="Date of Travel"
             />
             <TextField
@@ -133,12 +108,12 @@ const ContactUs = ()=>{
               sx={{ mb: 2 }}
               type="number"
               placeholder="No of Person"
-              value={enteredPerson}
-              onChange={changePersonHandler}
+              name='user-numberOfPeople'
             />
 
             <Button
               variant="contained"
+              type='submit'
               className="p-2 rounded-md w-20"
               fullWidth
               sx={{ backgroundColor: "#EA580C" }}
