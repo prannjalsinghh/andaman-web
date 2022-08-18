@@ -1,49 +1,25 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import "./QueryForm.css";
 import { TextField,Button } from "@mui/material";
 import { Container } from "postcss";
+import emailjs from '@emailjs/browser';
+
 const QueryForm = (props) => {
-  const [enteredName, setenteredName] = useState("");
-
-  const changeNameHandler = (event) => {
-    setenteredName(event.target.value);
-  };
-
-  const [enteredEmail, setenteredEmail] = useState("");
-
-  const changeEmailHandler = (event) => {
-    setenteredEmail(event.target.value);
-  };
-
-  const [enteredPhoneno, setenteredPhoneno] = useState("");
-
-  const changePhonenoHandler = (event) => {
-    setenteredPhoneno(event.target.value);
-  };
-
-  const [enteredDate, setenteredDate] = useState("");
-
-  const changeDateHandler = (event) => {
-    setenteredDate(event.target.value);
-  };
-
-  const [enteredPerson, setenteredPerson] = useState("");
-
-  const changePersonHandler = (event) => {
-    setenteredPerson(event.target.value);
-  };
-
+  const form = useRef()
   const addHandler = (event) => {
     event.preventDefault();
 
-    const submitObj = {
-      Name: enteredName,
-      Email: enteredEmail,
-      phoneno: enteredPhoneno,
-      Date: enteredDate,
-      Person: enteredPerson,
-    };
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
+      .then((result) => {
+          console.log(result.text);
+          form.current.reset();
+
+          
+      }, (error) => {
+          console.log(error.text);
+      });
+
   };
 
   return (
@@ -51,6 +27,7 @@ const QueryForm = (props) => {
       <div className="backdrop" onClick={props.closeHandler} />
     
       <form
+      ref={form}
         onSubmit={addHandler}
         style={{ width:'640px' }}
         className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-center  gap-10 p-8 pt-0 pb-0 right-0 z-100"
@@ -65,8 +42,7 @@ const QueryForm = (props) => {
             fullWidth
             label="Name"
             type="text"
-            value={enteredName}
-            onChange={changeNameHandler}
+            name='user-name'
             placeholder="Your Name"
           />
         </div>
@@ -75,8 +51,7 @@ const QueryForm = (props) => {
             fullWidth
             label="Email"
             type="email"
-            value={enteredEmail}
-            onChange={changeEmailHandler}
+            name='user-email'
             placeholder="Your E-mail"
           />
         </div>
@@ -85,8 +60,7 @@ const QueryForm = (props) => {
             fullWidth
             label="Phone"
             type="text"
-            value={enteredPhoneno}
-            onChange={changePhonenoHandler}
+            name='user-phone'
             placeholder="Your Phone No."
           />
         </div>
@@ -94,8 +68,7 @@ const QueryForm = (props) => {
           <TextField
             fullWidth
             type="date"
-            value={enteredDate}
-            onChange={changeDateHandler}
+            name='travel-date'
             placeholder="Date of Travel"
           />
         </div>
@@ -105,11 +78,10 @@ const QueryForm = (props) => {
             label="Number of People"
             type="number"
             placeholder="0"
-            value={enteredPerson}
-            onChange={changePersonHandler}
+            name='user-numberOfPeople'
           />
         </div>
-        <Button variant="contained" sx={{ backgroundColor: "#EA580C" }}>
+        <Button variant="contained" type='submit' sx={{ backgroundColor: "#EA580C" }}>
           Submit
         </Button>
       </form>
