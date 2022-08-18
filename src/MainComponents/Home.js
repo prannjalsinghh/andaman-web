@@ -122,6 +122,11 @@ const Home = () => {
             }}
           />
         </div>
+        <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around m-auto">
+          <Link to="/contactUs"><img  src={banner3}/></Link>
+          <Link to="/contactUs"><img  src={banner1}/></Link>
+          <Link to="/contactUs"><img  src={banner2}/></Link>
+        </div>
         <Services item={{heading: "MOST POPULAR PACKAGES"}}/> 
         <Marquee pauseOnHover={true} speed={80} className="mt-10" gradient={false}>
 
@@ -166,7 +171,7 @@ const Home = () => {
               ),
             }}
           />
-          <p className="text-center text-yellow-500 font-semibold">
+          <p className="text-center w-3/4 m-auto text-yellow-500 font-semibold">
           The below Andaman holiday packages contains sightseeing, hotels, transfers, tickets, ground support and breakfast. Basically, the below packages takes care of everything required during your trip right from the time you arrive at Port Blair airport to the time you depart. If you need any further customization to the Andaman tour packages then our holiday expert will be happy to make necessary changes to the itinerary
           </p>
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-5 items-center justify-around">
@@ -251,11 +256,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col p-5 md:p-10 gap-5 mt-10 items-center md:flex-row  sm:justify-around m-auto">
-          <Link to="/contactUs"><img  src={banner3}/></Link>
-          <Link to="/contactUs"><img  src={banner1}/></Link>
-          <Link to="/contactUs"><img  src={banner2}/></Link>
-        </div>
+        
         <Footer />
       </div>
       <button
