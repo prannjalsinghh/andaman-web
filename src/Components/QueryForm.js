@@ -2,16 +2,18 @@ import React, { useRef, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import "./QueryForm.css";
 import { TextField,Button } from "@mui/material";
-import { Container } from "postcss";
 import emailjs from '@emailjs/browser';
+import { useSnackbar } from 'notistack';
 
 const QueryForm = (props) => {
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
   const form = useRef()
   const addHandler = (event) => {
     event.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
+          enqueueSnackbar("success" , {variant:"success"});
           console.log(result.text);
           form.current.reset();
 
@@ -32,13 +34,14 @@ const QueryForm = (props) => {
         style={{ width:'640px' }}
         className="modal fixed h-screen max-w-sm top-0 bg-white flex flex-col justify-around  p-8 pt-0 pb-0 right-0 z-100"
       >
+        
 
         <div className="flex justify-center" onClick={props.closeHandler}>
           <CloseIcon />
           </div>
         <h2 className="text-center text-xl font-bold text-orange-700">Send us your requirements, We'll get back to you in 30 minutes!</h2>
         <div className="flex gap-3">
-          <TextField
+          <TextField  required={true}
             fullWidth
             label="Name"
             type="text"
@@ -47,7 +50,7 @@ const QueryForm = (props) => {
           />
         </div>
         <div className="flex gap-3">
-          <TextField
+          <TextField  required={true}
             fullWidth
             label="Email"
             type="email"
@@ -56,7 +59,7 @@ const QueryForm = (props) => {
           />
         </div>
         <div className="flex gap-3">
-          <TextField
+          <TextField  required={true}
             fullWidth
             label="Phone"
             type="text"
@@ -65,7 +68,7 @@ const QueryForm = (props) => {
           />
         </div>
         <div className="flex gap-3">
-          <TextField
+          <TextField  required={true}
             fullWidth
             type="date"
             name='travel-date'
@@ -74,7 +77,7 @@ const QueryForm = (props) => {
           />
         </div>
         <div className="flex gap-3">
-          <TextField
+          <TextField  required={true}
             fullWidth
             label="Number of People"
             type="number"

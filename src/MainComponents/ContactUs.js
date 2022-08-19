@@ -5,7 +5,7 @@ import Services from '../Components/Services';
 import CallIcon from '@mui/icons-material/Call';
 import SimpleMap from '../Components/Map';
 import { blue } from '@mui/material/colors';
-
+import { useSnackbar } from 'notistack';
 import { TextField,Container,Button } from '@mui/material';
 import ContactUsLeft from '../Components/ContactUsLeft';
 import Banner from '../Components/Banner';
@@ -32,6 +32,7 @@ const styles = {
 
 const ContactUs = ()=>{
   const form = useRef();
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
 
 
     const addHandler = (event) => {
@@ -39,6 +40,7 @@ const ContactUs = ()=>{
 
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
           .then((result) => {
+              enqueueSnackbar("success" , {variant:"success"});
               console.log(result.text);
               form.current.reset();
 
@@ -70,6 +72,7 @@ const ContactUs = ()=>{
             onSubmit={addHandler}
           >
             <TextField
+              required={true}
               variant="filled"
               sx={{ mb: 2 }}
               type="text"
@@ -82,28 +85,28 @@ const ContactUs = ()=>{
                 },
               }}
             />
-            <TextField
+            <TextField required={true}
               variant="filled"
               sx={{ mb: 2 }}
               type="email"
               name='user-email'
               placeholder="Your E-mail"
             />
-            <TextField
+            <TextField  required={true}
               variant="filled"
               sx={{ mb: 2 }}
               type="text"
               name='user-phone'
               placeholder="Your Phone No."
             />
-            <TextField
+            <TextField  required={true}
               variant="filled"
               sx={{ mb: 2 }}
               type="date"
               name='travel-date'
               placeholder="Date of Travel"
             />
-            <TextField
+            <TextField  required={true}
               variant="filled"
               sx={{ mb: 2 }}
               type="number"
