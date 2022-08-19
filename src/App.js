@@ -8,6 +8,7 @@ import Activities from './MainComponents/Activities';
 import Ferries from './MainComponents/Ferries';
 import { useEffect } from 'react';
 import TypesPackages from './Components/TypesPackages';
+import { Helmet } from 'react-helmet';
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,6 @@ return(
     <Route exact path= '/ferries' element={<Ferries/>}></Route>
     <Route exact path='/packages' element={<Packages/>}></Route>
     <Route exact path='/activities' element={<Activities/>}></Route>
-
     <Route exact path='/TypePackages' element={<TypesPackages/>}></Route>
   </Routes>
   )
