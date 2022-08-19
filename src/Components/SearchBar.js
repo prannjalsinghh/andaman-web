@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./SearchBar.css";
 import emailjs from '@emailjs/browser';
+import { useSnackbar } from 'notistack';
 
 const SearchBar = (props) => {
   const form= useRef();
   const [date,setDate] =useState();
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
 
   useEffect(()=>{
     var today = new Date();
@@ -28,6 +30,7 @@ console.log(date)
 
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
           .then((result) => {
+              enqueueSnackbar("success" , {variant:"success"});
               console.log(result.text);
               form.current.reset();
               
@@ -45,23 +48,23 @@ console.log(date)
       className={`searchBar hidden sm:flex p-5 gap-5 justify-around sm:p-10 w-11/12  items-center mx-auto z-20 ${props.class}`}
       style={{ background: "rgb(1,155,167)" }}
     >
-      <input
+      <input  required={true}
         type="text"
         name='user-name'
         placeholder="Your Name"
       />
-      <input
+      <input  required={true}
         type="email"
         name='user-email'
         placeholder="Your E-mail"
       />
-      <input
+      <input  required={true}
         type="text"
         name='user-phone'
         placeholder="Your Phone No."
       />
-      <input type="date" name='travel-date' min={date}/>
-      <input
+      <input  required={true} type="date" name='travel-date' min={date}/>
+      <input  required={true}
         type="number"
         placeholder="0"
         min="1"
