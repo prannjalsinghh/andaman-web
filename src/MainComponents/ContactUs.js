@@ -107,6 +107,7 @@ const ContactUs = ()=>{
               variant="filled"
               sx={{ mb: 2 }}
               type="number"
+              InputProps={{ inputProps: { min: 1 } }}
               placeholder="No of Person"
               name='user-numberOfPeople'
             />

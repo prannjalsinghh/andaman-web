@@ -33,9 +33,8 @@ export default function BasicMenu(props) {
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
-        onMouseEnter={handleClick}
-        onClick={handleClick}
-        
+        onMouseOver = {props.matches===true? handleClick : undefined}
+        onClick = {props.matches===false? handleClick:undefined}
       ><a>
         {props.item.heading}
         </a>

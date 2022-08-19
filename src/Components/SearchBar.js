@@ -1,9 +1,27 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./SearchBar.css";
 import emailjs from '@emailjs/browser';
 
 const SearchBar = (props) => {
   const form= useRef();
+  const [date,setDate] =useState();
+
+  useEffect(()=>{
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; 
+    var yyyy = today.getFullYear();
+    if(dd<10){
+      dd='0'+dd
+    } 
+    if(mm<10){
+      mm='0'+mm
+  } 
+
+today = dd +'-' +mm+'-' + yyyy;
+setDate(today);
+console.log(date)
+  },[])
 
   const addHandler = (event) => {
     event.preventDefault();
@@ -42,7 +60,7 @@ const SearchBar = (props) => {
         name='user-phone'
         placeholder="Your Phone No."
       />
-      <input type="date" name='travel-date' />
+      <input type="date" name='travel-date' min={date}/>
       <input
         type="number"
         placeholder="0"

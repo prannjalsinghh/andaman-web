@@ -70,6 +70,7 @@ const QueryForm = (props) => {
             type="date"
             name='travel-date'
             placeholder="Date of Travel"
+           
           />
         </div>
         <div className="flex gap-3">
@@ -78,6 +79,7 @@ const QueryForm = (props) => {
             label="Number of People"
             type="number"
             placeholder="0"
+            InputProps={{ inputProps: { min: 1 } }}
             name='user-numberOfPeople'
           />
         </div>

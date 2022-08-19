@@ -64,7 +64,7 @@ const Header = () => {
             <li>
               <Link to="/aboutUs">About Us</Link>{" "}
             </li>
-            < BasicMenu headerCloseHandler = {closeHandler} item={{heading:"Packages" , options:["Family Package" , "Honeymoon Package","Group Package","Corporate Package","Budget Package"]}}/>
+            < BasicMenu headerCloseHandler = {closeHandler} matches={matches} item={{heading:"Packages" , options:["Family Package" , "Honeymoon Package","Group Package","Corporate Package","Budget Package"]}}/>
             
             <li>
               <Link to="/activities">Water Sports</Link>
