@@ -8,6 +8,7 @@ import Activities from './MainComponents/Activities';
 import Ferries from './MainComponents/Ferries';
 import { useEffect } from 'react';
 import TypesPackages from './Components/TypesPackages';
+import { SnackbarProvider } from 'notistack';
 
 function App() {
   useEffect(() => {
@@ -16,16 +17,18 @@ function App() {
   }, []);
   
 return(
-  <Routes>
-    <Route exact path='/' element={ <Home/>}></Route>
-    <Route exact path='/aboutUs' element={<AboutUs/>}></Route>
-    <Route exact path='/contactUs' element={<ContactUs/>}></Route>
-    <Route exact path= '/ferries' element={<Ferries/>}></Route>
-    <Route exact path='/packages' element={<Packages/>}></Route>
-    <Route exact path='/activities' element={<Activities/>}></Route>
+  <SnackbarProvider maxSnack={3}>
+    <Routes>
+      <Route exact path='/' element={ <Home/>}></Route>
+      <Route exact path='/aboutUs' element={<AboutUs/>}></Route>
+      <Route exact path='/contactUs' element={<ContactUs/>}></Route>
+      <Route exact path= '/ferries' element={<Ferries/>}></Route>
+      <Route exact path='/packages' element={<Packages/>}></Route>
+      <Route exact path='/activities' element={<Activities/>}></Route>
 
-    <Route exact path='/TypePackages' element={<TypesPackages/>}></Route>
-  </Routes>
+      <Route exact path='/TypePackages' element={<TypesPackages/>}></Route>
+    </Routes>
+  </SnackbarProvider>
   )
 }
 export default App;
