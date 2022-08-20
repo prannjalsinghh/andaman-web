@@ -183,7 +183,6 @@ const Packages = () => {
            <li>All side Private Cruise charges Included - Port Blair – Neil – Havelock –Port blair.    </li>
            <li>(NAUTIKA//MAK//Sea Link//Green Ocean//Aashi).   </li>
            <li> Sightseeing as per the itinerary.  </li>
-           <li>Travel assistance by Mytourguru Experts in all the islands. </li>
            <li>5% GST Included</li>
         </ul>
       </div>
