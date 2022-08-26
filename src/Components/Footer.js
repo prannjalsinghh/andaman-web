@@ -69,9 +69,9 @@ const Footer = () =>
             <div className={styles.contactUs}>
                 <h3 className="text-xl font-semibold">Contact Us</h3>
                 <ul>
-                    <li><a href="tel:+919958377493"><span><LocalPhoneIcon/></span>+919958377493</a></li>
-                    <li><a href="mailto:info@andamanoceantour.com"><span><EmailIcon/></span> info@andamanoceantour.com</a></li>
-                    <li><span><LocationOnIcon/></span>Shop No 21 radhakrishna temple complex,JungliGhat,Port Blair, Andaman & Nicobar Islands 744103</li>
+                    <li><a href="tel:+919971750170"><span><LocalPhoneIcon/></span>+919971750170</a></li>
+                    <li><a href="mailto:sales@andamanoceantours.com"><span><EmailIcon/></span> sales@andamanoceantours.com</a></li>
+                    <li><span><LocationOnIcon/></span>Shop no 21 Ground Floor RK Complex, Gunglighat, Port Blair</li>
                 </ul>
             </div>
         </div>

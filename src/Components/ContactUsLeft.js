@@ -9,7 +9,7 @@ const ContactUsLeft = ()=>{
                     <i class="fa-solid fa-location-dot"></i>
                     <div className="desc">
                         <h4>Head Office Address:</h4>
-                        <p>Shop No 21 radhakrishna temple complex,JungliGhat,Port Blair, Andaman & Nicobar Islands 744103
+                        <p>Shop no 21 Ground Floor RK Complex, Gunglighat, Port Blair
 </p>
                     </div>
                 </div>
@@ -17,14 +17,14 @@ const ContactUsLeft = ()=>{
                 <i class="fa-solid fa-phone-volume"></i>
                     <div className='desc'>
                         <h4>Contact Number:</h4>
-                        <p>+91 9958377493</p>
+                        <p>+91 9971750170</p>
                     </div>
                 </div>
                 <div className="contactAdress">
                 <i class="fa-solid fa-envelope-open-text"></i>
                     <div className='desc'>
                         <h4>Email Address:</h4>
-                        <p>Info@andamanoceantour.com</p>
+                        <p>sales@andamanoceantours.com</p>
                     </div>
                 </div>
             </div>
