@@ -63,7 +63,8 @@ console.log(date)
         name='user-phone'
         placeholder="Your Phone No."
       />
-      <input  required={true} type="date" name='travel-date' min={date}/>
+      <input  required={true} type="date" name='travel-date' min={date} onFocus={(e) => (e.target.type = "date")}
+            onBlur={(e) => (e.target.type = "text")}></input>
       <input  required={true}
         type="number"
         placeholder="0"
