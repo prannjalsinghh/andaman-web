@@ -102,9 +102,11 @@ const ContactUs = ()=>{
             <TextField  required={true}
               variant="filled"
               sx={{ mb: 2 }}
-              type="date"
+              type="text"
               name='travel-date'
               placeholder="Date of Travel"
+              onFocus={(e) => (e.target.type = "date")}
+              onBlur={(e) => (e.target.type = "text")}
             />
             <TextField  required={true}
               variant="filled"

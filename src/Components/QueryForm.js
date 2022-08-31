@@ -24,6 +24,10 @@ const QueryForm = (props) => {
 
   };
 
+
+const typeChangeHandler = (event)=>{
+
+}
   return (
     <>
       <div className="backdrop" onClick={props.closeHandler} />
@@ -32,10 +36,8 @@ const QueryForm = (props) => {
       ref={form}
         onSubmit={addHandler}
         style={{ width:'640px' }}
-        className="modal fixed h-full max-w-sm top-0 bg-white flex flex-col justify-around  p-8 pt-0 pb-0 right-0 z-100"
-      >
-        
-
+        className="modal fixed h-full max-w-sm top-0 bg-white flex flex-col justify-around  p-8 pt-0 pb-0 right-0 z-100">
+      
         <div className="flex justify-center" onClick={props.closeHandler}>
           <CloseIcon />
           </div>
@@ -70,9 +72,11 @@ const QueryForm = (props) => {
         <div className="flex gap-3">
           <TextField  required={true}
             fullWidth
-            type="date"
+            type="text"
             name='travel-date'
             placeholder="Date of Travel"
+            onFocus={(e) => (e.target.type = "date")}
+            onBlur={(e) => (e.target.type = "text")}
            
           />
         </div>
