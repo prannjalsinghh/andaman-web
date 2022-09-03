@@ -24,7 +24,7 @@ const ContactUsLeft = ()=>{
                 <i class="fa-solid fa-envelope-open-text"></i>
                     <div className='desc'>
                         <h4>Email Address:</h4>
-                        <p>sales@andamanoceantours.com</p>
+                        <p>andamanoceantours09@gmail.com</p>
                     </div>
                 </div>
             </div>

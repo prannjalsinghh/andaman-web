@@ -70,7 +70,7 @@ const Footer = () =>
                 <h3 className="text-xl font-semibold">Contact Us</h3>
                 <ul>
                     <li><a href="tel:+919971750170"><span><LocalPhoneIcon/></span>+919971750170</a></li>
-                    <li><a href="mailto:sales@andamanoceantours.com"><span><EmailIcon/></span> sales@andamanoceantours.com</a></li>
+                    <li><a href="mailto:andamanoceantours09@gmail.com"><span><EmailIcon/></span>andamanoceantours09@gmail.com</a></li>
                     <li><span><LocationOnIcon/></span>Shop no 21 Ground Floor RK Complex, Gunglighat, Port Blair</li>
                 </ul>
             </div>
